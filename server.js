@@ -66,7 +66,7 @@ async function search(q) {
   const d = await r.json();
   const items = (d.items || []).slice(0, 10).map((x) => ({
     appid: x.id, title: x.name,
-    image: `https://cdn.cloudflare.steamstatic.com/steam/apps/${x.id}/header.jpg`,
+    image: x.tiny_image || `https://cdn.cloudflare.steamstatic.com/steam/apps/${x.id}/header.jpg`,
   }));
   setCache(key, items, 3600e3); // 1h
   return items;
@@ -79,7 +79,7 @@ async function game(appid) {
 
   const rate = await rates();
   const countries = [];
-  let title = null, genre = "Spiel", gotResponse = false;
+  let title = null, genre = "Spiel", image = null, gotResponse = false;
 
   for (const cc of COUNTRIES) {
     try {
@@ -93,6 +93,7 @@ async function game(appid) {
       if (!e?.success) continue;
       gotResponse = true; // Steam hat geantwortet (kein Rate-Limit-Fehler)
       if (!title) { title = e.data.name; if (e.data.genres?.length) genre = e.data.genres[0].description; }
+      if (!image && e.data.header_image) image = e.data.header_image; // echte Bild-URL von Steam
       const p = e.data.price_overview;
       if (!p) continue;
       const f = rate[p.currency];
@@ -105,16 +106,11 @@ async function game(appid) {
   // nur echte Free-to-Play-Spiele negativ cachen, NICHT rate-limit-Fehlschläge
   if (countries.length < 4) { if (gotResponse) setCache(key, "NONE", 6 * 3600e3); return null; }
 
-  // Bild muss existieren – sonst Spiel nicht aufnehmen (kein kaputtes Cover)
-  try {
-    const ir = await fetch(`https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`, { method: "HEAD" });
-    if (!ir.ok) { setCache(key, "NONE", 6 * 3600e3); return null; }
-  } catch { return null; }
-
   countries.sort((a, b) => a.price - b.price);
   const base = countries[countries.length - 1].price;
   const result = {
     appid: +appid, title: title || `App ${appid}`, genre,
+    image: image || `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`,
     emoji: GENRE_EMOJI[genre] || "🎮", color: PALETTE[appid % PALETTE.length],
     base, disc: -Math.round((1 - countries[0].price / base) * 100), countries,
   };

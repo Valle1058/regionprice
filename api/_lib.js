@@ -42,14 +42,14 @@ export async function search(q) {
   const d = await (await fetch(`https://store.steampowered.com/api/storesearch/?term=${encodeURIComponent(q)}&cc=de&l=german`)).json();
   return (d.items || []).slice(0, 10).map((x) => ({
     appid: x.id, title: x.name,
-    image: `https://cdn.cloudflare.steamstatic.com/steam/apps/${x.id}/header.jpg`,
+    image: x.tiny_image || `https://cdn.cloudflare.steamstatic.com/steam/apps/${x.id}/header.jpg`,
   }));
 }
 
 export async function game(appid) {
   const rate = await rates();
   const countries = [];
-  let title = null, genre = "Spiel";
+  let title = null, genre = "Spiel", image = null;
   for (const cc of COUNTRIES) {
     try {
       let r, tries = 0;
@@ -61,6 +61,7 @@ export async function game(appid) {
       const e = j[appid];
       if (!e?.success) continue;
       if (!title) { title = e.data.name; if (e.data.genres?.length) genre = e.data.genres[0].description; }
+      if (!image && e.data.header_image) image = e.data.header_image;
       const p = e.data.price_overview;
       if (!p) continue;
       const f = rate[p.currency];
@@ -71,15 +72,11 @@ export async function game(appid) {
     await sleep(120);
   }
   if (countries.length < 4) return null;
-  // Bild muss existieren – sonst Spiel nicht aufnehmen (kein kaputtes Cover)
-  try {
-    const ir = await fetch(`https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`, { method: "HEAD" });
-    if (!ir.ok) return null;
-  } catch { return null; }
   countries.sort((a, b) => a.price - b.price);
   const base = countries[countries.length - 1].price;
   return {
     appid: +appid, title: title || `App ${appid}`, genre,
+    image: image || `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`,
     emoji: GENRE_EMOJI[genre] || "🎮", color: PALETTE[appid % PALETTE.length],
     base, disc: -Math.round((1 - countries[0].price / base) * 100), countries,
   };

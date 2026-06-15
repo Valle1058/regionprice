@@ -347,7 +347,7 @@ function normalizeGame(raw,i){
     .map(c=>({shop:c.shop||"Steam",shops:c.shops||[{s:c.shop||"Steam",p:c.price}],...c}));
   const base=raw.base||countries[countries.length-1].price;
   return{
-    id:i,appid:raw.appid,title:raw.title,genre:raw.genre||"–",
+    id:i,appid:raw.appid,image:raw.image,title:raw.title,genre:raw.genre||"–",
     emoji:raw.emoji||"🎮",color:raw.color||"#4f8cff",base,
     disc:raw.disc??-Math.round((1-countries[0].price/base)*100),
     countries,best:countries[0],
@@ -468,7 +468,7 @@ function renderGrid(){
     const ref=refCountry(g);
     const saving=savingPct(g);
     const isHere=ref.code===g.best.code; // Besucher ist selbst im guenstigsten Land
-    const img=g.appid?`https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg`:null;
+    const img=g.image||(g.appid?`https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg`:null);
     return `<div class="card" onclick="openGame(${g.id})">
       <div class="thumb" style="background:linear-gradient(135deg,${g.color}33,${g.color}0a)">
         <span class="emoji" style="color:${g.color}">${g.emoji}</span>
@@ -513,7 +513,7 @@ function openGame(id){
 
   $('#modal').innerHTML=`
     <div class="modal-head">
-      <div class="ico" style="${g.appid?`background-image:url('https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg');background-size:cover;background-position:center`:`background:linear-gradient(135deg,${g.color}44,${g.color}11);color:${g.color}`}">${g.appid?'':g.emoji}</div>
+      <div class="ico" style="${(g.image||g.appid)?`background-image:url('${g.image||`https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg`}');background-size:cover;background-position:center`:`background:linear-gradient(135deg,${g.color}44,${g.color}11);color:${g.color}`}">${(g.image||g.appid)?'':g.emoji}</div>
       <div><h2>${g.title}</h2><div class="meta">${g.genre} · ${refCountry(g).code===g.best.code?'günstigstes Land = dein Land':`in deinem Land (${refCountry(g).code}) ${eur(refCountry(g).price)} · ${savingPct(g)}% sparen`}</div></div>
       <button class="close" onclick="closeModal()">×</button>
     </div>
