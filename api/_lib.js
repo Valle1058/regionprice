@@ -71,6 +71,11 @@ export async function game(appid) {
     await sleep(120);
   }
   if (countries.length < 4) return null;
+  // Bild muss existieren – sonst Spiel nicht aufnehmen (kein kaputtes Cover)
+  try {
+    const ir = await fetch(`https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`, { method: "HEAD" });
+    if (!ir.ok) return null;
+  } catch { return null; }
   countries.sort((a, b) => a.price - b.price);
   const base = countries[countries.length - 1].price;
   return {

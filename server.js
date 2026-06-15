@@ -105,6 +105,12 @@ async function game(appid) {
   // nur echte Free-to-Play-Spiele negativ cachen, NICHT rate-limit-Fehlschläge
   if (countries.length < 4) { if (gotResponse) setCache(key, "NONE", 6 * 3600e3); return null; }
 
+  // Bild muss existieren – sonst Spiel nicht aufnehmen (kein kaputtes Cover)
+  try {
+    const ir = await fetch(`https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`, { method: "HEAD" });
+    if (!ir.ok) { setCache(key, "NONE", 6 * 3600e3); return null; }
+  } catch { return null; }
+
   countries.sort((a, b) => a.price - b.price);
   const base = countries[countries.length - 1].price;
   const result = {
