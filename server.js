@@ -13,10 +13,11 @@
  */
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
-import { extname, join, normalize } from "node:path";
+import { extname, join, normalize, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const PORT = process.env.PORT || 3000;
-const ROOT = process.cwd();
+const ROOT = dirname(fileURLToPath(import.meta.url)); // Ordner dieser Datei
 
 /* Länder, die verglichen werden (Steam-Code -> Anzeige) */
 const COUNTRIES = ["TR","AR","IN","BR","UA","PL","DE","US"];
