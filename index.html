@@ -263,6 +263,7 @@
     <div id="region-note" style="margin:-14px 0 22px;font-size:13px;color:var(--muted)"></div>
 
     <div class="grid" id="grid"></div>
+    <div id="sentinel" style="height:1px"></div>
   </section>
 
   <!-- ============ ALERTS PANEL ============ -->
@@ -399,17 +400,32 @@ async function loadGames(){
   renderGrid();
 }
 
-/* Lädt die beliebten Spiele on-demand: erst AppIDs, dann Preise pro Spiel.
-   Karten erscheinen nach und nach, sobald ihre Preise da sind. */
+/* On-demand mit Infinite-Scroll: anfangs ein Schwung, beim Runterscrollen mehr. */
+let POP_IDS=[], EXHAUSTED=false;
 async function loadOnDemand(){
   let ids;
   try{ ids=await apiGet('/api/popular'); }catch{ return false; }   // kein Backend -> Fallback
   if(!Array.isArray(ids)||!ids.length) return false;
-  GAMES=[]; LOADING=true; renderGrid();
-  const TARGET=24, CONC=2; let i=0, added=0;
+  GAMES=[]; POP_IDS=ids.slice(); EXHAUSTED=false;
+  await loadMore(16);                       // Startschwung
+  // Beim Scrollen nahe ans Ende -> nachladen
+  const sentinel=$('#sentinel');
+  if(sentinel&&'IntersectionObserver'in window){
+    new IntersectionObserver((entries)=>{
+      if(entries[0].isIntersecting) loadMore(8);
+    },{rootMargin:'400px'}).observe(sentinel);
+  }
+  return true;
+}
+
+/* Lädt die nächsten `target` Spiele aus der Warteschlange (gedrosselt). */
+async function loadMore(target){
+  if(LOADING||EXHAUSTED||!POP_IDS.length) return;
+  LOADING=true; renderGrid();
+  const CONC=2; let added=0;
   async function worker(){
-    while(i<ids.length && added<TARGET){
-      const appid=ids[i++];
+    while(POP_IDS.length && added<target){
+      const appid=POP_IDS.shift();
       try{
         const raw=await apiGet('/api/game?appid='+appid);
         if(raw&&raw.countries&&raw.countries.length>=4){
@@ -419,9 +435,8 @@ async function loadOnDemand(){
     }
   }
   await Promise.all(Array.from({length:CONC},worker));
+  if(!POP_IDS.length) EXHAUSTED=true;
   LOADING=false; renderGrid();
-  console.log(`on-demand geladen: ${GAMES.length} Spiele`);
-  return true;
 }
 
 /* ---------------- State (localStorage) ---------------- */
