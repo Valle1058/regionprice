@@ -1,0 +1,10 @@
+{
+  "name": "regionprice",
+  "version": "1.0.0",
+  "description": "Vergleicht, in welchem Land ein Steam-Spiel am günstigsten ist.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "update": "node fetch-prices.js"
+  }
+}
