@@ -175,6 +175,10 @@
   }
   .forecast b{color:var(--accent)}
 
+  .edition-row{display:flex;align-items:center;gap:12px;margin-bottom:16px;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+  .edition-lbl{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+  .edition-sel{flex:1;padding:10px 12px;border-radius:10px;background:var(--surface);border:1px solid var(--border);color:var(--text);font-size:14px;font-weight:600;cursor:pointer;outline:none}
+  .edition-sel:hover{border-color:var(--accent)}
   .modal-tabs{display:flex;gap:4px;margin-bottom:18px;border-bottom:1px solid var(--border)}
   .mtab{padding:10px 14px;font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
   .mtab.active{color:#fff;border-color:var(--accent)}
@@ -350,7 +354,7 @@ function normalizeGame(raw,i){
     id:i,appid:raw.appid,image:raw.image,title:raw.title,genre:raw.genre||"–",
     emoji:raw.emoji||"🎮",color:raw.color||"#4f8cff",base,
     disc:raw.disc??-Math.round((1-countries[0].price/base)*100),
-    countries,best:countries[0],
+    countries,best:countries[0],editions:raw.editions,
     // Steam liefert keine Preis-Historie -> aus base annaehern (nur fuer den Chart)
     hist:raw.hist||history(base,i+1)
   };
@@ -500,33 +504,47 @@ function renderGrid(){
 
 /* ---------------- Modal: game detail ---------------- */
 let MODAL_GAME=null;
-function openGame(id){
+function openGame(id,edId){
   const g=GAMES.find(x=>x.id===id);MODAL_GAME=g;
-  const inWish=store.wishlist.includes(id);
+  // Edition wählen (falls vorhanden)
+  const eds=(g.editions&&g.editions.length>1)?g.editions:null;
+  const sel=eds?(eds.find(e=>String(e.id)===String(edId))||eds[0]):null;
+  const cs=sel?sel.countries:g.countries;          // Länderpreise der gewählten Edition
+  const best=cs[0];
+  const ref=cs.find(c=>c.code===USER_REGION)||cs.find(c=>c.code==='DE')||cs[cs.length-1];
+  const saving=ref.price>best.price?Math.round((1-best.price/ref.price)*100):0;
   const min=Math.min(...g.hist),max=Math.max(...g.hist);
-  // forecast: simple slope of last 4 points
   const last=g.hist.slice(-4);
   const slope=(last[3]-last[0])/3;
-  const fc=slope<-0.3?{t:"fallend",txt:`Tendenz <b>fallend</b> – warten könnte sich lohnen. Prognose nächster Monat: ~${eur(Math.max(min,g.best.price+slope))}`}
-          :slope>0.3?{t:"steigend",txt:`Tendenz <b>steigend</b> – jetzt kaufen empfohlen. Prognose nächster Monat: ~${eur(g.best.price+slope)}`}
-          :{t:"stabil",txt:`Preis ist aktuell <b>stabil</b>. Kein großer Schwankung erwartet.`};
+  const fc=slope<-0.3?{t:"fallend",txt:`Tendenz <b>fallend</b> – warten könnte sich lohnen.`}
+          :slope>0.3?{t:"steigend",txt:`Tendenz <b>steigend</b> – jetzt kaufen empfohlen.`}
+          :{t:"stabil",txt:`Preis ist aktuell <b>stabil</b>. Keine große Schwankung erwartet.`};
+
+  const editionPicker=eds?`
+      <div class="edition-row">
+        <span class="edition-lbl">Edition</span>
+        <select class="edition-sel" onchange="openGame(${g.id}, this.value)">
+          ${eds.map(e=>`<option value="${e.id}" ${e===sel?'selected':''}>${e.label} – ab ${eur(e.countries[0].price)}</option>`).join('')}
+        </select>
+      </div>`:'';
 
   $('#modal').innerHTML=`
     <div class="modal-head">
       <div class="ico" style="${(g.image||g.appid)?`background-image:url('${g.image||`https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg`}');background-size:cover;background-position:center`:`background:linear-gradient(135deg,${g.color}44,${g.color}11);color:${g.color}`}">${(g.image||g.appid)?'':g.emoji}</div>
-      <div><h2>${g.title}</h2><div class="meta">${g.genre} · ${refCountry(g).code===g.best.code?'günstigstes Land = dein Land':`in deinem Land (${refCountry(g).code}) ${eur(refCountry(g).price)} · ${savingPct(g)}% sparen`}</div></div>
+      <div><h2>${g.title}</h2><div class="meta">${g.genre} · ${ref.code===best.code?'günstigstes Land = dein Land':`in deinem Land (${ref.code}) ${eur(ref.price)} · ${saving}% sparen`}</div></div>
       <button class="close" onclick="closeModal()">×</button>
     </div>
     <div class="modal-body">
+      ${editionPicker}
       <div class="modal-tabs">
         <div class="mtab active" data-m="0">🌍 Länder</div>
-        <div class="mtab" data-m="1">🏪 Shops (${g.best.code})</div>
+        <div class="mtab" data-m="1">🏪 Shops (${best.code})</div>
         <div class="mtab" data-m="2">📈 Trend & Prognose</div>
       </div>
 
       <div class="mpane active" data-m="0">
-        <div class="section-title">Preis pro Land (Multi-Shop-Bestpreis)</div>
-        <table class="ctable">${g.countries.map((c,i)=>`
+        <div class="section-title">Preis pro Land${sel?` · ${sel.label}`:''}</div>
+        <table class="ctable">${cs.map((c,i)=>`
           <tr>
             <td class="c-flag">${flag(c.code,18)}</td>
             <td><span class="c-name">${c.code} · ${COUNTRIES[c.code].name}</span>${i===0?'<span class="badge-best">GÜNSTIGSTES</span>':''}<div class="c-shop">via ${c.shop}</div></td>
@@ -536,8 +554,8 @@ function openGame(id){
       </div>
 
       <div class="mpane" data-m="1">
-        <div class="section-title">Shops im günstigsten Land: ${flag(g.best.code)} ${g.best.code} · ${COUNTRIES[g.best.code].name}</div>
-        <table class="ctable">${g.best.shops.map((s,i)=>`
+        <div class="section-title">Shops im günstigsten Land: ${flag(best.code)} ${best.code} · ${COUNTRIES[best.code].name}</div>
+        <table class="ctable">${best.shops.map((s,i)=>`
           <tr><td>🏪</td><td class="c-name">${s.s}${i===0?'<span class="badge-best">TOP</span>':''}</td>
           <td class="c-price" style="color:${i===0?'var(--green)':'inherit'}">${eur(s.p)}</td></tr>`).join('')}
         </table>
@@ -545,12 +563,12 @@ function openGame(id){
       </div>
 
       <div class="mpane" data-m="2">
-        <div class="section-title">Preisverlauf (letzte 12 Monate · ${COUNTRIES[g.best.code].name})</div>
+        <div class="section-title">Preisverlauf (letzte 12 Monate · ${COUNTRIES[best.code].name})</div>
         <div class="chart-box">${sparkline(g.hist)}</div>
         <div style="display:flex;gap:20px;margin-top:12px;font-size:13px;color:var(--muted)">
           <span>Tief: <b style="color:var(--green)">${eur(min)}</b></span>
           <span>Hoch: <b style="color:var(--red)">${eur(max)}</b></span>
-          <span>Aktuell: <b>${eur(g.best.price)}</b></span>
+          <span>Aktuell: <b>${eur(best.price)}</b></span>
         </div>
         <div class="forecast">🔮 ${fc.txt}</div>
       </div>

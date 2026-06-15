@@ -7,6 +7,22 @@ const GENRE_EMOJI = { Action:"🎯", RPG:"🐉", Strategie:"♟️", Indie:"🎨
 const PALETTE = ["#4f8cff","#7c5cff","#36d399","#ff6b6b","#ffd166","#22d3ee","#f472b6","#a78bfa"];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/* ---- Editionen aus package_groups erkennen ---- */
+const EDITION_RE = /edition|deluxe|premium|ultimate|gold|complete|definitive|game of the year|goty|anniversary|legendary|collector|standard/i;
+const JUNK_RE = /points|soundtrack|\bost\b|currency|coins|credits|wallet|gift|season pass|upgrade|\bdlc\b|character pack|skin/i;
+function editionName(optionText) {
+  let n = optionText || "";
+  const i = n.lastIndexOf(" - ");
+  if (i > 0) n = n.slice(0, i);
+  return n.replace(/<[^>]*>/g, "").trim();
+}
+function isEdition(name, baseName) {
+  const l = name.toLowerCase();
+  if (JUNK_RE.test(l)) return false;
+  if (name === baseName) return true;
+  return EDITION_RE.test(l);
+}
+
 /* warmer Instanz-Cache (zusätzlich zum CDN-Cache via Header) */
 let ratesCache = null;
 async function rates() {
@@ -49,12 +65,13 @@ export async function search(q) {
 export async function game(appid) {
   const rate = await rates();
   const countries = [];
+  const editions = {};
   let title = null, genre = "Spiel", image = null;
   for (const cc of COUNTRIES) {
     try {
       let r, tries = 0;
       do {
-        r = await fetch(`https://store.steampowered.com/api/appdetails?appids=${appid}&cc=${cc}&l=german&filters=basic,price_overview,genres`);
+        r = await fetch(`https://store.steampowered.com/api/appdetails?appids=${appid}&cc=${cc}&l=german`);
         if (r.status === 429) await sleep(1500 * ++tries);
       } while (r.status === 429 && tries < 3);
       const j = await r.json();
@@ -68,16 +85,33 @@ export async function game(appid) {
       if (!f) continue;
       const eur = +(p.final / 100 / f).toFixed(2);
       countries.push({ code: cc, price: eur, localPrice: p.final / 100, currency: p.currency, shop: "Steam", shops: [{ s: "Steam", p: eur }] });
+      for (const grp of (e.data.package_groups || [])) {
+        for (const s of (grp.subs || [])) {
+          const cents = s.price_in_cents_with_discount;
+          if (!cents) continue;
+          const nm = editionName(s.option_text);
+          if (!isEdition(nm, e.data.name)) continue;
+          const ee = +(cents / 100 / f).toFixed(2);
+          (editions[s.packageid] ||= { id: s.packageid, name: nm, countries: [] })
+            .countries.push({ code: cc, price: ee, localPrice: cents / 100, currency: p.currency, shop: "Steam", shops: [{ s: "Steam", p: ee }] });
+        }
+      }
     } catch { /* skip */ }
     await sleep(120);
   }
   if (countries.length < 4) return null;
   countries.sort((a, b) => a.price - b.price);
   const base = countries[countries.length - 1].price;
+  let editionList = Object.values(editions)
+    .map((ed) => { ed.countries.sort((a, b) => a.price - b.price); return ed; })
+    .filter((ed) => ed.countries.length >= 4);
+  editionList.sort((a, b) => (a.name === title ? -1 : b.name === title ? 1 : a.countries[0].price - b.countries[0].price));
+  editionList.forEach((ed) => { ed.label = ed.name === title ? "Standard" : (ed.name.replace(title, "").trim() || ed.name); });
   return {
     appid: +appid, title: title || `App ${appid}`, genre,
     image: image || `https://cdn.cloudflare.steamstatic.com/steam/apps/${appid}/header.jpg`,
     emoji: GENRE_EMOJI[genre] || "🎮", color: PALETTE[appid % PALETTE.length],
     base, disc: -Math.round((1 - countries[0].price / base) * 100), countries,
+    editions: editionList.length > 1 ? editionList : undefined,
   };
 }
