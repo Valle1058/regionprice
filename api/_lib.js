@@ -89,7 +89,7 @@ export async function itad(appid) {
       const pts = (h || []).map((x) => ({ t: x.timestamp, p: x.deal?.price?.amount })).filter((x) => x.p != null)
         .sort((a, b) => new Date(a.t) - new Date(b.t));
       const step = Math.max(1, Math.floor(pts.length / 24));
-      history = pts.filter((_, i) => i % step === 0).map((x) => +(+x.p).toFixed(2));
+      history = pts.filter((_, i) => i % step === 0).map((x) => ({ p: +(+x.p).toFixed(2), t: x.t }));
     } catch { /* skip */ }
     const result = { deals, history };
     itadCache.set(appid, { data: result, exp: Date.now() + 12 * 3600e3 });
