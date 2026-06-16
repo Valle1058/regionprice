@@ -66,7 +66,7 @@ export async function game(appid) {
   const rate = await rates();
   const countries = [];
   const editions = {};
-  let title = null, genre = "Spiel", image = null;
+  let title = null, genre = "Spiel", image = null, notGame = false;
   for (const cc of COUNTRIES) {
     try {
       let r, tries = 0;
@@ -77,6 +77,7 @@ export async function game(appid) {
       const j = await r.json();
       const e = j[appid];
       if (!e?.success) continue;
+      if (e.data.type && e.data.type !== "game") { notGame = true; break; } // Hardware/DLC/Soundtrack raus
       if (!title) { title = e.data.name; if (e.data.genres?.length) genre = e.data.genres[0].description; }
       if (!image && e.data.header_image) image = e.data.header_image;
       const p = e.data.price_overview;
@@ -99,6 +100,7 @@ export async function game(appid) {
     } catch { /* skip */ }
     await sleep(120);
   }
+  if (notGame) return null;          // kein Spiel (Hardware/DLC/...)
   if (countries.length < 4) return null;
   countries.sort((a, b) => a.price - b.price);
   const base = countries[countries.length - 1].price;

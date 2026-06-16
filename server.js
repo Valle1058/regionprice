@@ -97,7 +97,7 @@ async function game(appid) {
   const rate = await rates();
   const countries = [];
   const editions = {};               // packageid -> { id, name, countries:[] }
-  let title = null, genre = "Spiel", image = null, gotResponse = false;
+  let title = null, genre = "Spiel", image = null, gotResponse = false, notGame = false;
 
   for (const cc of COUNTRIES) {
     try {
@@ -110,6 +110,7 @@ async function game(appid) {
       const e = j[appid];
       if (!e?.success) continue;
       gotResponse = true; // Steam hat geantwortet (kein Rate-Limit-Fehler)
+      if (e.data.type && e.data.type !== "game") { notGame = true; break; } // Hardware/DLC/Soundtrack raus
       if (!title) { title = e.data.name; if (e.data.genres?.length) genre = e.data.genres[0].description; }
       if (!image && e.data.header_image) image = e.data.header_image; // echte Bild-URL von Steam
       const p = e.data.price_overview;
@@ -133,6 +134,8 @@ async function game(appid) {
     } catch { /* skip */ }
     await sleep(120);
   }
+  // Kein Spiel (Hardware/DLC/...) -> ausschließen
+  if (notGame) { setCache(key, "NONE", 6 * 3600e3); return null; }
   // nur echte Free-to-Play-Spiele negativ cachen, NICHT rate-limit-Fehlschläge
   if (countries.length < 4) { if (gotResponse) setCache(key, "NONE", 6 * 3600e3); return null; }
 
