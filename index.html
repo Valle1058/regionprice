@@ -94,8 +94,9 @@
   select,.btn{
     padding:13px 16px;border-radius:12px;background:var(--surface);
     border:1px solid var(--border);color:var(--text);font-size:14px;
-    font-weight:600;cursor:pointer;outline:none;
+    font-weight:600;cursor:pointer;outline:none;font-family:inherit;
   }
+  select option{font-family:inherit;background:var(--surface);color:var(--text)}
   select:hover,.btn:hover{border-color:#3b4250}
   .btn-primary{
     background:linear-gradient(135deg,var(--accent),var(--accent-2));
@@ -177,7 +178,7 @@
 
   .edition-row{display:flex;align-items:center;gap:12px;margin-bottom:16px;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
   .edition-lbl{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
-  .edition-sel{flex:1;padding:10px 12px;border-radius:10px;background:var(--surface);border:1px solid var(--border);color:var(--text);font-size:14px;font-weight:600;cursor:pointer;outline:none}
+  .edition-sel{flex:1;padding:10px 12px;border-radius:10px;background:var(--surface);border:1px solid var(--border);color:var(--text);font-size:14px;font-weight:600;cursor:pointer;outline:none;font-family:inherit}
   .edition-sel:hover{border-color:var(--accent)}
   .modal-tabs{display:flex;gap:4px;margin-bottom:18px;border-bottom:1px solid var(--border)}
   .mtab{padding:10px 14px;font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
