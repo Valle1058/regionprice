@@ -256,6 +256,7 @@
       </div>
       <select id="sort">
         <option value="price">Preis aufsteigend</option>
+        <option value="priceDesc">Preis absteigend</option>
         <option value="disc">Größte Ersparnis</option>
         <option value="name">Name A–Z</option>
       </select>
@@ -481,7 +482,9 @@ function renderGrid(){
   const sort=$('#sort').value;
   let list=GAMES.filter(g=>g.title.toLowerCase().includes(q));
   list.sort((a,b)=>sort==='name'?a.title.localeCompare(b.title)
-    :sort==='disc'?savingPct(b)-savingPct(a):a.best.price-b.best.price);
+    :sort==='disc'?savingPct(b)-savingPct(a)
+    :sort==='priceDesc'?b.best.price-a.best.price
+    :a.best.price-b.best.price);
   $('#grid').innerHTML=list.map(g=>{
     const c=COUNTRIES[g.best.code];
     const ref=refCountry(g);
