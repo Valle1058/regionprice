@@ -160,6 +160,38 @@ async function game(appid) {
   return result;
 }
 
+/* ---------- IsThereAnyDeal: Verlauf + andere Shops (nur mit ITAD_KEY) ---------- */
+async function itad(appid) {
+  const apikey = process.env.ITAD_KEY;
+  if (!apikey) return null;
+  const ck = "itad:" + appid;
+  const hit = getCache(ck); if (hit) return hit;
+  try {
+    const lu = await (await fetch(`https://api.isthereanydeal.com/games/lookup/v1?key=${apikey}&appid=${appid}`)).json();
+    if (!lu.found) return null;
+    const id = lu.game.id;
+    let deals = [];
+    try {
+      const pr = await (await fetch(`https://api.isthereanydeal.com/games/prices/v2?key=${apikey}&country=DE&deals=true`,
+        { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify([id]) })).json();
+      const entry = Array.isArray(pr) ? pr[0] : pr;
+      deals = (entry?.deals || []).slice(0, 6).map((d) => ({ shop: d.shop.name, price: d.price.amount, cut: d.cut, url: d.url }));
+    } catch { /* skip */ }
+    let history = [];
+    try {
+      const since = new Date(Date.now() - 365 * 864e5).toISOString().replace(/\.\d{3}Z$/, "Z");
+      const h = await (await fetch(`https://api.isthereanydeal.com/games/history/v2?key=${apikey}&id=${id}&country=DE&since=${since}`)).json();
+      const pts = (h || []).map((x) => ({ t: x.timestamp, p: x.deal?.price?.amount })).filter((x) => x.p != null)
+        .sort((a, b) => new Date(a.t) - new Date(b.t));
+      const step = Math.max(1, Math.floor(pts.length / 24));
+      history = pts.filter((_, i) => i % step === 0).map((x) => +(+x.p).toFixed(2));
+    } catch { /* skip */ }
+    const result = { deals, history };
+    setCache(ck, result, 12 * 3600e3);
+    return result;
+  } catch { return null; }
+}
+
 /* ---------- statische Dateien ---------- */
 const MIME = { ".html":"text/html", ".js":"text/javascript", ".json":"application/json", ".css":"text/css", ".png":"image/png", ".jpg":"image/jpeg", ".svg":"image/svg+xml", ".ico":"image/x-icon" };
 async function serveStatic(req, res) {
@@ -185,6 +217,11 @@ createServer(async (req, res) => {
     }
     if (url.pathname === "/api/popular") {
       return json(res, 200, await popular());
+    }
+    if (url.pathname === "/api/itad") {
+      const appid = url.searchParams.get("appid");
+      if (!appid) return json(res, 400, { error: "appid fehlt" });
+      return json(res, 200, (await itad(appid)) || { deals: [], history: [] });
     }
     if (url.pathname === "/api/search") {
       const q = (url.searchParams.get("q") || "").trim();

@@ -62,6 +62,41 @@ export async function search(q) {
   }));
 }
 
+/* ---- IsThereAnyDeal: echter Preisverlauf + andere Shops ----
+   Nur aktiv, wenn ITAD_KEY gesetzt ist; sonst null (Feature bleibt aus). */
+const itadCache = new Map();
+export async function itad(appid) {
+  const key = process.env.ITAD_KEY;
+  if (!key) return null;
+  const hit = itadCache.get(appid); if (hit && hit.exp > Date.now()) return hit.data;
+  try {
+    const lu = await (await fetch(`https://api.isthereanydeal.com/games/lookup/v1?key=${key}&appid=${appid}`)).json();
+    if (!lu.found) return null;
+    const id = lu.game.id;
+    // aktuelle Deals (EUR)
+    let deals = [];
+    try {
+      const pr = await (await fetch(`https://api.isthereanydeal.com/games/prices/v2?key=${key}&country=DE&deals=true`,
+        { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify([id]) })).json();
+      const entry = Array.isArray(pr) ? pr[0] : pr;
+      deals = (entry?.deals || []).slice(0, 6).map((d) => ({ shop: d.shop.name, price: d.price.amount, cut: d.cut, url: d.url }));
+    } catch { /* skip */ }
+    // Verlauf (12 Monate)
+    let history = [];
+    try {
+      const since = new Date(Date.now() - 365 * 864e5).toISOString().replace(/\.\d{3}Z$/, "Z");
+      const h = await (await fetch(`https://api.isthereanydeal.com/games/history/v2?key=${key}&id=${id}&country=DE&since=${since}`)).json();
+      const pts = (h || []).map((x) => ({ t: x.timestamp, p: x.deal?.price?.amount })).filter((x) => x.p != null)
+        .sort((a, b) => new Date(a.t) - new Date(b.t));
+      const step = Math.max(1, Math.floor(pts.length / 24));
+      history = pts.filter((_, i) => i % step === 0).map((x) => +(+x.p).toFixed(2));
+    } catch { /* skip */ }
+    const result = { deals, history };
+    itadCache.set(appid, { data: result, exp: Date.now() + 12 * 3600e3 });
+    return result;
+  } catch { return null; }
+}
+
 export async function game(appid) {
   const rate = await rates();
   const countries = [];
