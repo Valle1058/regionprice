@@ -85,7 +85,7 @@ export async function game(appid) {
       const f = rate[p.currency];
       if (!f) continue;
       const eur = +(p.final / 100 / f).toFixed(2);
-      countries.push({ code: cc, price: eur, localPrice: p.final / 100, currency: p.currency, shop: "Steam", shops: [{ s: "Steam", p: eur }] });
+      countries.push({ code: cc, price: eur, localPrice: p.final / 100, currency: p.currency, discount: p.discount_percent || 0, shop: "Steam", shops: [{ s: "Steam", p: eur }] });
       for (const grp of (e.data.package_groups || [])) {
         for (const s of (grp.subs || [])) {
           const cents = s.price_in_cents_with_discount;

@@ -131,6 +131,8 @@
   .region-sel{background:var(--surface-2);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:13px;font-weight:700;border-radius:8px;padding:3px 8px;cursor:pointer;outline:none}
   .buy{display:inline-block;background:var(--surface-2);border:1px solid var(--border);color:var(--text);font-size:12px;font-weight:700;padding:6px 10px;border-radius:8px}
   .buy:hover{border-color:var(--accent);color:var(--accent)}
+  .sale{display:inline-block;background:rgba(255,107,107,.15);color:var(--red);font-size:11px;font-weight:700;padding:2px 7px;border-radius:6px;margin-left:6px}
+  .thumb .sale-tag{position:absolute;bottom:10px;left:10px;z-index:3;background:rgba(255,107,107,.92);color:#fff;font-size:11px;font-weight:800;padding:4px 8px;border-radius:8px}
   .card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
   .card h3{font-size:15px;line-height:1.3}
   .meta{font-size:12px;color:var(--muted)}
@@ -291,7 +293,11 @@
     <div id="wishlist-list"></div>
   </section>
 
-  <footer>RegionPrice · Demo-Prototyp mit Beispieldaten · Preise sind fiktiv</footer>
+  <footer>
+    Preise von Steam, in Euro umgerechnet · ohne Gewähr ·
+    <a href="impressum.html" style="color:var(--accent)">Impressum</a> ·
+    <a href="datenschutz.html" style="color:var(--accent)">Datenschutz</a>
+  </footer>
 </main>
 
 <!-- ============ MODAL ============ -->
@@ -386,43 +392,46 @@ function loadScript(src){
 let LOADING=false;
 async function loadGames(){
   await detectRegion();
-  // 1) ON-DEMAND: beliebte Spiele live über die API laden
-  if(await loadOnDemand()) return;
-  // 2) Fallback games.js (ohne Server / file://)
+  // 1) SOFORT: vorgeladene beliebte Spiele aus games.js (instant paint)
+  let hadStatic=false;
   try{
     await loadScript('games.js?v='+Date.now());
     if(Array.isArray(window.GAMES_DATA)&&window.GAMES_DATA.length){
       GAMES=window.GAMES_DATA.map(normalizeGame);
-      console.log(`games.js geladen: ${GAMES.length} Spiele (Fallback)`);
-      return renderGrid();
+      renderGrid(); hadStatic=true;
+      console.log(`games.js sofort geladen: ${GAMES.length} Spiele`);
     }
   }catch{}
-  // 3) Fallback games.json
-  try{
-    const res=await fetch('games.json',{cache:'no-store'});
-    if(res.ok){
-      const data=await res.json();
-      if(Array.isArray(data)&&data.length){ GAMES=data.map(normalizeGame); return renderGrid(); }
-    }
-  }catch{}
-  console.log('Keine Daten gefunden – Demo-Daten aktiv.');
-  renderGrid();
+  // 2) DANACH: on-demand für mehr Spiele + Infinite-Scroll
+  const ok=await loadOnDemand({keepExisting:hadStatic});
+  // 3) Fallback games.json, falls weder noch
+  if(!hadStatic && !ok){
+    try{
+      const res=await fetch('games.json',{cache:'no-store'});
+      if(res.ok){ const data=await res.json(); if(data.length){ GAMES=data.map(normalizeGame); renderGrid(); return; } }
+    }catch{}
+    console.log('Keine Daten gefunden – Demo-Daten aktiv.');
+    renderGrid();
+  }
 }
 
 /* On-demand mit Infinite-Scroll: anfangs ein Schwung, beim Runterscrollen mehr. */
 let POP_IDS=[], EXHAUSTED=false;
-async function loadOnDemand(){
+async function loadOnDemand(opts={}){
   let ids;
   try{ ids=await apiGet('/api/popular'); }catch{ return false; }   // kein Backend -> Fallback
   if(!Array.isArray(ids)||!ids.length) return false;
-  GAMES=[]; POP_IDS=ids.slice(); EXHAUSTED=false;
-  await loadMore(16);                       // Startschwung
+  const have=new Set(GAMES.map(g=>g.appid));
+  if(!opts.keepExisting){ GAMES=[]; have.clear(); }
+  POP_IDS=ids.filter(id=>!have.has(id)); EXHAUSTED=false;
+  if(!opts.keepExisting) await loadMore(16);   // ohne Vorladung: Startschwung
   // Beim Scrollen nahe ans Ende -> nachladen
   const sentinel=$('#sentinel');
-  if(sentinel&&'IntersectionObserver'in window){
-    new IntersectionObserver((entries)=>{
+  if(sentinel&&'IntersectionObserver'in window&&!sentinel._obs){
+    sentinel._obs=new IntersectionObserver((entries)=>{
       if(entries[0].isIntersecting) loadMore(8);
-    },{rootMargin:'400px'}).observe(sentinel);
+    },{rootMargin:'400px'});
+    sentinel._obs.observe(sentinel);
   }
   return true;
 }
@@ -469,11 +478,12 @@ const flag=(code,h=14)=>`<img class="flagimg" style="height:${h}px" src="https:/
 /* ---- Region des Besuchers ---- */
 let USER_REGION='DE';
 async function detectRegion(){
-  try{
-    const r=await fetch('https://ipapi.co/json/');
-    const d=await r.json();
-    if(d&&d.country_code) USER_REGION=d.country_code.toUpperCase();
-  }catch{/* Fallback: DE */}
+  let c=null;
+  // 1) eigener Endpoint (Vercel-Header, kein Limit)
+  try{ const r=await fetch('/api/region'); if(r.ok){ const d=await r.json(); c=d.country; } }catch{}
+  // 2) Fallback ipapi.co
+  if(!c){ try{ const d=await (await fetch('https://ipapi.co/json/')).json(); c=d&&d.country_code; }catch{} }
+  if(c) USER_REGION=c.toUpperCase();
   if(!COUNTRIES[USER_REGION]) USER_REGION='DE'; // nur Länder, für die wir Preise haben
 }
 /* Referenzland = Preis im Land des Besuchers; sonst DE; sonst teuerstes */
@@ -510,6 +520,7 @@ function renderGrid(){
         ${img?`<img class="cover" src="${img}" alt="" loading="lazy" onerror="this.remove()">`:''}
         <span class="ov"></span>
         <span class="disc" style="${isHere?'background:var(--accent);color:#fff':''}">${isHere?'BESTE REGION':'-'+saving+'%'}</span>
+        ${g.best.discount>0?`<span class="sale-tag">🔥 Sale -${g.best.discount}%</span>`:''}
         <span class="flag" title="${c.name}">${flag(g.best.code,16)} ${g.best.code}</span>
       </div>
       <div class="body">
@@ -565,7 +576,7 @@ function openGame(id,edId){
       <table class="ctable">${cs.map((c,i)=>`
         <tr>
           <td class="c-flag">${flag(c.code,18)}</td>
-          <td><span class="c-name">${c.code} · ${COUNTRIES[c.code].name}</span>${i===0?'<span class="badge-best">GÜNSTIGSTES</span>':''}<div class="c-shop">${localMoney(c.localPrice,c.currency)}</div></td>
+          <td><span class="c-name">${c.code} · ${COUNTRIES[c.code].name}</span>${i===0?'<span class="badge-best">GÜNSTIGSTES</span>':''}${c.discount>0?`<span class="sale">🔥 Sale -${c.discount}%</span>`:''}<div class="c-shop">${localMoney(c.localPrice,c.currency)}</div></td>
           <td class="c-price" style="color:${i===0?'var(--green)':'inherit'}">${eur(c.price)}</td>
           <td style="text-align:right">${g.appid?`<a class="buy" href="https://store.steampowered.com/app/${g.appid}/?cc=${c.code}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Steam ↗</a>`:''}</td>
         </tr>`).join('')}

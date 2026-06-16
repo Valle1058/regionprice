@@ -118,7 +118,7 @@ async function game(appid) {
       const f = rate[p.currency];
       if (!f) continue;
       const eur = +(p.final / 100 / f).toFixed(2);
-      countries.push({ code: cc, price: eur, localPrice: p.final / 100, currency: p.currency, shop: "Steam", shops: [{ s: "Steam", p: eur }] });
+      countries.push({ code: cc, price: eur, localPrice: p.final / 100, currency: p.currency, discount: p.discount_percent || 0, shop: "Steam", shops: [{ s: "Steam", p: eur }] });
       // Editionen aus package_groups
       for (const grp of (e.data.package_groups || [])) {
         for (const s of (grp.subs || [])) {
@@ -180,6 +180,9 @@ const json = (res, code, obj) => { res.writeHead(code, { "Content-Type": "applic
 createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
   try {
+    if (url.pathname === "/api/region") {
+      return json(res, 200, { country: (req.headers["x-vercel-ip-country"] || "").toUpperCase() || null });
+    }
     if (url.pathname === "/api/popular") {
       return json(res, 200, await popular());
     }

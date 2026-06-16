@@ -1,363 +1,3771 @@
 window.GAMES_DATA = [
   {
-    "appid": 1245620,
-    "title": "ELDEN RING",
-    "genre": "RPG",
-    "emoji": "🐉",
+    "appid": 4704690,
+    "title": "MECCHA CHAMELEON",
+    "genre": "Gelegenheitsspiele",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4704690/163e2a742e5fb8e1f5d1e3a890da98f04ab809d4/header.jpg?t=1781108224",
+    "emoji": "🎲",
+    "color": "#36d399",
+    "base": 4.92,
+    "disc": -54,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 2.25,
+        "localPrice": 247,
+        "currency": "INR",
+        "discount": 20,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 2.25
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 2.38,
+        "localPrice": 124,
+        "currency": "UAH",
+        "discount": 20,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 2.38
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 2.75,
+        "localPrice": 3.19,
+        "currency": "USD",
+        "discount": 20,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 2.75
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 2.75,
+        "localPrice": 3.19,
+        "currency": "USD",
+        "discount": 20,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 2.75
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 3.21,
+        "localPrice": 18.79,
+        "currency": "BRL",
+        "discount": 20,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 3.21
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 4.13,
+        "localPrice": 4.79,
+        "currency": "USD",
+        "discount": 20,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 4.13
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 4.8,
+        "localPrice": 20.39,
+        "currency": "PLN",
+        "discount": 20,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 4.8
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 4.92,
+        "localPrice": 4.92,
+        "currency": "EUR",
+        "discount": 20,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 4.92
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 381210,
+    "title": "Dead by Daylight",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/66727e8249aae119400352d4b1d84928f924939c/header_alt_assets_8.jpg?t=1781624092",
+    "emoji": "🎯",
+    "color": "#36d399",
+    "base": 19.99,
+    "disc": -59,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 8.24,
+        "localPrice": 429,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.24
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 10.55,
+        "localPrice": 1159,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.55
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 11.94,
+        "localPrice": 69.99,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.94
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 12.93,
+        "localPrice": 14.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.93
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 12.93,
+        "localPrice": 14.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.93
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 17.24,
+        "localPrice": 19.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.24
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 19.31,
+        "localPrice": 81.99,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.31
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 19.99,
+        "localPrice": 19.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 71374,
+        "name": "Dead by Daylight",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 8.24,
+            "localPrice": 429,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.24
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 10.55,
+            "localPrice": 1159,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.55
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 11.94,
+            "localPrice": 69.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 11.94
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 12.93,
+            "localPrice": 14.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.93
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 12.93,
+            "localPrice": 14.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.93
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 17.24,
+            "localPrice": 19.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 17.24
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 19.31,
+            "localPrice": 81.99,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 19.31
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 19.99,
+            "localPrice": 19.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 19.99
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1100714,
+        "name": "Dead by Daylight - Gold Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 29.19,
+            "localPrice": 1519,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 29.19
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 36.94,
+            "localPrice": 4059,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 36.94
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 41.79,
+            "localPrice": 244.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 41.79
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 45.26,
+            "localPrice": 52.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 45.26
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 45.26,
+            "localPrice": 52.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 45.26
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 60.35,
+            "localPrice": 69.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 60.35
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 67.35,
+            "localPrice": 285.99,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 67.35
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 69.99,
+            "localPrice": 69.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 69.99
+              }
+            ]
+          }
+        ],
+        "label": "- Gold Edition"
+      }
+    ]
+  },
+  {
+    "appid": 2958130,
+    "title": "Jurassic World Evolution 3",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2958130/df39f8c59232633e8e01ab63313b095402bdd0d5/header.jpg?t=1781616104",
+    "emoji": "🎮",
+    "color": "#36d399",
+    "base": 43.39,
+    "disc": -58,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 18.13,
+        "localPrice": 1992,
+        "currency": "INR",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 18.13
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 18.48,
+        "localPrice": 21.43,
+        "currency": "USD",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 18.48
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 18.48,
+        "localPrice": 21.43,
+        "currency": "USD",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 18.48
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 18.66,
+        "localPrice": 971,
+        "currency": "UAH",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 18.66
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 25.83,
+        "localPrice": 151.42,
+        "currency": "BRL",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.83
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 34.65,
+        "localPrice": 40.19,
+        "currency": "USD",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.65
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 40.19,
+        "localPrice": 40.19,
+        "currency": "EUR",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 40.19
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 43.39,
+        "localPrice": 184.24,
+        "currency": "PLN",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 43.39
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 1053151,
+        "name": "Jurassic World Evolution 3",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 18.13,
+            "localPrice": 1992,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.13
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 18.48,
+            "localPrice": 21.43,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.48
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 18.48,
+            "localPrice": 21.43,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.48
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 18.66,
+            "localPrice": 971,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.66
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 25.83,
+            "localPrice": 151.42,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 25.83
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 34.65,
+            "localPrice": 40.19,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.65
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 40.19,
+            "localPrice": 40.19,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 40.19
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 43.39,
+            "localPrice": 184.24,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.39
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1291163,
+        "name": "Jurassic World Evolution 3: Deluxe Edition",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 22.7,
+            "localPrice": 2495,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 22.7
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 22.85,
+            "localPrice": 1189,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 22.85
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 23.1,
+            "localPrice": 26.79,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 23.1
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 23.1,
+            "localPrice": 26.79,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 23.1
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 32.69,
+            "localPrice": 191.62,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 32.69
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 43.32,
+            "localPrice": 50.24,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.32
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 50.24,
+            "localPrice": 50.24,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 50.24
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 54.75,
+            "localPrice": 232.48,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 54.75
+              }
+            ]
+          }
+        ],
+        "label": ": Deluxe Edition"
+      }
+    ]
+  },
+  {
+    "appid": 281990,
+    "title": "Stellaris",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/281990/a2ea275052f983858e6c8e4969902a5b9900c743/header_alt_assets_12_german.jpg?t=1781528310",
+    "emoji": "🎮",
     "color": "#f472b6",
-    "base": 59.99,
+    "base": 14.99,
+    "disc": -48,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 7.76,
+        "localPrice": 404,
+        "currency": "UAH",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.76
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 8.56,
+        "localPrice": 941,
+        "currency": "INR",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.56
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 9.05,
+        "localPrice": 10.49,
+        "currency": "USD",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.05
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 9.05,
+        "localPrice": 10.49,
+        "currency": "USD",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.05
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 9.67,
+        "localPrice": 56.69,
+        "currency": "BRL",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.67
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 12.93,
+        "localPrice": 14.99,
+        "currency": "USD",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.93
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 14.76,
+        "localPrice": 62.69,
+        "currency": "PLN",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.76
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 14.99,
+        "localPrice": 14.99,
+        "currency": "EUR",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 38760,
+        "name": "Stellaris",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 7.76,
+            "localPrice": 404,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.76
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 8.56,
+            "localPrice": 941,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.56
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 9.05,
+            "localPrice": 10.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.05
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 9.05,
+            "localPrice": 10.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.05
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 9.67,
+            "localPrice": 56.69,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.67
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 12.93,
+            "localPrice": 14.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.93
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 14.76,
+            "localPrice": 62.69,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 14.76
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 14.99,
+            "localPrice": 14.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 14.99
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1583399,
+        "name": "Stellaris: Anniversary Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 9.26,
+            "localPrice": 482,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.26
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 10.34,
+            "localPrice": 1136,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.34
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 10.86,
+            "localPrice": 12.59,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.86
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 10.86,
+            "localPrice": 12.59,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.86
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 11.82,
+            "localPrice": 69.29,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 11.82
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 15.51,
+            "localPrice": 17.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 15.51
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 17.73,
+            "localPrice": 75.29,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 17.73
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 17.99,
+            "localPrice": 17.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 17.99
+              }
+            ]
+          }
+        ],
+        "label": ": Anniversary Edition"
+      }
+    ]
+  },
+  {
+    "appid": 1297900,
+    "title": "Gothic 1 Remake",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1297900/6bc8c205a107e552f14631524f25cdf88743515a/header.jpg?t=1780965412",
+    "emoji": "🎯",
+    "color": "#ffd166",
+    "base": 49.99,
+    "disc": -43,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 28.48,
+        "localPrice": 3130,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.48
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 28.92,
+        "localPrice": 1505,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.92
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 29.31,
+        "localPrice": 33.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.31
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 29.31,
+        "localPrice": 33.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.31
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 30.7,
+        "localPrice": 179.99,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.7
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 43.11,
+        "localPrice": 49.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 43.11
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 49.45,
+        "localPrice": 209.99,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 49.45
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 49.99,
+        "localPrice": 49.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 49.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 518790,
+    "title": "theHunter: Call of the Wild™",
+    "genre": "Abenteuer",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/518790/00f0df3558439a6a2cc4fbd7a658b00fb71353ea/header.jpg?t=1781618757",
+    "emoji": "🗺️",
+    "color": "#f472b6",
+    "base": 21.66,
+    "disc": -63,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 7.97,
+        "localPrice": 415,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.97
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 8.01,
+        "localPrice": 880,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.01
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 9.05,
+        "localPrice": 10.49,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.05
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 9.05,
+        "localPrice": 10.49,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.05
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 10.23,
+        "localPrice": 59.99,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.23
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 17.24,
+        "localPrice": 19.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.24
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 19.5,
+        "localPrice": 19.5,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.5
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 21.66,
+        "localPrice": 91.99,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.66
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 2694490,
+    "title": "Path of Exile 2",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2694490/24eeddcbda17903f03d819588757e40845f8115f/header.jpg?t=1781573777",
+    "emoji": "🎯",
+    "color": "#36d399",
+    "base": 29.41,
+    "disc": -61,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 11.53,
+        "localPrice": 600,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.53
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 13.61,
+        "localPrice": 79.8,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.61
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 23.04,
+        "localPrice": 2532,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 23.04
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 25.86,
+        "localPrice": 29.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.86
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 25.86,
+        "localPrice": 29.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.86
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 25.86,
+        "localPrice": 29.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.86
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 27.75,
+        "localPrice": 27.75,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 27.75
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 29.41,
+        "localPrice": 124.87,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.41
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 2483190,
+    "title": "Forza Horizon 6",
+    "genre": "Rennspiele",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/27abb1584a118d50d0e3950fd48d557c51981db7/header.jpg?t=1781040370",
+    "emoji": "🎮",
+    "color": "#f472b6",
+    "base": 70.41,
+    "disc": -40,
+    "countries": [
+      {
+        "code": "TR",
+        "price": 42.24,
+        "localPrice": 48.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 42.24
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 42.24,
+        "localPrice": 48.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 42.24
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 44.17,
+        "localPrice": 2299,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 44.17
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 50.04,
+        "localPrice": 5499,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 50.04
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 51,
+        "localPrice": 299,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 51
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 60.35,
+        "localPrice": 69.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 60.35
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 69.99,
+        "localPrice": 69.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 69.99
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 70.41,
+        "localPrice": 299,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 70.41
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 950527,
+        "name": "Forza Horizon 6",
+        "countries": [
+          {
+            "code": "TR",
+            "price": 42.24,
+            "localPrice": 48.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 42.24
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 42.24,
+            "localPrice": 48.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 42.24
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 44.17,
+            "localPrice": 2299,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 44.17
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 50.04,
+            "localPrice": 5499,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 50.04
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 51,
+            "localPrice": 299,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 60.35,
+            "localPrice": 69.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 60.35
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 69.99,
+            "localPrice": 69.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 69.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 70.41,
+            "localPrice": 299,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 70.41
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1463376,
+        "name": "Forza Horizon 6 Deluxe Edition",
+        "countries": [
+          {
+            "code": "TR",
+            "price": 60.35,
+            "localPrice": 69.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 60.35
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 60.35,
+            "localPrice": 69.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 60.35
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 63.39,
+            "localPrice": 3299,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 63.39
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 72.79,
+            "localPrice": 7999,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 72.79
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 76.59,
+            "localPrice": 449,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 76.59
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 86.22,
+            "localPrice": 99.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 86.22
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 99.99,
+            "localPrice": 99.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 99.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 100.79,
+            "localPrice": 428,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 100.79
+              }
+            ]
+          }
+        ],
+        "label": "Deluxe Edition"
+      },
+      {
+        "id": 1463380,
+        "name": "Forza Horizon 6 Premium Edition",
+        "countries": [
+          {
+            "code": "TR",
+            "price": 72.42,
+            "localPrice": 83.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 72.42
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 72.42,
+            "localPrice": 83.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 72.42
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 76.84,
+            "localPrice": 3999,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 76.84
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 88.26,
+            "localPrice": 9699,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 88.26
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 93.65,
+            "localPrice": 549,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 93.65
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 103.46,
+            "localPrice": 119.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 103.46
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 119.99,
+            "localPrice": 119.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 119.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 122.22,
+            "localPrice": 519,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 122.22
+              }
+            ]
+          }
+        ],
+        "label": "Premium Edition"
+      }
+    ]
+  },
+  {
+    "appid": 3405690,
+    "title": "EA SPORTS FC™ 26",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/64d362e71693f1ec7023f52ab94026f9a0d4fbed/header.jpg?t=1781025991",
+    "emoji": "🎮",
+    "color": "#36d399",
+    "base": 14.12,
+    "disc": -90,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 1.37,
+        "localPrice": 150,
+        "currency": "INR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 1.37
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 4.26,
+        "localPrice": 25,
+        "currency": "BRL",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 4.26
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 6.53,
+        "localPrice": 340,
+        "currency": "UAH",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.53
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 12.06,
+        "localPrice": 13.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.06
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 12.06,
+        "localPrice": 13.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.06
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 12.06,
+        "localPrice": 13.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.06
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 13.99,
+        "localPrice": 13.99,
+        "currency": "EUR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.99
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 14.12,
+        "localPrice": 59.98,
+        "currency": "PLN",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.12
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 1204710,
+        "name": "EA SPORTS FC™ 26",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 1.37,
+            "localPrice": 150,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 1.37
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 4.26,
+            "localPrice": 25,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 4.26
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 6.53,
+            "localPrice": 340,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.53
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 12.06,
+            "localPrice": 13.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.06
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 12.06,
+            "localPrice": 13.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.06
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 12.06,
+            "localPrice": 13.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.06
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 13.99,
+            "localPrice": 13.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 14.12,
+            "localPrice": 59.98,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 14.12
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1566190,
+        "name": "EA SPORTS FC™ 26 The World's Game Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 8.84,
+            "localPrice": 460,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.84
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 10.01,
+            "localPrice": 1100,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.01
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 12.93,
+            "localPrice": 75.8,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.93
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 15.52,
+            "localPrice": 18,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 15.52
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 15.52,
+            "localPrice": 18,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 15.52
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 15.52,
+            "localPrice": 18,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 15.52
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 18,
+            "localPrice": 18,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 18.36,
+            "localPrice": 77.98,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.36
+              }
+            ]
+          }
+        ],
+        "label": "The World's Game Edition"
+      }
+    ]
+  },
+  {
+    "appid": 2210520,
+    "title": "COPA CITY",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2210520/75df4302682e4d5cb47a15fdfe5cda57d85a3978/header.jpg?t=1781618841",
+    "emoji": "🎮",
+    "color": "#4f8cff",
+    "base": 31.49,
+    "disc": -54,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 14.53,
+        "localPrice": 756,
+        "currency": "UAH",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.53
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 16.89,
+        "localPrice": 98.99,
+        "currency": "BRL",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 16.89
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 17.85,
+        "localPrice": 20.7,
+        "currency": "USD",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.85
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 17.85,
+        "localPrice": 20.7,
+        "currency": "USD",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.85
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 22.1,
+        "localPrice": 2429,
+        "currency": "INR",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 22.1
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 27.15,
+        "localPrice": 31.49,
+        "currency": "USD",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 27.15
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 27.55,
+        "localPrice": 116.99,
+        "currency": "PLN",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 27.55
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 31.49,
+        "localPrice": 31.49,
+        "currency": "EUR",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 31.49
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 394360,
+    "title": "Hearts of Iron IV",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/67bbd0057627fc2244793bcdd09260c2539499cf/header.jpg?t=1781595476",
+    "emoji": "🎮",
+    "color": "#4f8cff",
+    "base": 9.99,
+    "disc": -48,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 5.17,
+        "localPrice": 269,
+        "currency": "UAH",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.17
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 5.71,
+        "localPrice": 627,
+        "currency": "INR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.71
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 6.03,
+        "localPrice": 6.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.03
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 6.03,
+        "localPrice": 6.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.03
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 6.45,
+        "localPrice": 37.79,
+        "currency": "BRL",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.45
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 8.61,
+        "localPrice": 9.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.61
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 9.84,
+        "localPrice": 41.79,
+        "currency": "PLN",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.84
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 9.99,
+        "localPrice": 9.99,
+        "currency": "EUR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 808474,
+        "name": "Hearts of Iron IV",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 5.17,
+            "localPrice": 269,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.17
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 5.71,
+            "localPrice": 627,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.71
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 6.03,
+            "localPrice": 6.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.03
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 6.03,
+            "localPrice": 6.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.03
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 6.45,
+            "localPrice": 37.79,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.45
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 8.61,
+            "localPrice": 9.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.61
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 9.84,
+            "localPrice": 41.79,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.84
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1429184,
+        "name": "Hearts of Iron IV: General Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 7.72,
+            "localPrice": 402,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.72
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 8.62,
+            "localPrice": 947,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.62
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 9.05,
+            "localPrice": 10.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.05
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 9.05,
+            "localPrice": 10.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.05
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 9.85,
+            "localPrice": 57.74,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.85
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 12.93,
+            "localPrice": 14.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.93
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 14.77,
+            "localPrice": 62.74,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 14.77
+              }
+            ]
+          }
+        ],
+        "label": ": General Edition"
+      }
+    ]
+  },
+  {
+    "appid": 2001120,
+    "title": "Split Fiction",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/header.jpg?t=1763484567",
+    "emoji": "🎯",
+    "color": "#4f8cff",
+    "base": 33.66,
+    "disc": -56,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 14.78,
+        "localPrice": 1624,
+        "currency": "INR",
+        "discount": 35,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.78
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 16.22,
+        "localPrice": 844,
+        "currency": "UAH",
+        "discount": 35,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 16.22
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 22.06,
+        "localPrice": 129.35,
+        "currency": "BRL",
+        "discount": 35,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 22.06
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 28.02,
+        "localPrice": 32.49,
+        "currency": "USD",
+        "discount": 35,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.02
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 28.02,
+        "localPrice": 32.49,
+        "currency": "USD",
+        "discount": 35,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.02
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 28.02,
+        "localPrice": 32.49,
+        "currency": "USD",
+        "discount": 35,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.02
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 32.49,
+        "localPrice": 32.49,
+        "currency": "EUR",
+        "discount": 35,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 32.49
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 33.66,
+        "localPrice": 142.93,
+        "currency": "PLN",
+        "discount": 35,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 33.66
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 3276050,
+    "title": "SpaceCraft",
+    "genre": "Abenteuer",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3276050/f3c3248ff25d51c8857d135376b2042b8e203235/header_alt_assets_1_german.jpg?t=1781191112",
+    "emoji": "🗺️",
+    "color": "#36d399",
+    "base": 26.99,
+    "disc": -57,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 11.57,
+        "localPrice": 602,
+        "currency": "UAH",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.57
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 11.63,
+        "localPrice": 13.49,
+        "currency": "USD",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.63
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 11.63,
+        "localPrice": 13.49,
+        "currency": "USD",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.63
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 12.28,
+        "localPrice": 1349,
+        "currency": "INR",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.28
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 12.89,
+        "localPrice": 75.59,
+        "currency": "BRL",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.89
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 23.1,
+        "localPrice": 98.09,
+        "currency": "PLN",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 23.1
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 23.27,
+        "localPrice": 26.99,
+        "currency": "USD",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 23.27
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 26.99,
+        "localPrice": 26.99,
+        "currency": "EUR",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 26.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 949230,
+    "title": "Cities: Skylines II",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/949230/header.jpg?t=1781017670",
+    "emoji": "🎮",
+    "color": "#f472b6",
+    "base": 34.99,
+    "disc": -48,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 18.14,
+        "localPrice": 944,
+        "currency": "UAH",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 18.14
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 19.99,
+        "localPrice": 2197,
+        "currency": "INR",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.99
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 21.12,
+        "localPrice": 24.49,
+        "currency": "USD",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.12
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 21.12,
+        "localPrice": 24.49,
+        "currency": "USD",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.12
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 22.57,
+        "localPrice": 132.29,
+        "currency": "BRL",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 22.57
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 30.17,
+        "localPrice": 34.99,
+        "currency": "USD",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.17
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 34.45,
+        "localPrice": 146.29,
+        "currency": "PLN",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.45
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 34.99,
+        "localPrice": 34.99,
+        "currency": "EUR",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 885642,
+        "name": "Cities: Skylines II",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 18.14,
+            "localPrice": 944,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.14
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 19.99,
+            "localPrice": 2197,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 19.99
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 21.12,
+            "localPrice": 24.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.12
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 21.12,
+            "localPrice": 24.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.12
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 22.57,
+            "localPrice": 132.29,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 22.57
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 30.17,
+            "localPrice": 34.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 30.17
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 34.45,
+            "localPrice": 146.29,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.45
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 34.99,
+            "localPrice": 34.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.99
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 885643,
+        "name": "Cities: Skylines II - Ultimate Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 37.03,
+            "localPrice": 1927,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 37.03
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 41.41,
+            "localPrice": 4551,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 41.41
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 43.45,
+            "localPrice": 50.39,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.45
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 43.45,
+            "localPrice": 50.39,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.45
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 46.53,
+            "localPrice": 272.79,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 46.53
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 62.08,
+            "localPrice": 71.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 62.08
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 70.83,
+            "localPrice": 300.79,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 70.83
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 71.99,
+            "localPrice": 71.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 71.99
+              }
+            ]
+          }
+        ],
+        "label": "- Ultimate Edition"
+      }
+    ]
+  },
+  {
+    "appid": 1462040,
+    "title": "FINAL FANTASY VII REMAKE INTERGRADE",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1462040/header.jpg?t=1773895755",
+    "emoji": "🎯",
+    "color": "#4f8cff",
+    "base": 13.99,
+    "disc": -47,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 7.38,
+        "localPrice": 384,
+        "currency": "UAH",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.38
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 7.95,
+        "localPrice": 874,
+        "currency": "INR",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.95
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 9.65,
+        "localPrice": 11.19,
+        "currency": "USD",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.65
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 9.65,
+        "localPrice": 11.19,
+        "currency": "USD",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.65
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 10.44,
+        "localPrice": 61.21,
+        "currency": "BRL",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.44
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 12.06,
+        "localPrice": 13.99,
+        "currency": "USD",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.06
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 13.11,
+        "localPrice": 55.65,
+        "currency": "PLN",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.11
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 13.99,
+        "localPrice": 13.99,
+        "currency": "EUR",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 514802,
+        "name": "FINAL FANTASY VII REMAKE INTERGRADE",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 7.38,
+            "localPrice": 384,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.38
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 7.95,
+            "localPrice": 874,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.95
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 9.65,
+            "localPrice": 11.19,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.65
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 9.65,
+            "localPrice": 11.19,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.65
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 10.44,
+            "localPrice": 61.21,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.44
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 12.06,
+            "localPrice": 13.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.06
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 13.11,
+            "localPrice": 55.65,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.11
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 13.99,
+            "localPrice": 13.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.99
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1186111,
+        "name": "FINAL FANTASY VII REMAKE & REBIRTH Digital Deluxe Twin Pack",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 21.5,
+            "localPrice": 1119,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.5
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 25.47,
+            "localPrice": 2799,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 25.47
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 30.7,
+            "localPrice": 179.96,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 30.7
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 31.03,
+            "localPrice": 35.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.03
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 31.03,
+            "localPrice": 35.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.03
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 34.48,
+            "localPrice": 39.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.48
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 37.58,
+            "localPrice": 159.6,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 37.58
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 39.99,
+            "localPrice": 39.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.99
+              }
+            ]
+          }
+        ],
+        "label": "FINAL FANTASY VII REMAKE & REBIRTH Digital Deluxe Twin Pack"
+      }
+    ]
+  },
+  {
+    "appid": 1962700,
+    "title": "Subnautica 2",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/header.jpg?t=1780372044",
+    "emoji": "🎯",
+    "color": "#ffd166",
+    "base": 29.99,
     "disc": -45,
     "countries": [
       {
         "code": "IN",
-        "price": 32.75,
-        "localPrice": 3599,
+        "price": 16.38,
+        "localPrice": 1800,
         "currency": "INR",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 32.75
+            "p": 16.38
           }
         ]
       },
-      {
-        "code": "TR",
-        "price": 34.48,
-        "localPrice": 39.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 34.48
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 34.57,
-        "localPrice": 1799,
-        "currency": "UAH",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 34.57
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 41.38,
-        "localPrice": 47.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 41.38
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 46.82,
-        "localPrice": 274.5,
-        "currency": "BRL",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 46.82
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 51.73,
-        "localPrice": 59.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 51.73
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 58.64,
-        "localPrice": 249,
-        "currency": "PLN",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 58.64
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 59.99,
-        "localPrice": 59.99,
-        "currency": "EUR",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 59.99
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "appid": 1174180,
-    "title": "Red Dead Redemption 2",
-    "genre": "Action",
-    "emoji": "🤠",
-    "color": "#ffd166",
-    "base": 59.99,
-    "disc": -24,
-    "countries": [
-      {
-        "code": "IN",
-        "price": 45.49,
-        "localPrice": 4999,
-        "currency": "INR",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 45.49
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 49.94,
-        "localPrice": 2599,
-        "currency": "UAH",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 49.94
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 51.16,
-        "localPrice": 299.9,
-        "currency": "BRL",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 51.16
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 51.73,
-        "localPrice": 59.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 51.73
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 51.73,
-        "localPrice": 59.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 51.73
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 51.73,
-        "localPrice": 59.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 51.73
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 58.85,
-        "localPrice": 249.9,
-        "currency": "PLN",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 58.85
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 59.99,
-        "localPrice": 59.99,
-        "currency": "EUR",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 59.99
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "appid": 1091500,
-    "title": "Cyberpunk 2077",
-    "genre": "RPG",
-    "emoji": "⚡",
-    "color": "#7c5cff",
-    "base": 59.99,
-    "disc": -55,
-    "countries": [
-      {
-        "code": "UA",
-        "price": 26.88,
-        "localPrice": 1399,
-        "currency": "UAH",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 26.88
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 27.29,
-        "localPrice": 2999,
-        "currency": "INR",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 27.29
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 34.1,
-        "localPrice": 199.9,
-        "currency": "BRL",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 34.1
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 38.79,
-        "localPrice": 44.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 38.79
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 38.79,
-        "localPrice": 44.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 38.79
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 46.86,
-        "localPrice": 199,
-        "currency": "PLN",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 46.86
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 51.73,
-        "localPrice": 59.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 51.73
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 59.99,
-        "localPrice": 59.99,
-        "currency": "EUR",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 59.99
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "appid": 1086940,
-    "title": "Baldur's Gate 3",
-    "genre": "RPG",
-    "emoji": "🎲",
-    "color": "#4f8cff",
-    "base": 59.99,
-    "disc": -71,
-    "countries": [
       {
         "code": "UA",
         "price": 17.27,
         "localPrice": 899,
         "currency": "UAH",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
@@ -367,112 +3775,915 @@ window.GAMES_DATA = [
         ]
       },
       {
-        "code": "IN",
-        "price": 27.29,
-        "localPrice": 2999,
-        "currency": "INR",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 27.29
-          }
-        ]
-      },
-      {
         "code": "TR",
-        "price": 30.17,
-        "localPrice": 34.99,
+        "price": 18.1,
+        "localPrice": 20.99,
         "currency": "USD",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 30.17
+            "p": 18.1
           }
         ]
       },
       {
         "code": "AR",
-        "price": 30.17,
-        "localPrice": 34.99,
+        "price": 18.1,
+        "localPrice": 20.99,
         "currency": "USD",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 30.17
+            "p": 18.1
           }
         ]
       },
       {
         "code": "BR",
-        "price": 34.11,
-        "localPrice": 199.99,
+        "price": 20.47,
+        "localPrice": 119.99,
         "currency": "BRL",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 34.11
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 51.73,
-        "localPrice": 59.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 51.73
+            "p": 20.47
           }
         ]
       },
       {
         "code": "PL",
-        "price": 58.64,
-        "localPrice": 249,
+        "price": 27.08,
+        "localPrice": 115,
         "currency": "PLN",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 58.64
+            "p": 27.08
           }
         ]
       },
       {
         "code": "DE",
-        "price": 59.99,
-        "localPrice": 59.99,
+        "price": 29.99,
+        "localPrice": 29.99,
         "currency": "EUR",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 59.99
+            "p": 29.99
           }
         ]
       }
     ]
   },
   {
-    "appid": 292030,
-    "title": "The Witcher 3: Wild Hunt",
-    "genre": "RPG",
-    "emoji": "🐺",
-    "color": "#22d3ee",
-    "base": 34.48,
-    "disc": -53,
+    "appid": 3892270,
+    "title": "Gamble With Your Friends",
+    "genre": "Abenteuer",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3892270/395e6d7972474333a698b26f8aa5597bf38109a1/header.jpg?t=1778274309",
+    "emoji": "🗺️",
+    "color": "#f472b6",
+    "base": 7.79,
+    "disc": -54,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 3.59,
+        "localPrice": 187,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 3.59
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 3.64,
+        "localPrice": 400,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 3.64
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 3.87,
+        "localPrice": 4.49,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 3.87
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 3.87,
+        "localPrice": 4.49,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 3.87
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 4.52,
+        "localPrice": 26.49,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 4.52
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 6.83,
+        "localPrice": 28.99,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.83
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 6.89,
+        "localPrice": 7.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.89
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 7.79,
+        "localPrice": 7.79,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.79
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 3768760,
+    "title": "007 First Light",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/dbe86ebd2edb4c77d113e9e2feefeb90189fabc9/header.jpg?t=1780990824",
+    "emoji": "🎯",
+    "color": "#4f8cff",
+    "base": 69.99,
+    "disc": -56,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 30.72,
+        "localPrice": 1599,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.72
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 31.84,
+        "localPrice": 3499,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 31.84
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 34.48,
+        "localPrice": 39.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.48
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 34.48,
+        "localPrice": 39.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.48
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 51,
+        "localPrice": 299,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 51
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 53.93,
+        "localPrice": 229,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 53.93
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 60.35,
+        "localPrice": 69.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 60.35
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 69.99,
+        "localPrice": 69.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 69.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 1488462,
+        "name": "007 First Light",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 30.72,
+            "localPrice": 1599,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 30.72
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 31.84,
+            "localPrice": 3499,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.84
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 34.48,
+            "localPrice": 39.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.48
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 34.48,
+            "localPrice": 39.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.48
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 51,
+            "localPrice": 299,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 53.93,
+            "localPrice": 229,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 53.93
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 60.35,
+            "localPrice": 69.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 60.35
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 69.99,
+            "localPrice": 69.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 69.99
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1383445,
+        "name": "007 First Light - Deluxe Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 35.53,
+            "localPrice": 1849,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 35.53
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 36.4,
+            "localPrice": 4000,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 36.4
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 39.66,
+            "localPrice": 45.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.66
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 39.66,
+            "localPrice": 45.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.66
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 57.98,
+            "localPrice": 339.9,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 57.98
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 60.99,
+            "localPrice": 259,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 60.99
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 68.97,
+            "localPrice": 79.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 68.97
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 79.99,
+            "localPrice": 79.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 79.99
+              }
+            ]
+          }
+        ],
+        "label": "- Deluxe Edition"
+      }
+    ]
+  },
+  {
+    "appid": 534380,
+    "title": "Dying Light 2 Stay Human: Reloaded Edition",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/534380/header.jpg?t=1781107577",
+    "emoji": "🎯",
+    "color": "#ffd166",
+    "base": 11.99,
+    "disc": -55,
     "countries": [
       {
         "code": "IN",
-        "price": 16.37,
-        "localPrice": 1799,
+        "price": 5.45,
+        "localPrice": 599,
         "currency": "INR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.45
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 6.13,
+        "localPrice": 319,
+        "currency": "UAH",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.13
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 6.89,
+        "localPrice": 7.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.89
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 6.89,
+        "localPrice": 7.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.89
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 8.5,
+        "localPrice": 49.8,
+        "currency": "BRL",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.5
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 9.42,
+        "localPrice": 39.99,
+        "currency": "PLN",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.42
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 10.34,
+        "localPrice": 11.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.34
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 11.99,
+        "localPrice": 11.99,
+        "currency": "EUR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 129576,
+        "name": "Dying Light 2: Reloaded Edition",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 5.45,
+            "localPrice": 599,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.45
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 6.13,
+            "localPrice": 319,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.13
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 6.89,
+            "localPrice": 7.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.89
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 6.89,
+            "localPrice": 7.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.89
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 8.5,
+            "localPrice": 49.8,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.5
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 9.42,
+            "localPrice": 39.99,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.42
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 10.34,
+            "localPrice": 11.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.34
+              }
+            ]
+          }
+        ],
+        "label": "Dying Light 2: Reloaded Edition"
+      },
+      {
+        "id": 1150220,
+        "name": "Dying Light 2: Stay Human Digital Extras Edition",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 6.36,
+            "localPrice": 699,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.36
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 7.17,
+            "localPrice": 373,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.17
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 7.93,
+            "localPrice": 9.2,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.93
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 7.93,
+            "localPrice": 9.2,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.93
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 9.89,
+            "localPrice": 58,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.89
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 10.97,
+            "localPrice": 46.6,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.97
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 12.06,
+            "localPrice": 13.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.06
+              }
+            ]
+          }
+        ],
+        "label": "Dying Light 2: Stay Human Digital Extras Edition"
+      }
+    ]
+  },
+  {
+    "appid": 1118520,
+    "title": "Paralives",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1118520/277ab7a2ad1bbce0f4837bb37a3c86d109bd5258/header.jpg?t=1780764457",
+    "emoji": "🎮",
+    "color": "#4f8cff",
+    "base": 38.99,
+    "disc": -64,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 14.22,
+        "localPrice": 740,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.22
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 14.56,
+        "localPrice": 1600,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.56
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 16.37,
+        "localPrice": 18.99,
+        "currency": "USD",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
@@ -482,80 +4693,30 @@ window.GAMES_DATA = [
         ]
       },
       {
-        "code": "UA",
-        "price": 18.23,
-        "localPrice": 949,
-        "currency": "UAH",
+        "code": "AR",
+        "price": 16.37,
+        "localPrice": 18.99,
+        "currency": "USD",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 18.23
+            "p": 16.37
           }
         ]
       },
       {
         "code": "BR",
-        "price": 22.17,
-        "localPrice": 129.99,
+        "price": 18.42,
+        "localPrice": 107.99,
         "currency": "BRL",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 22.17
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 23.55,
-        "localPrice": 99.99,
-        "currency": "PLN",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 23.55
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 25.86,
-        "localPrice": 29.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 25.86
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 25.86,
-        "localPrice": 29.99,
-        "currency": "USD",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 25.86
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 29.99,
-        "localPrice": 29.99,
-        "currency": "EUR",
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.99
+            "p": 18.42
           }
         ]
       },
@@ -564,11 +4725,2731 @@ window.GAMES_DATA = [
         "price": 34.48,
         "localPrice": 39.99,
         "currency": "USD",
+        "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
             "p": 34.48
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 34.85,
+        "localPrice": 147.99,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.85
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 38.99,
+        "localPrice": 38.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 38.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 2537590,
+    "title": "Microsoft Flight Simulator 2024",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2537590/header.jpg?t=1780854662",
+    "emoji": "🎮",
+    "color": "#f472b6",
+    "base": 59.99,
+    "disc": -43,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 34.13,
+        "localPrice": 3750,
+        "currency": "INR",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.13
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 34.59,
+        "localPrice": 1800,
+        "currency": "UAH",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.59
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 38.38,
+        "localPrice": 224.99,
+        "currency": "BRL",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 38.38
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 45.26,
+        "localPrice": 52.49,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 45.26
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 45.26,
+        "localPrice": 52.49,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 45.26
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 45.26,
+        "localPrice": 52.49,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 45.26
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 54.58,
+        "localPrice": 231.75,
+        "currency": "PLN",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 54.58
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 59.99,
+        "localPrice": 59.99,
+        "currency": "EUR",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 59.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 1151186,
+        "name": "Microsoft Flight Simulator 2024 - Standard Edition",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 34.13,
+            "localPrice": 3750,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.13
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 34.59,
+            "localPrice": 1800,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.59
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 38.38,
+            "localPrice": 224.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 38.38
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 45.26,
+            "localPrice": 52.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 45.26
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 45.26,
+            "localPrice": 52.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 45.26
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 45.26,
+            "localPrice": 52.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 45.26
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 54.58,
+            "localPrice": 231.75,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 54.58
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 59.99,
+            "localPrice": 59.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 59.99
+              }
+            ]
+          }
+        ],
+        "label": "- Standard Edition"
+      },
+      {
+        "id": 1151190,
+        "name": "Microsoft Flight Simulator 2024 - Deluxe Edition",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 47.78,
+            "localPrice": 5250,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 47.78
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 50.44,
+            "localPrice": 2625,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 50.44
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 54.88,
+            "localPrice": 321.75,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 54.88
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 64.66,
+            "localPrice": 74.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 64.66
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 64.66,
+            "localPrice": 74.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 64.66
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 64.66,
+            "localPrice": 74.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 64.66
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 77.54,
+            "localPrice": 329.25,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 77.54
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 82.49,
+            "localPrice": 82.49,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 82.49
+              }
+            ]
+          }
+        ],
+        "label": "- Deluxe Edition"
+      },
+      {
+        "id": 1151188,
+        "name": "Microsoft Flight Simulator 2024 - Premium Deluxe Edition",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 61.43,
+            "localPrice": 6750,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 61.43
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 66.29,
+            "localPrice": 3450,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 66.29
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 71.52,
+            "localPrice": 419.25,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 71.52
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 84.06,
+            "localPrice": 97.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 84.06
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 84.06,
+            "localPrice": 97.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 84.06
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 84.06,
+            "localPrice": 97.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 84.06
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 100.5,
+            "localPrice": 426.75,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 100.5
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 104.99,
+            "localPrice": 104.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 104.99
+              }
+            ]
+          }
+        ],
+        "label": "- Premium Deluxe Edition"
+      },
+      {
+        "id": 1150347,
+        "name": "Microsoft Flight Simulator 2024 - Aviator Edition",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 95.55,
+            "localPrice": 10500,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 95.55
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 100.88,
+            "localPrice": 5250,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 100.88
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 109.9,
+            "localPrice": 644.25,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 109.9
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 129.33,
+            "localPrice": 149.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 129.33
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 129.33,
+            "localPrice": 149.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 129.33
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 129.33,
+            "localPrice": 149.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 129.33
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 155.25,
+            "localPrice": 659.25,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 155.25
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 164.99,
+            "localPrice": 164.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 164.99
+              }
+            ]
+          }
+        ],
+        "label": "- Aviator Edition"
+      }
+    ]
+  },
+  {
+    "appid": 2221490,
+    "title": "Tom Clancy’s The Division® 2",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/015046eb22f13e9c2635456543a984b49ffe67bb/header_alt_assets_6_german.jpg?t=1781597370",
+    "emoji": "🎯",
+    "color": "#36d399",
+    "base": 29.99,
+    "disc": -58,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 12.47,
+        "localPrice": 649,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.47
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 19.1,
+        "localPrice": 2099,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.1
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 20.69,
+        "localPrice": 23.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.69
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 20.69,
+        "localPrice": 23.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.69
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 25.59,
+        "localPrice": 149.99,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.59
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 25.86,
+        "localPrice": 29.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.86
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 28.24,
+        "localPrice": 119.9,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.24
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 29.99,
+        "localPrice": 29.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 796567,
+        "name": "Tom Clancy's The Division 2 Standard Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 12.47,
+            "localPrice": 649,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.47
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 19.1,
+            "localPrice": 2099,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 19.1
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 20.69,
+            "localPrice": 23.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 20.69
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 20.69,
+            "localPrice": 23.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 20.69
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 25.59,
+            "localPrice": 149.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 25.59
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 25.86,
+            "localPrice": 29.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 25.86
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 28.24,
+            "localPrice": 119.9,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 28.24
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 29.99,
+            "localPrice": 29.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 29.99
+              }
+            ]
+          }
+        ],
+        "label": "Tom Clancy's The Division 2 Standard Edition"
+      },
+      {
+        "id": 1260348,
+        "name": "Tom Clancy’s The Division 2 - Gold Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 33.03,
+            "localPrice": 1719,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 33.03
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 38.21,
+            "localPrice": 4199,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 38.21
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 41.38,
+            "localPrice": 47.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 41.38
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 41.38,
+            "localPrice": 47.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 41.38
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 42.64,
+            "localPrice": 249.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 42.64
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 51.73,
+            "localPrice": 59.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51.73
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 58.85,
+            "localPrice": 249.9,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 58.85
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 59.99,
+            "localPrice": 59.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 59.99
+              }
+            ]
+          }
+        ],
+        "label": "Tom Clancy’s The Division 2 - Gold Edition"
+      },
+      {
+        "id": 1260380,
+        "name": "Tom Clancy’s The Division 2 - Ultimate Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 38.41,
+            "localPrice": 1999,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 38.41
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 44.58,
+            "localPrice": 4899,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 44.58
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 48.28,
+            "localPrice": 55.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 48.28
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 48.28,
+            "localPrice": 55.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 48.28
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 51.17,
+            "localPrice": 299.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51.17
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 60.35,
+            "localPrice": 69.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 60.35
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 68.27,
+            "localPrice": 289.9,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 68.27
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 69.99,
+            "localPrice": 69.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 69.99
+              }
+            ]
+          }
+        ],
+        "label": "Tom Clancy’s The Division 2 - Ultimate Edition"
+      }
+    ]
+  },
+  {
+    "appid": 252490,
+    "title": "Rust",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1781536981",
+    "emoji": "🎯",
+    "color": "#36d399",
+    "base": 19.99,
+    "disc": -63,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 7.47,
+        "localPrice": 389,
+        "currency": "UAH",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.47
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 8.18,
+        "localPrice": 9.49,
+        "currency": "USD",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.18
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 8.18,
+        "localPrice": 9.49,
+        "currency": "USD",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.18
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 8.18,
+        "localPrice": 899,
+        "currency": "INR",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.18
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 10.23,
+        "localPrice": 59.99,
+        "currency": "BRL",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.23
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 14.13,
+        "localPrice": 59.99,
+        "currency": "PLN",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.13
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 17.24,
+        "localPrice": 19.99,
+        "currency": "USD",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.24
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 19.99,
+        "localPrice": 19.99,
+        "currency": "EUR",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 1129580,
+    "title": "Medieval Dynasty",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1129580/6a3e938027937e0056e9253895873cb608a6bd94/header_alt_assets_37.jpg?t=1781251858",
+    "emoji": "🎯",
+    "color": "#ffd166",
+    "base": 15.08,
+    "disc": -56,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 6.63,
+        "localPrice": 345,
+        "currency": "UAH",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.63
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 6.78,
+        "localPrice": 745,
+        "currency": "INR",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.78
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 7.75,
+        "localPrice": 8.99,
+        "currency": "USD",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.75
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 7.75,
+        "localPrice": 8.99,
+        "currency": "USD",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.75
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 11,
+        "localPrice": 64.5,
+        "currency": "BRL",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 12.83,
+        "localPrice": 54.5,
+        "currency": "PLN",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.83
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 14.99,
+        "localPrice": 14.99,
+        "currency": "EUR",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.99
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 15.08,
+        "localPrice": 17.49,
+        "currency": "USD",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.08
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 3105440,
+    "title": "Heroes of Might and Magic: Olden Era",
+    "genre": "Rollenspiel",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3105440/e2bef853b7cb19e3d5f019022309783609e8454f/header.jpg?t=1779786083",
+    "emoji": "🎮",
+    "color": "#4f8cff",
+    "base": 29.99,
+    "disc": -71,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 8.63,
+        "localPrice": 449,
+        "currency": "UAH",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.63
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 10.23,
+        "localPrice": 1124,
+        "currency": "INR",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.23
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 10.23,
+        "localPrice": 59.99,
+        "currency": "BRL",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.23
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 12.93,
+        "localPrice": 14.99,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.93
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 12.93,
+        "localPrice": 14.99,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.93
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 25.86,
+        "localPrice": 29.99,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.86
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 26.49,
+        "localPrice": 112.49,
+        "currency": "PLN",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 26.49
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 29.99,
+        "localPrice": 29.99,
+        "currency": "EUR",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 2244210,
+    "title": "Echoes of Aincrad",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2244210/25fb6350451b21ca824562c8d1eebe89091347cc/header.jpg?t=1781588941",
+    "emoji": "🎯",
+    "color": "#36d399",
+    "base": 70.41,
+    "disc": -48,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 36.39,
+        "localPrice": 3999,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 36.39
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 38.41,
+        "localPrice": 1999,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 38.41
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 39.83,
+        "localPrice": 46.19,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 39.83
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 48.28,
+        "localPrice": 55.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 48.28
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 51.77,
+        "localPrice": 303.5,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 51.77
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 60.35,
+        "localPrice": 69.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 60.35
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 69.99,
+        "localPrice": 69.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 69.99
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 70.41,
+        "localPrice": 299,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 70.41
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 1531722,
+        "name": "Echoes of Aincrad",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 36.39,
+            "localPrice": 3999,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 36.39
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 38.41,
+            "localPrice": 1999,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 38.41
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 39.83,
+            "localPrice": 46.19,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.83
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 48.28,
+            "localPrice": 55.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 48.28
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 51.77,
+            "localPrice": 303.5,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51.77
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 60.35,
+            "localPrice": 69.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 60.35
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 69.99,
+            "localPrice": 69.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 69.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 70.41,
+            "localPrice": 299,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 70.41
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1531724,
+        "name": "Echoes of Aincrad Deluxe Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 46.1,
+            "localPrice": 2399,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 46.1
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 51.21,
+            "localPrice": 59.39,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51.21
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 51.86,
+            "localPrice": 5699,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51.86
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 62.08,
+            "localPrice": 71.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 62.08
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 66.61,
+            "localPrice": 390.5,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 66.61
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 77.6,
+            "localPrice": 89.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 77.6
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 89.99,
+            "localPrice": 89.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 89.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 91.61,
+            "localPrice": 389,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 91.61
+              }
+            ]
+          }
+        ],
+        "label": "Deluxe Edition"
+      },
+      {
+        "id": 1531726,
+        "name": "Echoes of Aincrad Ultimate Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 53.78,
+            "localPrice": 2799,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 53.78
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 62.59,
+            "localPrice": 72.59,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 62.59
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 65.51,
+            "localPrice": 7199,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 65.51
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 75.87,
+            "localPrice": 87.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 75.87
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 81.45,
+            "localPrice": 477.5,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 81.45
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 94.84,
+            "localPrice": 109.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 94.84
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 109.99,
+            "localPrice": 109.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 109.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 110.45,
+            "localPrice": 469,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 110.45
+              }
+            ]
+          }
+        ],
+        "label": "Ultimate Edition"
+      }
+    ]
+  },
+  {
+    "appid": 3337380,
+    "title": "Tabletop Tavern",
+    "genre": "Strategie",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3337380/be1671a7a42ef807118e9770ae4f3df65050cf37/header.jpg?t=1781266198",
+    "emoji": "♟️",
+    "color": "#ffd166",
+    "base": 14.99,
+    "disc": -73,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 4.09,
+        "localPrice": 449,
+        "currency": "INR",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 4.09
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 4.3,
+        "localPrice": 224,
+        "currency": "UAH",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 4.3
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 5.12,
+        "localPrice": 29.99,
+        "currency": "BRL",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.12
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 5.17,
+        "localPrice": 5.99,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.17
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 5.17,
+        "localPrice": 5.99,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.17
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 10.59,
+        "localPrice": 44.99,
+        "currency": "PLN",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.59
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 12.93,
+        "localPrice": 14.99,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.93
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 14.99,
+        "localPrice": 14.99,
+        "currency": "EUR",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 3059520,
+    "title": "F1® 25",
+    "genre": "Rennspiele",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3059520/76dc8ac45f1bd6dec26e04434ca1c8814e7bb330/header.jpg?t=1780590545",
+    "emoji": "🎮",
+    "color": "#4f8cff",
+    "base": 51.78,
+    "disc": -56,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 22.74,
+        "localPrice": 2499,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 22.74
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 30.72,
+        "localPrice": 1599,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.72
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 33.95,
+        "localPrice": 199,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 33.95
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 43.11,
+        "localPrice": 49.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 43.11
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 43.11,
+        "localPrice": 49.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 43.11
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 43.11,
+        "localPrice": 49.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 43.11
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 49.99,
+        "localPrice": 49.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 49.99
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 51.78,
+        "localPrice": 219.9,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 51.78
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 1172620,
+    "title": "Sea of Thieves: 2026 Edition",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/579c6d544424019a032f4add98e8f923925c1cef/header.jpg?t=1780506905",
+    "emoji": "🎯",
+    "color": "#ffd166",
+    "base": 16.4,
+    "disc": -58,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 6.92,
+        "localPrice": 360,
+        "currency": "UAH",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.92
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 8.44,
+        "localPrice": 9.79,
+        "currency": "USD",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.44
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 8.44,
+        "localPrice": 9.79,
+        "currency": "USD",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.44
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 10.69,
+        "localPrice": 62.65,
+        "currency": "BRL",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.69
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 11.14,
+        "localPrice": 1224,
+        "currency": "INR",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.14
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 12.06,
+        "localPrice": 13.99,
+        "currency": "USD",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.06
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 13.99,
+        "localPrice": 13.99,
+        "currency": "EUR",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.99
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 16.4,
+        "localPrice": 69.65,
+        "currency": "PLN",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 16.4
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 401467,
+        "name": "Sea of Thieves 2026 Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 6.92,
+            "localPrice": 360,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.92
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 8.44,
+            "localPrice": 9.79,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.44
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 8.44,
+            "localPrice": 9.79,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.44
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 10.69,
+            "localPrice": 62.65,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.69
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 11.14,
+            "localPrice": 1224,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 11.14
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 12.06,
+            "localPrice": 13.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.06
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 13.99,
+            "localPrice": 13.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 16.4,
+            "localPrice": 69.65,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 16.4
+              }
+            ]
+          }
+        ],
+        "label": "Sea of Thieves 2026 Edition"
+      },
+      {
+        "id": 1486117,
+        "name": "Sea of Thieves 2026 Deluxe Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 8.63,
+            "localPrice": 449,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.63
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 10.55,
+            "localPrice": 12.24,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.55
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 10.55,
+            "localPrice": 12.24,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.55
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 13.08,
+            "localPrice": 76.65,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.08
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 14.01,
+            "localPrice": 1539,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 14.01
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 15.08,
+            "localPrice": 17.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 15.08
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 17.49,
+            "localPrice": 17.49,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 17.49
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 20.52,
+            "localPrice": 87.15,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 20.52
+              }
+            ]
+          }
+        ],
+        "label": "Sea of Thieves 2026 Deluxe Edition"
+      },
+      {
+        "id": 1486118,
+        "name": "Sea of Thieves 2026 Premium Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 10.36,
+            "localPrice": 539,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.36
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 12.06,
+            "localPrice": 13.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.06
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 12.06,
+            "localPrice": 13.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.06
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 15.46,
+            "localPrice": 90.65,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 15.46
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 17.51,
+            "localPrice": 1924,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 17.51
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 18.1,
+            "localPrice": 20.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.1
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 20.99,
+            "localPrice": 20.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 20.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 24.64,
+            "localPrice": 104.65,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 24.64
+              }
+            ]
+          }
+        ],
+        "label": "Sea of Thieves 2026 Premium Edition"
+      }
+    ]
+  },
+  {
+    "appid": 1162750,
+    "title": "Songs of Syx",
+    "genre": "Gelegenheitsspiele",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1162750/1139c83ae1b3886732d64d7933542a1b7e12db68/header_alt_assets_3.jpg?t=1781544780",
+    "emoji": "🎲",
+    "color": "#f472b6",
+    "base": 18.37,
+    "disc": -60,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 7.42,
+        "localPrice": 386,
+        "currency": "UAH",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.42
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 7.51,
+        "localPrice": 825,
+        "currency": "INR",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.51
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 8.07,
+        "localPrice": 9.36,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.07
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 8.07,
+        "localPrice": 9.36,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.07
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 9.47,
+        "localPrice": 55.49,
+        "currency": "BRL",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.47
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 12.36,
+        "localPrice": 52.49,
+        "currency": "PLN",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.36
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 16.16,
+        "localPrice": 18.74,
+        "currency": "USD",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 16.16
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 18.37,
+        "localPrice": 18.37,
+        "currency": "EUR",
+        "discount": 25,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 18.37
           }
         ]
       }
