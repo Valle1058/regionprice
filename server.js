@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3000;
 const ROOT = dirname(fileURLToPath(import.meta.url)); // Ordner dieser Datei
 
 /* Länder, die verglichen werden (Steam-Code -> Anzeige) */
-const COUNTRIES = ["TR","AR","IN","BR","UA","PL","DE","US"];
+const COUNTRIES = ["TR","AR","IN","BR","UA","PL","DE","US","KZ","ID","VN","PH","CO","CL","ZA"];
 
 /* ---------- einfacher Cache (RAM) ---------- */
 const cache = new Map(); // key -> { exp, data }

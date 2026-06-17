@@ -2,7 +2,7 @@
  * Geteilte Steam-Logik für die Vercel-Serverless-Funktionen.
  * (Dateiname mit "_" -> Vercel behandelt sie NICHT als eigene Route.)
  */
-export const COUNTRIES = ["TR","AR","IN","BR","UA","PL","DE","US"];
+export const COUNTRIES = ["TR","AR","IN","BR","UA","PL","DE","US","KZ","ID","VN","PH","CO","CL","ZA"];
 const GENRE_EMOJI = { Action:"🎯", RPG:"🐉", Strategie:"♟️", Indie:"🎨", Simulation:"🎛️", Sport:"🏆", Rennspiel:"🏎️", Abenteuer:"🗺️", Gelegenheitsspiele:"🎲", "Massively Multiplayer":"🌐" };
 const PALETTE = ["#4f8cff","#7c5cff","#36d399","#ff6b6b","#ffd166","#22d3ee","#f472b6","#a78bfa"];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
