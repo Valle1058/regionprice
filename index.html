@@ -131,6 +131,10 @@
   .region-sel{background:var(--surface-2);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:13px;font-weight:700;border-radius:8px;padding:3px 8px;cursor:pointer;outline:none}
   .buy{display:inline-block;background:var(--surface-2);border:1px solid var(--border);color:var(--text);font-size:12px;font-weight:700;padding:6px 10px;border-radius:8px}
   .buy:hover{border-color:var(--accent);color:var(--accent)}
+  .aff-row{margin-top:16px}
+  .aff-btn{display:inline-block;font-weight:700;font-size:14px;padding:11px 16px;border-radius:10px;text-align:center}
+  .aff-btn.ig{background:linear-gradient(135deg,#16a34a,#22c55e);color:#fff}
+  .aff-btn.ig:hover{filter:brightness(1.08)}
   .sale{display:inline-block;background:rgba(255,107,107,.15);color:var(--red);font-size:11px;font-weight:700;padding:2px 7px;border-radius:6px;margin-left:6px}
   .thumb .sale-tag{position:absolute;bottom:10px;left:10px;z-index:3;background:rgba(255,107,107,.92);color:#fff;font-size:11px;font-weight:800;padding:4px 8px;border-radius:8px}
   .card .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
@@ -301,7 +305,8 @@
   <footer>
     Preise von Steam, in Euro umgerechnet · ohne Gewähr ·
     <a href="impressum.html" style="color:var(--accent)">Impressum</a> ·
-    <a href="datenschutz.html" style="color:var(--accent)">Datenschutz</a>
+    <a href="datenschutz.html" style="color:var(--accent)">Datenschutz</a><br>
+    <span style="font-size:12px">* Affiliate-Link: Bei einem Kauf über diesen Link erhalten wir ggf. eine Provision – für dich ohne Mehrkosten.</span>
   </footer>
 </main>
 
@@ -471,6 +476,7 @@ const store={
 };
 
 /* ---------------- Helpers ---------------- */
+const IG_AFF="gamer-346292"; // Instant-Gaming Affiliate-Kennung
 const $=s=>document.querySelector(s);
 const eur=n=>n.toFixed(2).replace('.',',')+" €";
 /* lokaler Preis in Landeswährung, z.B. "1.099 TRY" */
@@ -586,6 +592,9 @@ function openGame(id,edId){
         </tr>`).join('')}
       </table>
       <p class="meta" style="margin-top:12px">Preise von Steam, in Euro umgerechnet. „Steam ↗" öffnet die Store-Seite der jeweiligen Region.</p>
+      <div class="aff-row">
+        <a class="aff-btn ig" href="https://www.instant-gaming.com/de/search/?q=${encodeURIComponent(g.title)}&igr=${IG_AFF}" target="_blank" rel="noopener sponsored">🎮 Auf Instant Gaming ansehen *</a>
+      </div>
       <div id="itad-extra"></div>
     </div>`;
   $('#overlay').classList.add('open');
