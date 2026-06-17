@@ -172,10 +172,11 @@ async function itad(appid) {
     const id = lu.game.id;
     let deals = [];
     try {
-      const pr = await (await fetch(`https://api.isthereanydeal.com/games/prices/v2?key=${apikey}&country=DE&deals=true`,
+      const pr = await (await fetch(`https://api.isthereanydeal.com/games/prices/v2?key=${apikey}&country=DE&deals=true&nondeals=true&vouchers=true`,
         { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify([id]) })).json();
       const entry = Array.isArray(pr) ? pr[0] : pr;
-      deals = (entry?.deals || []).slice(0, 6).map((d) => ({ shop: d.shop.name, price: d.price.amount, cut: d.cut, url: d.url }));
+      deals = (entry?.deals || []).map((d) => ({ shop: d.shop.name, price: d.price.amount, cut: d.cut, url: d.url }))
+        .sort((a, b) => a.price - b.price).slice(0, 8);
     } catch { /* skip */ }
     let history = [];
     try {
