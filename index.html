@@ -133,6 +133,14 @@
   @keyframes sh{to{transform:translateX(100%)}}
   .loadmore{text-align:center;color:var(--muted);font-size:14px;padding:24px 0}
   .loadmore.done{color:var(--muted);opacity:.7}
+  .thumb .fav-btn{position:absolute;top:8px;right:10px;z-index:3;background:rgba(0,0,0,.45);border:none;color:#fff;font-size:16px;width:30px;height:30px;border-radius:8px;cursor:pointer;line-height:1;backdrop-filter:blur(2px)}
+  .thumb .fav-btn.on{color:#ffd166}
+  .fav-head{margin-left:auto;background:var(--surface-2);border:1px solid var(--border);color:var(--muted);font-size:18px;width:38px;height:38px;border-radius:10px;cursor:pointer;flex-shrink:0}
+  .fav-head.on{color:#ffd166;border-color:#ffd166}
+  .btn.active{border-color:var(--accent);color:var(--accent)}
+  .consent{position:fixed;bottom:0;left:0;right:0;z-index:90;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;background:rgba(19,22,30,.97);border-top:1px solid var(--border);padding:14px 18px;font-size:13px;color:var(--muted);backdrop-filter:blur(8px)}
+  .consent a{color:var(--accent)}
+  .consent .btn-primary{padding:9px 18px;border-radius:10px;font-size:14px}
   .thumb{height:130px;position:relative;display:grid;place-items:center;font-size:42px;font-weight:800;color:rgba(255,255,255,.85);overflow:hidden}
   .thumb .cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
   .thumb .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.55));z-index:2;pointer-events:none}
@@ -298,7 +306,7 @@
   <section class="panel active" id="panel-games">
     <div class="hero">
       <h1>Dasselbe Spiel,<br><span>im günstigsten Land</span>.</h1>
-      <p>Wir vergleichen Steam-Preise weltweit und zeigt dir sofort, in welcher Region dein Spiel am wenigsten kostet – mit Preisalarmen, Trend-Prognose und Wunschliste.</p>
+      <p>Wir vergleichen Steam-Preise weltweit und zeigen dir sofort, in welcher Region dein Spiel am wenigsten kostet – mit Editionen, echtem Preisverlauf und Shop-Vergleich.</p>
     </div>
 
     <div class="toolbar">
@@ -313,6 +321,7 @@
         <option value="disc">Größte Ersparnis</option>
         <option value="name">Name A–Z</option>
       </select>
+      <button class="btn" id="favBtn" onclick="toggleFavFilter()">☆ Favoriten</button>
     </div>
     <div id="region-note" style="margin:-14px 0 22px;font-size:13px;color:var(--muted)"></div>
 
@@ -350,6 +359,14 @@
 </div>
 
 <div class="toast" id="toast"></div>
+
+<div class="consent" id="consent" style="display:none">
+  <span>Diese Seite speichert nur technisch notwendige Einstellungen (z. B. deine Region). Beim Klick auf Shop-/Affiliate-Links können Drittanbieter Cookies setzen. <a href="datenschutz.html">Mehr erfahren</a></span>
+  <button class="btn-primary" onclick="acceptConsent()">Verstanden</button>
+</div>
+
+<!-- Vercel Web Analytics (cookielos; aktiv, sobald in Vercel eingeschaltet) -->
+<script defer src="/_vercel/insights/script.js"></script>
 
 <script>
 /* ---------------- Beispieldaten ---------------- */
@@ -521,6 +538,13 @@ const eur=n=>n.toFixed(2).replace('.',',')+" €";
 const localMoney=(v,cur)=>v.toLocaleString('de-DE',{minimumFractionDigits:0,maximumFractionDigits:2})+' '+cur;
 /* Region manuell umstellen */
 function setRegion(code){ USER_REGION=code; try{localStorage.setItem('rp_region',code);}catch{} renderGrid(); if($('#overlay').classList.contains('open')&&MODAL_GAME) openGame(MODAL_GAME.id); }
+/* ---- Favoriten ---- */
+let FAVS=JSON.parse(localStorage.getItem('rp_favs')||'[]');
+let FAV_ONLY=false;
+const isFav=appid=>FAVS.includes(appid);
+function saveFavs(){try{localStorage.setItem('rp_favs',JSON.stringify(FAVS));}catch{}}
+function toggleFav(appid,e){ if(e)e.stopPropagation(); if(!appid)return; const i=FAVS.indexOf(appid); if(i>=0)FAVS.splice(i,1); else FAVS.push(appid); saveFavs(); renderGrid(); if($('#overlay').classList.contains('open')&&MODAL_GAME&&MODAL_GAME.appid===appid) openGame(MODAL_GAME.id,document.querySelector('.edition-sel')?.value); }
+function toggleFavFilter(){ FAV_ONLY=!FAV_ONLY; const b=$('#favBtn'); if(b){b.textContent=(FAV_ONLY?'★':'☆')+' Favoriten'; b.classList.toggle('active',FAV_ONLY);} renderGrid(); }
 /* echte Flaggen-Bilder (Emoji-Flaggen werden auf Windows nicht angezeigt) */
 const flag=(code,h=14)=>`<img class="flagimg" style="height:${h}px" src="https://flagcdn.com/h${h<=20?20:40}/${code.toLowerCase()}.png" alt="${code}" loading="lazy">`;
 
@@ -554,7 +578,7 @@ function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show'
 function renderGrid(){
   const q=$('#search').value.toLowerCase();
   const sort=$('#sort').value;
-  let list=GAMES.filter(g=>g.title.toLowerCase().includes(q));
+  let list=GAMES.filter(g=>g.title.toLowerCase().includes(q) && (!FAV_ONLY||isFav(g.appid)));
   list.sort((a,b)=>sort==='name'?a.title.localeCompare(b.title)
     :sort==='disc'?savingPct(b)-savingPct(a)
     :sort==='priceDesc'?b.best.price-a.best.price
@@ -572,6 +596,7 @@ function renderGrid(){
         <span class="ov"></span>
         <span class="disc" style="${isHere?'background:var(--accent);color:#fff':''}">${isHere?'BESTE REGION':'-'+saving+'%'}</span>
         <span class="flag" title="${c.name}">${flag(g.best.code,16)} ${g.best.code}</span>
+        ${g.appid?`<button class="fav-btn ${isFav(g.appid)?'on':''}" onclick="toggleFav(${g.appid},event)" title="Favorit">${isFav(g.appid)?'★':'☆'}</button>`:''}
       </div>
       <div class="body">
         <h3>${g.title}</h3>
@@ -589,7 +614,7 @@ function renderGrid(){
     const need=Math.max(0,(list.length<8?12:4));
     $('#grid').insertAdjacentHTML('beforeend','<div class="skel"></div>'.repeat(need));
   }
-  if(!list.length && !LOADING)$('#grid').innerHTML='<div class="empty" style="grid-column:1/-1"><div class="big">🔍</div>Keine Spiele gefunden.</div>';
+  if(!list.length && !LOADING)$('#grid').innerHTML=`<div class="empty" style="grid-column:1/-1"><div class="big">${FAV_ONLY?'★':'🔍'}</div>${FAV_ONLY?'Noch keine Favoriten – tippe das ☆ auf einem Spiel.':'Keine Spiele gefunden.'}</div>`;
   const rn=$('#region-note');
   if(rn)rn.innerHTML=`Deine Region: ${flag(USER_REGION)} <select class="region-sel" onchange="setRegion(this.value)">${Object.entries(COUNTRIES).map(([code,info])=>`<option value="${code}" ${code===USER_REGION?'selected':''}>${info.name}</option>`).join('')}</select> · Ersparnis & Vergleichspreis beziehen sich auf dein Land.`;
   const sent=$('#sentinel');
@@ -621,6 +646,7 @@ function openGame(id,edId){
     <div class="modal-head">
       <div class="ico" style="${(g.image||g.appid)?`background-image:url('${g.image||`https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg`}');background-size:cover;background-position:center`:`background:linear-gradient(135deg,${g.color}44,${g.color}11);color:${g.color}`}">${(g.image||g.appid)?'':g.emoji}</div>
       <div><h2>${g.title}</h2><div class="meta">${g.genre} · ${ref.code===best.code?'günstigstes Land = dein Land':`in deinem Land (${ref.code}) ${eur(ref.price)} · ${saving}% sparen`}</div></div>
+      ${g.appid?`<button class="fav-head ${isFav(g.appid)?'on':''}" onclick="toggleFav(${g.appid},event)" title="Favorit">${isFav(g.appid)?'★':'☆'}</button>`:''}
       <button class="close" onclick="closeModal()">×</button>
     </div>
     <div class="modal-body">
@@ -641,6 +667,7 @@ function openGame(id,edId){
       <div id="itad-extra"></div>
     </div>`;
   $('#overlay').classList.add('open');
+  try{ if(g.appid) history.replaceState(null,'','?game='+g.appid); }catch{}
   loadItad(g.appid);
 }
 /* Lädt echten Preisverlauf + andere Shops (IsThereAnyDeal), falls verfügbar */
@@ -671,7 +698,7 @@ async function loadItad(appid){
   el.innerHTML=html;
   attachCharts();
 }
-function closeModal(){$('#overlay').classList.remove('open')}
+function closeModal(){$('#overlay').classList.remove('open');try{history.replaceState(null,'',location.pathname);}catch{}}
 $('#overlay').onclick=e=>{if(e.target.id==='overlay')closeModal()};
 
 /* SVG sparkline chart */
@@ -850,10 +877,18 @@ function onSearchInput(){
 }
 document.addEventListener('click',e=>{ if(!e.target.closest('.search')) $('#suggest').classList.remove('open'); });
 
+/* ---------------- Cookie-Hinweis ---------------- */
+function initConsent(){ try{ if(!localStorage.getItem('rp_consent')){ const c=$('#consent'); if(c)c.style.display='flex'; } }catch{} }
+function acceptConsent(){ try{localStorage.setItem('rp_consent','1');}catch{} const c=$('#consent'); if(c)c.style.display='none'; }
+
 /* ---------------- Init ---------------- */
 $('#search').addEventListener('input',onSearchInput);
 $('#sort').addEventListener('input',renderGrid);
-loadGames();
+initConsent();
+loadGames().then(()=>{
+  const id=new URLSearchParams(location.search).get('game');
+  if(id) pickGame(+id);   // Direkt-Link: Spiel öffnen
+});
 </script>
 </body>
 </html>
