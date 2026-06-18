@@ -105,7 +105,7 @@
   .sug{display:flex;align-items:center;gap:12px;padding:9px 12px;cursor:pointer;border-bottom:1px solid var(--border)}
   .sug:last-child{border-bottom:none}
   .sug:hover{background:var(--surface-2)}
-  .sug img{width:54px;height:25px;object-fit:cover;border-radius:5px;flex-shrink:0;background:var(--surface-2)}
+  .sug img{width:54px;height:25px;object-fit:cover;border-radius:5px;flex-shrink:0;background:var(--surface-2);pointer-events:none}
   .sug span{font-size:14px;font-weight:600}
   .sug small{color:var(--muted);font-weight:400;margin-left:auto;font-size:12px}
   select,.btn{
@@ -142,7 +142,7 @@
   .consent a{color:var(--accent)}
   .consent .btn-primary{padding:9px 18px;border-radius:10px;font-size:14px}
   .thumb{height:130px;position:relative;display:grid;place-items:center;font-size:42px;font-weight:800;color:rgba(255,255,255,.85);overflow:hidden}
-  .thumb .cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .thumb .cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;pointer-events:none;user-select:none;-webkit-user-drag:none}
   .thumb .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.55));z-index:2;pointer-events:none}
   .thumb .emoji{position:relative;z-index:0}
   .thumb .disc{
@@ -592,7 +592,7 @@ function renderGrid(){
     return `<div class="card" onclick="openGame(${g.id})">
       <div class="thumb" style="background:linear-gradient(135deg,${g.color}33,${g.color}0a)">
         <span class="emoji" style="color:${g.color}">${g.emoji}</span>
-        ${img?`<img class="cover" src="${img}" alt="" loading="lazy" onerror="this.remove()">`:''}
+        ${img?`<img class="cover" src="${img}" alt="" loading="lazy" draggable="false" onerror="this.remove()">`:''}
         <span class="ov"></span>
         <span class="disc" style="${isHere?'background:var(--accent);color:#fff':''}">${isHere?'BESTE REGION':'-'+saving+'%'}</span>
         <span class="flag" title="${c.name}">${flag(g.best.code,16)} ${g.best.code}</span>
