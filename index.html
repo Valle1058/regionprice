@@ -135,7 +135,9 @@
   .loadmore.done{color:var(--muted);opacity:.7}
   .thumb .fav-btn{position:absolute;top:8px;right:10px;z-index:3;background:rgba(0,0,0,.45);border:none;color:#fff;font-size:16px;width:30px;height:30px;border-radius:8px;cursor:pointer;line-height:1;backdrop-filter:blur(2px)}
   .thumb .fav-btn.on{color:#ffd166}
-  .fav-head{margin-left:auto;background:var(--surface-2);border:1px solid var(--border);color:var(--muted);font-size:18px;width:38px;height:38px;border-radius:10px;cursor:pointer;flex-shrink:0}
+  .head-actions{margin-left:auto;display:flex;gap:8px;align-items:center;flex-shrink:0}
+  .act-btn{background:var(--surface-2);border:1px solid var(--border);color:var(--muted);font-size:16px;width:38px;height:38px;border-radius:10px;cursor:pointer}
+  .act-btn:hover{color:var(--text);border-color:#3b4250}
   .fav-head.on{color:#ffd166;border-color:#ffd166}
   .btn.active{border-color:var(--accent);color:var(--accent)}
   .consent{position:fixed;bottom:0;left:0;right:0;z-index:90;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;background:rgba(19,22,30,.97);border-top:1px solid var(--border);padding:14px 18px;font-size:13px;color:var(--muted);backdrop-filter:blur(8px)}
@@ -322,6 +324,15 @@
         <option value="name">Name A–Z</option>
       </select>
       <button class="btn" id="favBtn" onclick="toggleFavFilter()">☆ Favoriten</button>
+      <select id="curSel" onchange="setCurrency(this.value)" title="Anzeige-Währung">
+        <option value="EUR">€ EUR</option>
+        <option value="USD">$ USD</option>
+        <option value="GBP">£ GBP</option>
+        <option value="CHF">CHF</option>
+        <option value="PLN">zł PLN</option>
+        <option value="TRY">₺ TRY</option>
+        <option value="BRL">R$ BRL</option>
+      </select>
     </div>
     <div id="region-note" style="margin:-14px 0 22px;font-size:13px;color:var(--muted)"></div>
 
@@ -533,7 +544,15 @@ const store={
 /* ---------------- Helpers ---------------- */
 const IG_AFF="gamer-346292"; // Instant-Gaming Affiliate-Kennung
 const $=s=>document.querySelector(s);
-const eur=n=>n.toFixed(2).replace('.',',')+" €";
+/* ---- Anzeige-Währung (alle Preise sind intern in EUR) ---- */
+let DISPLAY_CUR=localStorage.getItem('rp_cur')||'EUR';
+let RATES={EUR:1};
+const CUR_LOCALE={EUR:'de-DE',USD:'en-US',GBP:'en-GB',CHF:'de-CH',PLN:'pl-PL',TRY:'tr-TR',BRL:'pt-BR'};
+function eur(n){ const v=n*(RATES[DISPLAY_CUR]||1);
+  try{ return new Intl.NumberFormat(CUR_LOCALE[DISPLAY_CUR]||'de-DE',{style:'currency',currency:DISPLAY_CUR,maximumFractionDigits:2}).format(v); }
+  catch{ return v.toFixed(2)+' '+DISPLAY_CUR; } }
+async function fetchRates(){ try{ const d=await (await fetch('https://open.er-api.com/v6/latest/EUR')).json(); if(d&&d.rates){ RATES=d.rates; RATES.EUR=1; if(DISPLAY_CUR!=='EUR') renderGrid(); } }catch{} }
+async function setCurrency(cur){ DISPLAY_CUR=cur; try{localStorage.setItem('rp_cur',cur);}catch{} renderGrid(); if($('#overlay').classList.contains('open')&&MODAL_GAME) openGame(MODAL_GAME.id,document.querySelector('.edition-sel')?.value); }
 /* lokaler Preis in Landeswährung, z.B. "1.099 TRY" */
 const localMoney=(v,cur)=>v.toLocaleString('de-DE',{minimumFractionDigits:0,maximumFractionDigits:2})+' '+cur;
 /* Region manuell umstellen */
@@ -646,8 +665,11 @@ function openGame(id,edId){
     <div class="modal-head">
       <div class="ico" style="${(g.image||g.appid)?`background-image:url('${g.image||`https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg`}');background-size:cover;background-position:center`:`background:linear-gradient(135deg,${g.color}44,${g.color}11);color:${g.color}`}">${(g.image||g.appid)?'':g.emoji}</div>
       <div><h2>${g.title}</h2><div class="meta">${g.genre} · ${ref.code===best.code?'günstigstes Land = dein Land':`in deinem Land (${ref.code}) ${eur(ref.price)} · ${saving}% sparen`}</div></div>
-      ${g.appid?`<button class="fav-head ${isFav(g.appid)?'on':''}" onclick="toggleFav(${g.appid},event)" title="Favorit">${isFav(g.appid)?'★':'☆'}</button>`:''}
-      <button class="close" onclick="closeModal()">×</button>
+      <div class="head-actions">
+        ${g.appid?`<button class="act-btn" onclick="shareGame(${g.appid},'${(g.title||'').replace(/'/g,'')}')" title="Teilen">🔗</button>`:''}
+        ${g.appid?`<button class="act-btn fav-head ${isFav(g.appid)?'on':''}" onclick="toggleFav(${g.appid},event)" title="Favorit">${isFav(g.appid)?'★':'☆'}</button>`:''}
+        <button class="close" onclick="closeModal()">×</button>
+      </div>
     </div>
     <div class="modal-body">
       ${editionPicker}
@@ -692,6 +714,13 @@ async function loadItad(appid){
   attachCharts();
 }
 function closeModal(){$('#overlay').classList.remove('open');try{history.replaceState(null,'',location.pathname);}catch{}}
+/* Teilen: Direkt-Link kopieren oder System-Teilen */
+function shareGame(appid,title){
+  const url=location.origin+'/game/'+appid;
+  if(navigator.share){ navigator.share({title:(title||'Spiel')+' – RegionPrice',url}).catch(()=>{}); }
+  else if(navigator.clipboard){ navigator.clipboard.writeText(url).then(()=>toast('🔗 Link kopiert')).catch(()=>toast(url)); }
+  else { toast(url); }
+}
 $('#overlay').onclick=e=>{if(e.target.id==='overlay')closeModal()};
 
 /* SVG sparkline chart */
@@ -878,6 +907,8 @@ function acceptConsent(){ try{localStorage.setItem('rp_consent','1');}catch{} co
 $('#search').addEventListener('input',onSearchInput);
 $('#sort').addEventListener('input',renderGrid);
 initConsent();
+const _cs=$('#curSel'); if(_cs)_cs.value=DISPLAY_CUR;
+fetchRates();
 loadGames().then(()=>{
   const id=new URLSearchParams(location.search).get('game');
   if(id) pickGame(+id);   // Direkt-Link: Spiel öffnen

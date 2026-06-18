@@ -2,5 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
     "api/*.js": { "maxDuration": 30 }
-  }
+  },
+  "rewrites": [
+    { "source": "/game/:appid", "destination": "/api/share?appid=:appid" }
+  ]
 }
