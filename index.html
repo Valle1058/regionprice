@@ -685,15 +685,8 @@ async function loadItad(appid){
         <span>Tief: <b style="color:var(--green)">${eur(min)}</b></span><span>Hoch: <b style="color:var(--red)">${eur(max)}</b></span>
         <span style="margin-left:auto">↔ Fahre über die Kurve</span></div>`;
   }
-  if(d.deals&&d.deals.length){
-    html+=`<div class="section-title" style="margin-top:22px">🏪 Andere Shops (EUR)</div>
-      <table class="ctable">${d.deals.map((s,i)=>`<tr>
-        <td>🏪</td>
-        <td class="c-name">${s.shop}${s.cut>0?` <span class="sale">-${s.cut}%</span>`:''}</td>
-        <td class="c-price" style="color:${i===0?'var(--green)':'inherit'}">${eur(s.price)}</td>
-        <td style="text-align:right"><a class="buy" href="${s.url}" target="_blank" rel="noopener">Ansehen ↗</a></td>
-      </tr>`).join('')}</table>
-      <p class="meta" style="margin-top:8px">Verlauf & Shops von IsThereAnyDeal</p>`;
+  if(d.history&&d.history.length>1){
+    html+=`<p class="meta" style="margin-top:8px">Preisverlauf von IsThereAnyDeal</p>`;
   }
   el.innerHTML=html;
   attachCharts();
