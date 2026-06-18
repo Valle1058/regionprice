@@ -651,8 +651,8 @@ function openGame(id,edId){
     </div>
     <div class="modal-body">
       ${editionPicker}
-      <div class="section-title">Preis pro Land${sel?` · ${sel.label}`:''}</div>
-      <table class="ctable">${cs.map((c,i)=>`
+      <div class="section-title">Günstigste Länder${sel?` · ${sel.label}`:''}</div>
+      <table class="ctable">${cs.slice(0,8).map((c,i)=>`
         <tr>
           <td class="c-flag">${flag(c.code,18)}</td>
           <td><span class="c-name">${c.code} · ${COUNTRIES[c.code].name}</span>${i===0?'<span class="badge-best">GÜNSTIGSTES</span>':''}<div class="c-shop">${localMoney(c.localPrice,c.currency)}</div></td>
