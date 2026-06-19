@@ -7,11 +7,11 @@ window.GAMES_DATA = [
     "emoji": "🎲",
     "color": "#36d399",
     "base": 6.15,
-    "disc": -54,
+    "disc": -53,
     "countries": [
       {
         "code": "IN",
-        "price": 2.82,
+        "price": 2.86,
         "localPrice": 309,
         "currency": "INR",
         "discount": 0,
@@ -19,13 +19,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 2.82
+            "p": 2.86
           }
         ]
       },
       {
         "code": "ID",
-        "price": 2.85,
+        "price": 2.88,
         "localPrice": 58499,
         "currency": "IDR",
         "discount": 0,
@@ -33,13 +33,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 2.85
+            "p": 2.88
           }
         ]
       },
       {
         "code": "PH",
-        "price": 2.93,
+        "price": 2.95,
         "localPrice": 205,
         "currency": "PHP",
         "discount": 0,
@@ -47,13 +47,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 2.93
+            "p": 2.95
           }
         ]
       },
       {
         "code": "UA",
-        "price": 2.98,
+        "price": 3,
         "localPrice": 155,
         "currency": "UAH",
         "discount": 0,
@@ -61,13 +61,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 2.98
+            "p": 3
           }
         ]
       },
       {
         "code": "VN",
-        "price": 3.04,
+        "price": 3.05,
         "localPrice": 92000,
         "currency": "VND",
         "discount": 0,
@@ -75,43 +75,15 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.04
+            "p": 3.05
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 3.41,
+        "price": 3.45,
         "localPrice": 1930,
         "currency": "KZT",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 3.41
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 3.45,
-        "localPrice": 3.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 3.45
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 3.45,
-        "localPrice": 3.99,
-        "currency": "USD",
         "discount": 0,
         "shop": "Steam",
         "shops": [
@@ -136,8 +108,36 @@ window.GAMES_DATA = [
         ]
       },
       {
+        "code": "TR",
+        "price": 3.48,
+        "localPrice": 3.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 3.48
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 3.48,
+        "localPrice": 3.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 3.48
+          }
+        ]
+      },
+      {
         "code": "BR",
-        "price": 3.99,
+        "price": 3.98,
         "localPrice": 23.49,
         "currency": "BRL",
         "discount": 0,
@@ -145,13 +145,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.99
+            "p": 3.98
           }
         ]
       },
       {
         "code": "CL",
-        "price": 4.03,
+        "price": 4.06,
         "localPrice": 4149,
         "currency": "CLP",
         "discount": 0,
@@ -159,13 +159,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.03
+            "p": 4.06
           }
         ]
       },
       {
         "code": "CO",
-        "price": 4.14,
+        "price": 4.15,
         "localPrice": 16499,
         "currency": "COP",
         "discount": 0,
@@ -173,13 +173,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.14
+            "p": 4.15
           }
         ]
       },
       {
         "code": "US",
-        "price": 5.18,
+        "price": 5.22,
         "localPrice": 5.99,
         "currency": "USD",
         "discount": 0,
@@ -187,13 +187,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 5.18
+            "p": 5.22
           }
         ]
       },
       {
         "code": "PL",
-        "price": 6.01,
+        "price": 5.99,
         "localPrice": 25.49,
         "currency": "PLN",
         "discount": 0,
@@ -201,7 +201,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 6.01
+            "p": 5.99
           }
         ]
       },
@@ -222,10 +222,454 @@ window.GAMES_DATA = [
     ]
   },
   {
+    "appid": 1091500,
+    "title": "Cyberpunk 2077",
+    "genre": "Rollenspiel",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/e9047d8ec47ae3d94bb8b464fb0fc9e9972b4ac7/header.jpg?t=1769690377",
+    "emoji": "🎮",
+    "color": "#ffd166",
+    "base": 17.99,
+    "disc": -55,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 8.12,
+        "localPrice": 419,
+        "currency": "UAH",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.12
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 8.31,
+        "localPrice": 899,
+        "currency": "INR",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.31
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 9.65,
+        "localPrice": 5399,
+        "currency": "KZT",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.65
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 9.85,
+        "localPrice": 297000,
+        "currency": "VND",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.85
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 10.15,
+        "localPrice": 59.97,
+        "currency": "BRL",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.15
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 10.33,
+        "localPrice": 209999,
+        "currency": "IDR",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.33
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 11.22,
+        "localPrice": 779.7,
+        "currency": "PHP",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.22
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 11.73,
+        "localPrice": 11999,
+        "currency": "CLP",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.73
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 11.76,
+        "localPrice": 13.49,
+        "currency": "USD",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.76
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 11.76,
+        "localPrice": 13.49,
+        "currency": "USD",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.76
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 12.73,
+        "localPrice": 239.7,
+        "currency": "ZAR",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.73
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 14.02,
+        "localPrice": 59.7,
+        "currency": "PLN",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.02
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 15.03,
+        "localPrice": 59700,
+        "currency": "COP",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.03
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 15.68,
+        "localPrice": 17.99,
+        "currency": "USD",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.68
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 17.99,
+        "localPrice": 17.99,
+        "currency": "EUR",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 1297900,
+    "title": "Gothic 1 Remake",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1297900/6bc8c205a107e552f14631524f25cdf88743515a/header.jpg?t=1780965412",
+    "emoji": "🎯",
+    "color": "#ffd166",
+    "base": 49.99,
+    "disc": -44,
+    "countries": [
+      {
+        "code": "ID",
+        "price": 28.23,
+        "localPrice": 573999,
+        "currency": "IDR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.23
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 28.93,
+        "localPrice": 2010,
+        "currency": "PHP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.93
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 28.95,
+        "localPrice": 3130,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.95
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 29.17,
+        "localPrice": 1505,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.17
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 29.52,
+        "localPrice": 556,
+        "currency": "ZAR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.52
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 29.63,
+        "localPrice": 33.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.63
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 29.63,
+        "localPrice": 33.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.63
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 29.69,
+        "localPrice": 895000,
+        "currency": "VND",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.69
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 29.73,
+        "localPrice": 30400,
+        "currency": "CLP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.73
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 29.84,
+        "localPrice": 16700,
+        "currency": "KZT",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.84
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 30.47,
+        "localPrice": 179.99,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.47
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 31.44,
+        "localPrice": 124900,
+        "currency": "COP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 31.44
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 43.58,
+        "localPrice": 49.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 43.58
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 49.32,
+        "localPrice": 209.99,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 49.32
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 49.99,
+        "localPrice": 49.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 49.99
+          }
+        ]
+      }
+    ]
+  },
+  {
     "appid": 381210,
     "title": "Dead by Daylight",
     "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/66727e8249aae119400352d4b1d84928f924939c/header_alt_assets_8.jpg?t=1781793413",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/66727e8249aae119400352d4b1d84928f924939c/header_alt_assets_8.jpg?t=1781795618",
     "emoji": "🎯",
     "color": "#36d399",
     "base": 7.99,
@@ -233,7 +677,7 @@ window.GAMES_DATA = [
     "countries": [
       {
         "code": "UA",
-        "price": 3.29,
+        "price": 3.31,
         "localPrice": 171,
         "currency": "UAH",
         "discount": 60,
@@ -241,27 +685,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.29
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 4.23,
-        "localPrice": 463,
-        "currency": "INR",
-        "discount": 60,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 4.23
+            "p": 3.31
           }
         ]
       },
       {
         "code": "PH",
-        "price": 4.23,
+        "price": 4.26,
         "localPrice": 295.99,
         "currency": "PHP",
         "discount": 60,
@@ -269,15 +699,15 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.23
+            "p": 4.26
           }
         ]
       },
       {
-        "code": "ID",
+        "code": "IN",
         "price": 4.28,
-        "localPrice": 87956,
-        "currency": "IDR",
+        "localPrice": 463,
+        "currency": "INR",
         "discount": 60,
         "shop": "Steam",
         "shops": [
@@ -288,8 +718,22 @@ window.GAMES_DATA = [
         ]
       },
       {
+        "code": "ID",
+        "price": 4.33,
+        "localPrice": 87956,
+        "currency": "IDR",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 4.33
+          }
+        ]
+      },
+      {
         "code": "KZ",
-        "price": 4.36,
+        "price": 4.41,
         "localPrice": 2470,
         "currency": "KZT",
         "discount": 60,
@@ -297,13 +741,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.36
+            "p": 4.41
           }
         ]
       },
       {
         "code": "VN",
-        "price": 4.49,
+        "price": 4.51,
         "localPrice": 136000,
         "currency": "VND",
         "discount": 60,
@@ -311,13 +755,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.49
+            "p": 4.51
           }
         ]
       },
       {
         "code": "CL",
-        "price": 4.66,
+        "price": 4.69,
         "localPrice": 4797,
         "currency": "CLP",
         "discount": 60,
@@ -325,13 +769,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.66
+            "p": 4.69
           }
         ]
       },
       {
         "code": "BR",
-        "price": 4.75,
+        "price": 4.74,
         "localPrice": 27.99,
         "currency": "BRL",
         "discount": 60,
@@ -339,13 +783,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.75
+            "p": 4.74
           }
         ]
       },
       {
         "code": "TR",
-        "price": 5.18,
+        "price": 5.22,
         "localPrice": 5.99,
         "currency": "USD",
         "discount": 60,
@@ -353,13 +797,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 5.18
+            "p": 5.22
           }
         ]
       },
       {
         "code": "AR",
-        "price": 5.18,
+        "price": 5.22,
         "localPrice": 5.99,
         "currency": "USD",
         "discount": 60,
@@ -367,7 +811,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 5.18
+            "p": 5.22
           }
         ]
       },
@@ -387,7 +831,7 @@ window.GAMES_DATA = [
       },
       {
         "code": "CO",
-        "price": 6.25,
+        "price": 6.28,
         "localPrice": 24931,
         "currency": "COP",
         "discount": 60,
@@ -395,13 +839,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 6.25
+            "p": 6.28
           }
         ]
       },
       {
         "code": "US",
-        "price": 6.92,
+        "price": 6.97,
         "localPrice": 7.99,
         "currency": "USD",
         "discount": 60,
@@ -409,13 +853,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 6.92
+            "p": 6.97
           }
         ]
       },
       {
         "code": "PL",
-        "price": 7.73,
+        "price": 7.7,
         "localPrice": 32.79,
         "currency": "PLN",
         "discount": 60,
@@ -423,7 +867,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 7.73
+            "p": 7.7
           }
         ]
       },
@@ -449,48 +893,35 @@ window.GAMES_DATA = [
         "countries": [
           {
             "code": "UA",
-            "price": 3.29,
+            "price": 3.31,
             "localPrice": 171,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 3.29
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 4.23,
-            "localPrice": 463,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 4.23
+                "p": 3.31
               }
             ]
           },
           {
             "code": "PH",
-            "price": 4.23,
+            "price": 4.26,
             "localPrice": 295.99,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 4.23
+                "p": 4.26
               }
             ]
           },
           {
-            "code": "ID",
+            "code": "IN",
             "price": 4.28,
-            "localPrice": 87956,
-            "currency": "IDR",
+            "localPrice": 463,
+            "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
@@ -500,80 +931,93 @@ window.GAMES_DATA = [
             ]
           },
           {
+            "code": "ID",
+            "price": 4.33,
+            "localPrice": 87956,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 4.33
+              }
+            ]
+          },
+          {
             "code": "KZ",
-            "price": 4.36,
+            "price": 4.41,
             "localPrice": 2470,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 4.36
+                "p": 4.41
               }
             ]
           },
           {
             "code": "VN",
-            "price": 4.49,
+            "price": 4.51,
             "localPrice": 136000,
             "currency": "VND",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 4.49
+                "p": 4.51
               }
             ]
           },
           {
             "code": "CL",
-            "price": 4.66,
+            "price": 4.69,
             "localPrice": 4797,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 4.66
+                "p": 4.69
               }
             ]
           },
           {
             "code": "BR",
-            "price": 4.75,
+            "price": 4.74,
             "localPrice": 27.99,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 4.75
+                "p": 4.74
               }
             ]
           },
           {
             "code": "TR",
-            "price": 5.18,
+            "price": 5.22,
             "localPrice": 5.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 5.18
+                "p": 5.22
               }
             ]
           },
           {
             "code": "AR",
-            "price": 5.18,
+            "price": 5.22,
             "localPrice": 5.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 5.18
+                "p": 5.22
               }
             ]
           },
@@ -592,40 +1036,40 @@ window.GAMES_DATA = [
           },
           {
             "code": "CO",
-            "price": 6.25,
+            "price": 6.28,
             "localPrice": 24931,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 6.25
+                "p": 6.28
               }
             ]
           },
           {
             "code": "US",
-            "price": 6.92,
+            "price": 6.97,
             "localPrice": 7.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 6.92
+                "p": 6.97
               }
             ]
           },
           {
             "code": "PL",
-            "price": 7.73,
+            "price": 7.7,
             "localPrice": 32.79,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 7.73
+                "p": 7.7
               }
             ]
           },
@@ -651,183 +1095,183 @@ window.GAMES_DATA = [
         "countries": [
           {
             "code": "UA",
-            "price": 14.59,
+            "price": 14.71,
             "localPrice": 759,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 14.59
+                "p": 14.71
               }
             ]
           },
           {
             "code": "PH",
-            "price": 18.5,
+            "price": 18.64,
             "localPrice": 1294.99,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 18.5
+                "p": 18.64
               }
             ]
           },
           {
             "code": "IN",
-            "price": 18.55,
+            "price": 18.76,
             "localPrice": 2029,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 18.55
+                "p": 18.76
               }
             ]
           },
           {
             "code": "ID",
-            "price": 18.75,
+            "price": 18.93,
             "localPrice": 384945,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 18.75
+                "p": 18.93
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 19.09,
+            "price": 19.32,
             "localPrice": 10813,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 19.09
+                "p": 19.32
               }
             ]
           },
           {
             "code": "VN",
-            "price": 19.66,
+            "price": 19.74,
             "localPrice": 595000,
             "currency": "VND",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 19.66
+                "p": 19.74
               }
             ]
           },
           {
             "code": "CL",
-            "price": 20.42,
+            "price": 20.53,
             "localPrice": 20997,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 20.42
+                "p": 20.53
               }
             ]
           },
           {
             "code": "BR",
-            "price": 20.8,
+            "price": 20.74,
             "localPrice": 122.49,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 20.8
+                "p": 20.74
               }
             ]
           },
           {
             "code": "TR",
-            "price": 22.71,
+            "price": 22.88,
             "localPrice": 26.24,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 22.71
+                "p": 22.88
               }
             ]
           },
           {
             "code": "AR",
-            "price": 22.71,
+            "price": 22.88,
             "localPrice": 26.24,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 22.71
+                "p": 22.88
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 26.96,
+            "price": 26.94,
             "localPrice": 507.49,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 26.96
+                "p": 26.94
               }
             ]
           },
           {
             "code": "CO",
-            "price": 27.35,
+            "price": 27.47,
             "localPrice": 109114,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 27.35
+                "p": 27.47
               }
             ]
           },
           {
             "code": "US",
-            "price": 30.29,
+            "price": 30.5,
             "localPrice": 34.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 30.29
+                "p": 30.5
               }
             ]
           },
           {
             "code": "PL",
-            "price": 33.7,
+            "price": 33.59,
             "localPrice": 142.99,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 33.7
+                "p": 33.59
               }
             ]
           },
@@ -850,240 +1294,18 @@ window.GAMES_DATA = [
     ]
   },
   {
-    "appid": 1297900,
-    "title": "Gothic 1 Remake",
-    "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1297900/6bc8c205a107e552f14631524f25cdf88743515a/header.jpg?t=1780965412",
-    "emoji": "🎯",
-    "color": "#ffd166",
-    "base": 49.99,
-    "disc": -44,
-    "countries": [
-      {
-        "code": "ID",
-        "price": 27.96,
-        "localPrice": 573999,
-        "currency": "IDR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 27.96
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 28.61,
-        "localPrice": 3130,
-        "currency": "INR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 28.61
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 28.72,
-        "localPrice": 2010,
-        "currency": "PHP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 28.72
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 28.94,
-        "localPrice": 1505,
-        "currency": "UAH",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 28.94
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 29.42,
-        "localPrice": 33.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.42
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 29.42,
-        "localPrice": 33.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.42
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 29.48,
-        "localPrice": 16700,
-        "currency": "KZT",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.48
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 29.54,
-        "localPrice": 556,
-        "currency": "ZAR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.54
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 29.56,
-        "localPrice": 30400,
-        "currency": "CLP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.56
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 29.57,
-        "localPrice": 895000,
-        "currency": "VND",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.57
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 30.56,
-        "localPrice": 179.99,
-        "currency": "BRL",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 30.56
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 31.3,
-        "localPrice": 124900,
-        "currency": "COP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 31.3
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 43.27,
-        "localPrice": 49.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 43.27
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 49.5,
-        "localPrice": 209.99,
-        "currency": "PLN",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 49.5
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 49.99,
-        "localPrice": 49.99,
-        "currency": "EUR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 49.99
-          }
-        ]
-      }
-    ]
-  },
-  {
     "appid": 2694490,
     "title": "Path of Exile 2",
     "genre": "Action",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2694490/24eeddcbda17903f03d819588757e40845f8115f/header.jpg?t=1781573777",
     "emoji": "🎯",
     "color": "#36d399",
-    "base": 33.21,
+    "base": 33.36,
     "disc": -65,
     "countries": [
       {
         "code": "UA",
-        "price": 11.54,
+        "price": 11.63,
         "localPrice": 600,
         "currency": "UAH",
         "discount": 0,
@@ -1091,13 +1313,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 11.54
+            "p": 11.63
           }
         ]
       },
       {
         "code": "BR",
-        "price": 13.55,
+        "price": 13.51,
         "localPrice": 79.8,
         "currency": "BRL",
         "discount": 0,
@@ -1105,13 +1327,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 13.55
+            "p": 13.51
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 13.94,
+        "price": 14.11,
         "localPrice": 7896,
         "currency": "KZT",
         "discount": 0,
@@ -1119,13 +1341,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 13.94
+            "p": 14.11
           }
         ]
       },
       {
         "code": "IN",
-        "price": 23.14,
+        "price": 23.42,
         "localPrice": 2532,
         "currency": "INR",
         "discount": 0,
@@ -1133,13 +1355,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 23.14
+            "p": 23.42
           }
         ]
       },
       {
         "code": "ID",
-        "price": 23.29,
+        "price": 23.52,
         "localPrice": 478185,
         "currency": "IDR",
         "discount": 0,
@@ -1147,13 +1369,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 23.29
+            "p": 23.52
           }
         ]
       },
       {
         "code": "PH",
-        "price": 25.26,
+        "price": 25.44,
         "localPrice": 1767.5,
         "currency": "PHP",
         "discount": 0,
@@ -1161,13 +1383,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 25.26
+            "p": 25.44
           }
         ]
       },
       {
         "code": "TR",
-        "price": 25.96,
+        "price": 26.14,
         "localPrice": 29.99,
         "currency": "USD",
         "discount": 0,
@@ -1175,13 +1397,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 25.96
+            "p": 26.14
           }
         ]
       },
       {
         "code": "AR",
-        "price": 25.96,
+        "price": 26.14,
         "localPrice": 29.99,
         "currency": "USD",
         "discount": 0,
@@ -1189,13 +1411,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 25.96
+            "p": 26.14
           }
         ]
       },
       {
         "code": "US",
-        "price": 25.96,
+        "price": 26.14,
         "localPrice": 29.99,
         "currency": "USD",
         "discount": 0,
@@ -1203,7 +1425,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 25.96
+            "p": 26.14
           }
         ]
       },
@@ -1222,22 +1444,8 @@ window.GAMES_DATA = [
         ]
       },
       {
-        "code": "CL",
-        "price": 28.77,
-        "localPrice": 29590,
-        "currency": "CLP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 28.77
-          }
-        ]
-      },
-      {
         "code": "ZA",
-        "price": 28.86,
+        "price": 28.84,
         "localPrice": 543.26,
         "currency": "ZAR",
         "discount": 0,
@@ -1245,13 +1453,27 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 28.86
+            "p": 28.84
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 28.93,
+        "localPrice": 29590,
+        "currency": "CLP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.93
           }
         ]
       },
       {
         "code": "PL",
-        "price": 29.43,
+        "price": 29.33,
         "localPrice": 124.87,
         "currency": "PLN",
         "discount": 0,
@@ -1259,13 +1481,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 29.43
+            "p": 29.33
           }
         ]
       },
       {
         "code": "CO",
-        "price": 33.21,
+        "price": 33.36,
         "localPrice": 132526,
         "currency": "COP",
         "discount": 0,
@@ -1273,7 +1495,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 33.21
+            "p": 33.36
           }
         ]
       }
@@ -1283,7 +1505,7 @@ window.GAMES_DATA = [
     "appid": 3483510,
     "title": "The Adventures of Elliot: The Millennium Tales",
     "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3483510/3c96b19255b69aa9b2e131dda3e19d622b0d6562/header.jpg?t=1779674534",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3483510/3c96b19255b69aa9b2e131dda3e19d622b0d6562/header.jpg?t=1781812674",
     "emoji": "🎯",
     "color": "#f472b6",
     "base": 59.99,
@@ -1291,7 +1513,7 @@ window.GAMES_DATA = [
     "countries": [
       {
         "code": "UA",
-        "price": 34.59,
+        "price": 34.87,
         "localPrice": 1799,
         "currency": "UAH",
         "discount": 0,
@@ -1299,13 +1521,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 34.59
+            "p": 34.87
           }
         ]
       },
       {
         "code": "IN",
-        "price": 36.55,
+        "price": 36.98,
         "localPrice": 3999,
         "currency": "INR",
         "discount": 0,
@@ -1313,13 +1535,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 36.55
+            "p": 36.98
           }
         ]
       },
       {
         "code": "PH",
-        "price": 40,
+        "price": 40.28,
         "localPrice": 2799,
         "currency": "PHP",
         "discount": 0,
@@ -1327,13 +1549,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 40
+            "p": 40.28
           }
         ]
       },
       {
         "code": "ID",
-        "price": 42.81,
+        "price": 43.23,
         "localPrice": 879000,
         "currency": "IDR",
         "discount": 0,
@@ -1341,13 +1563,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 42.81
+            "p": 43.23
           }
         ]
       },
       {
         "code": "TR",
-        "price": 43.27,
+        "price": 43.58,
         "localPrice": 49.99,
         "currency": "USD",
         "discount": 0,
@@ -1355,13 +1577,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 43.27
+            "p": 43.58
           }
         ]
       },
       {
         "code": "AR",
-        "price": 43.27,
+        "price": 43.58,
         "localPrice": 49.99,
         "currency": "USD",
         "discount": 0,
@@ -1369,13 +1591,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 43.27
+            "p": 43.58
           }
         ]
       },
       {
         "code": "CL",
-        "price": 48.62,
+        "price": 48.89,
         "localPrice": 49999,
         "currency": "CLP",
         "discount": 0,
@@ -1383,13 +1605,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 48.62
+            "p": 48.89
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 49.43,
+        "price": 50.04,
         "localPrice": 28000,
         "currency": "KZT",
         "discount": 0,
@@ -1397,13 +1619,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 49.43
+            "p": 50.04
           }
         ]
       },
       {
         "code": "US",
-        "price": 51.93,
+        "price": 52.3,
         "localPrice": 59.99,
         "currency": "USD",
         "discount": 0,
@@ -1411,13 +1633,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 51.93
+            "p": 52.3
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 53.07,
+        "price": 53.04,
         "localPrice": 999,
         "currency": "ZAR",
         "discount": 0,
@@ -1425,13 +1647,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 53.07
+            "p": 53.04
           }
         ]
       },
       {
         "code": "CO",
-        "price": 54.64,
+        "price": 54.88,
         "localPrice": 218000,
         "currency": "COP",
         "discount": 0,
@@ -1439,13 +1661,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 54.64
+            "p": 54.88
           }
         ]
       },
       {
         "code": "BR",
-        "price": 57.72,
+        "price": 57.55,
         "localPrice": 339.9,
         "currency": "BRL",
         "discount": 0,
@@ -1453,13 +1675,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 57.72
+            "p": 57.55
           }
         ]
       },
       {
         "code": "PL",
-        "price": 58.69,
+        "price": 58.49,
         "localPrice": 249,
         "currency": "PLN",
         "discount": 0,
@@ -1467,7 +1689,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 58.69
+            "p": 58.49
           }
         ]
       },
@@ -1488,175 +1710,175 @@ window.GAMES_DATA = [
     ],
     "editions": [
       {
-        "id": 1509395,
+        "id": 1230320,
         "name": "The Adventures of Elliot: The Millennium Tales",
         "countries": [
           {
             "code": "UA",
-            "price": 34.59,
+            "price": 34.87,
             "localPrice": 1799,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 34.59
+                "p": 34.87
               }
             ]
           },
           {
             "code": "IN",
-            "price": 36.55,
+            "price": 36.98,
             "localPrice": 3999,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 36.55
+                "p": 36.98
               }
             ]
           },
           {
             "code": "PH",
-            "price": 40,
+            "price": 40.28,
             "localPrice": 2799,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 40
+                "p": 40.28
               }
             ]
           },
           {
             "code": "ID",
-            "price": 42.81,
+            "price": 43.23,
             "localPrice": 879000,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 42.81
+                "p": 43.23
               }
             ]
           },
           {
             "code": "TR",
-            "price": 43.27,
+            "price": 43.58,
             "localPrice": 49.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 43.27
+                "p": 43.58
               }
             ]
           },
           {
             "code": "AR",
-            "price": 43.27,
+            "price": 43.58,
             "localPrice": 49.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 43.27
+                "p": 43.58
               }
             ]
           },
           {
             "code": "CL",
-            "price": 48.62,
+            "price": 48.89,
             "localPrice": 49999,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 48.62
+                "p": 48.89
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 49.43,
+            "price": 50.04,
             "localPrice": 28000,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 49.43
+                "p": 50.04
               }
             ]
           },
           {
             "code": "US",
-            "price": 51.93,
+            "price": 52.3,
             "localPrice": 59.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 51.93
+                "p": 52.3
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 53.07,
+            "price": 53.04,
             "localPrice": 999,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 53.07
+                "p": 53.04
               }
             ]
           },
           {
             "code": "CO",
-            "price": 54.64,
+            "price": 54.88,
             "localPrice": 218000,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 54.64
+                "p": 54.88
               }
             ]
           },
           {
             "code": "BR",
-            "price": 57.72,
+            "price": 57.55,
             "localPrice": 339.9,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 57.72
+                "p": 57.55
               }
             ]
           },
           {
             "code": "PL",
-            "price": 58.69,
+            "price": 58.49,
             "localPrice": 249,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 58.69
+                "p": 58.49
               }
             ]
           },
@@ -1677,175 +1899,175 @@ window.GAMES_DATA = [
         "label": "Standard"
       },
       {
-        "id": 1510539,
+        "id": 1510538,
         "name": "The Adventures of Elliot: The Millennium Tales - Digital Deluxe Edition",
         "countries": [
           {
             "code": "UA",
-            "price": 40.55,
+            "price": 40.88,
             "localPrice": 2109,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 40.55
+                "p": 40.88
               }
             ]
           },
           {
             "code": "IN",
-            "price": 43.86,
+            "price": 44.38,
             "localPrice": 4799,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 43.86
+                "p": 44.38
               }
             ]
           },
           {
             "code": "PH",
-            "price": 47.14,
+            "price": 47.48,
             "localPrice": 3299,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 47.14
+                "p": 47.48
               }
             ]
           },
           {
             "code": "ID",
-            "price": 50.12,
+            "price": 50.61,
             "localPrice": 1029000,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 50.12
+                "p": 50.61
               }
             ]
           },
           {
             "code": "TR",
-            "price": 51.93,
+            "price": 52.3,
             "localPrice": 59.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 51.93
+                "p": 52.3
               }
             ]
           },
           {
             "code": "AR",
-            "price": 51.93,
+            "price": 52.3,
             "localPrice": 59.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 51.93
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 58.26,
-            "localPrice": 33000,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 58.26
+                "p": 52.3
               }
             ]
           },
           {
             "code": "CL",
-            "price": 58.34,
+            "price": 58.67,
             "localPrice": 59999,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 58.34
+                "p": 58.67
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 58.97,
+            "localPrice": 33000,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 58.97
               }
             ]
           },
           {
             "code": "US",
-            "price": 60.58,
+            "price": 61.02,
             "localPrice": 69.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 60.58
+                "p": 61.02
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 62.1,
+            "price": 62.06,
             "localPrice": 1169,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 62.1
+                "p": 62.06
               }
             ]
           },
           {
             "code": "CO",
-            "price": 63.91,
+            "price": 64.2,
             "localPrice": 255000,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 63.91
+                "p": 64.2
               }
             ]
           },
           {
             "code": "BR",
-            "price": 67.91,
+            "price": 67.7,
             "localPrice": 399.9,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 67.91
+                "p": 67.7
               }
             ]
           },
           {
             "code": "PL",
-            "price": 68.12,
+            "price": 67.88,
             "localPrice": 289,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 68.12
+                "p": 67.88
               }
             ]
           },
@@ -1868,646 +2090,18 @@ window.GAMES_DATA = [
     ]
   },
   {
-    "appid": 281990,
-    "title": "Stellaris",
-    "genre": "Simulationen",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/281990/a2ea275052f983858e6c8e4969902a5b9900c743/header_alt_assets_12_german.jpg?t=1781784917",
-    "emoji": "🎮",
-    "color": "#f472b6",
-    "base": 14.99,
-    "disc": -48,
-    "countries": [
-      {
-        "code": "UA",
-        "price": 7.77,
-        "localPrice": 404,
-        "currency": "UAH",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.77
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 8.24,
-        "localPrice": 169199,
-        "currency": "IDR",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.24
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 8.57,
-        "localPrice": 599.7,
-        "currency": "PHP",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.57
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 8.6,
-        "localPrice": 941,
-        "currency": "INR",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.6
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 8.64,
-        "localPrice": 261500,
-        "currency": "VND",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.64
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 9.08,
-        "localPrice": 10.49,
-        "currency": "USD",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.08
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 9.08,
-        "localPrice": 10.49,
-        "currency": "USD",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.08
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 9.63,
-        "localPrice": 56.69,
-        "currency": "BRL",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.63
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 10.27,
-        "localPrice": 10560,
-        "currency": "CLP",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.27
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 10.64,
-        "localPrice": 6030,
-        "currency": "KZT",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.64
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 11.85,
-        "localPrice": 47280,
-        "currency": "COP",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 11.85
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 12.16,
-        "localPrice": 228.9,
-        "currency": "ZAR",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 12.16
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 12.98,
-        "localPrice": 14.99,
-        "currency": "USD",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 12.98
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 14.78,
-        "localPrice": 62.69,
-        "currency": "PLN",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 14.78
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 14.99,
-        "localPrice": 14.99,
-        "currency": "EUR",
-        "discount": 70,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 14.99
-          }
-        ]
-      }
-    ],
-    "editions": [
-      {
-        "id": 38760,
-        "name": "Stellaris",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 7.77,
-            "localPrice": 404,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.77
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 8.24,
-            "localPrice": 169199,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.24
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 8.57,
-            "localPrice": 599.7,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.57
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 8.6,
-            "localPrice": 941,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.6
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 8.64,
-            "localPrice": 261500,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.64
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 9.08,
-            "localPrice": 10.49,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.08
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 9.08,
-            "localPrice": 10.49,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.08
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 9.63,
-            "localPrice": 56.69,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.63
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 10.27,
-            "localPrice": 10560,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.27
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 10.64,
-            "localPrice": 6030,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.64
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 11.85,
-            "localPrice": 47280,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 11.85
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 12.16,
-            "localPrice": 228.9,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.16
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 12.98,
-            "localPrice": 14.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.98
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 14.78,
-            "localPrice": 62.69,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 14.78
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 14.99,
-            "localPrice": 14.99,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 14.99
-              }
-            ]
-          }
-        ],
-        "label": "Standard"
-      },
-      {
-        "id": 1583399,
-        "name": "Stellaris: Anniversary Edition",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 9.27,
-            "localPrice": 482,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.27
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 9.89,
-            "localPrice": 203099,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.89
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 10.2,
-            "localPrice": 713.7,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.2
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 10.37,
-            "localPrice": 314000,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.37
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 10.38,
-            "localPrice": 1136,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.38
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 10.9,
-            "localPrice": 12.59,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.9
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 10.9,
-            "localPrice": 12.59,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.9
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 11.77,
-            "localPrice": 69.29,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 11.77
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 12.31,
-            "localPrice": 12660,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.31
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 12.76,
-            "localPrice": 7230,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.76
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 14.23,
-            "localPrice": 56760,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 14.23
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 14.58,
-            "localPrice": 274.5,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 14.58
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 15.57,
-            "localPrice": 17.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 15.57
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 17.75,
-            "localPrice": 75.29,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 17.75
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 17.99,
-            "localPrice": 17.99,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 17.99
-              }
-            ]
-          }
-        ],
-        "label": ": Anniversary Edition"
-      }
-    ]
-  },
-  {
     "appid": 2483190,
     "title": "Forza Horizon 6",
     "genre": "Rennspiele",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/744a52b2f79bb03825dea2c0fcfa29e330bb2f1e/header_alt_assets_1.jpg?t=1781643649",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/744a52b2f79bb03825dea2c0fcfa29e330bb2f1e/header_alt_assets_1.jpg?t=1781815797",
     "emoji": "🎮",
     "color": "#f472b6",
-    "base": 70.48,
-    "disc": -40,
+    "base": 70.47,
+    "disc": -39,
     "countries": [
       {
         "code": "TR",
-        "price": 42.41,
+        "price": 42.71,
         "localPrice": 48.99,
         "currency": "USD",
         "discount": 0,
@@ -2515,13 +2109,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 42.41
+            "p": 42.71
           }
         ]
       },
       {
         "code": "AR",
-        "price": 42.41,
+        "price": 42.71,
         "localPrice": 48.99,
         "currency": "USD",
         "discount": 0,
@@ -2529,29 +2123,15 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 42.41
+            "p": 42.71
           }
         ]
       },
       {
         "code": "ID",
-        "price": 43.78,
+        "price": 44.21,
         "localPrice": 899000,
         "currency": "IDR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 43.78
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 44.21,
-        "localPrice": 2299,
-        "currency": "UAH",
         "discount": 0,
         "shop": "Steam",
         "shops": [
@@ -2562,8 +2142,22 @@ window.GAMES_DATA = [
         ]
       },
       {
+        "code": "UA",
+        "price": 44.56,
+        "localPrice": 2299,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 44.56
+          }
+        ]
+      },
+      {
         "code": "PH",
-        "price": 49.87,
+        "price": 50.23,
         "localPrice": 3490,
         "currency": "PHP",
         "discount": 0,
@@ -2571,27 +2165,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 49.87
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 50.26,
-        "localPrice": 5499,
-        "currency": "INR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 50.26
+            "p": 50.23
           }
         ]
       },
       {
         "code": "BR",
-        "price": 50.77,
+        "price": 50.62,
         "localPrice": 299,
         "currency": "BRL",
         "discount": 0,
@@ -2599,13 +2179,27 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 50.77
+            "p": 50.62
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 50.85,
+        "localPrice": 5499,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 50.85
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 52.96,
+        "price": 53.61,
         "localPrice": 30000,
         "currency": "KZT",
         "discount": 0,
@@ -2613,13 +2207,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 52.96
+            "p": 53.61
           }
         ]
       },
       {
         "code": "CL",
-        "price": 58.33,
+        "price": 58.66,
         "localPrice": 59990,
         "currency": "CLP",
         "discount": 0,
@@ -2627,13 +2221,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 58.33
+            "p": 58.66
           }
         ]
       },
       {
         "code": "US",
-        "price": 60.58,
+        "price": 61.02,
         "localPrice": 69.99,
         "currency": "USD",
         "discount": 0,
@@ -2641,13 +2235,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 60.58
+            "p": 61.02
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 69.01,
+        "price": 68.97,
         "localPrice": 1299,
         "currency": "ZAR",
         "discount": 0,
@@ -2655,7 +2249,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 69.01
+            "p": 68.97
           }
         ]
       },
@@ -2674,22 +2268,8 @@ window.GAMES_DATA = [
         ]
       },
       {
-        "code": "CO",
-        "price": 70.15,
-        "localPrice": 279900,
-        "currency": "COP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 70.15
-          }
-        ]
-      },
-      {
         "code": "PL",
-        "price": 70.48,
+        "price": 70.23,
         "localPrice": 299,
         "currency": "PLN",
         "discount": 0,
@@ -2697,7 +2277,21 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 70.48
+            "p": 70.23
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 70.47,
+        "localPrice": 279900,
+        "currency": "COP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 70.47
           }
         ]
       }
@@ -2709,48 +2303,35 @@ window.GAMES_DATA = [
         "countries": [
           {
             "code": "TR",
-            "price": 42.41,
+            "price": 42.71,
             "localPrice": 48.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 42.41
+                "p": 42.71
               }
             ]
           },
           {
             "code": "AR",
-            "price": 42.41,
+            "price": 42.71,
             "localPrice": 48.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 42.41
+                "p": 42.71
               }
             ]
           },
           {
             "code": "ID",
-            "price": 43.78,
+            "price": 44.21,
             "localPrice": 899000,
             "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 43.78
-              }
-            ]
-          },
-          {
-            "code": "UA",
-            "price": 44.21,
-            "localPrice": 2299,
-            "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
@@ -2760,93 +2341,106 @@ window.GAMES_DATA = [
             ]
           },
           {
+            "code": "UA",
+            "price": 44.56,
+            "localPrice": 2299,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 44.56
+              }
+            ]
+          },
+          {
             "code": "PH",
-            "price": 49.87,
+            "price": 50.23,
             "localPrice": 3490,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 49.87
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 50.26,
-            "localPrice": 5499,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 50.26
+                "p": 50.23
               }
             ]
           },
           {
             "code": "BR",
-            "price": 50.77,
+            "price": 50.62,
             "localPrice": 299,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 50.77
+                "p": 50.62
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 50.85,
+            "localPrice": 5499,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 50.85
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 52.96,
+            "price": 53.61,
             "localPrice": 30000,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 52.96
+                "p": 53.61
               }
             ]
           },
           {
             "code": "CL",
-            "price": 58.33,
+            "price": 58.66,
             "localPrice": 59990,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 58.33
+                "p": 58.66
               }
             ]
           },
           {
             "code": "US",
-            "price": 60.58,
+            "price": 61.02,
             "localPrice": 69.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 60.58
+                "p": 61.02
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 69.01,
+            "price": 68.97,
             "localPrice": 1299,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 69.01
+                "p": 68.97
               }
             ]
           },
@@ -2864,28 +2458,28 @@ window.GAMES_DATA = [
             ]
           },
           {
-            "code": "CO",
-            "price": 70.15,
-            "localPrice": 279900,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 70.15
-              }
-            ]
-          },
-          {
             "code": "PL",
-            "price": 70.48,
+            "price": 70.23,
             "localPrice": 299,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 70.48
+                "p": 70.23
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 70.47,
+            "localPrice": 279900,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 70.47
               }
             ]
           }
@@ -2898,144 +2492,144 @@ window.GAMES_DATA = [
         "countries": [
           {
             "code": "TR",
-            "price": 60.58,
+            "price": 61.02,
             "localPrice": 69.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 60.58
+                "p": 61.02
               }
             ]
           },
           {
             "code": "AR",
-            "price": 60.58,
+            "price": 61.02,
             "localPrice": 69.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 60.58
+                "p": 61.02
               }
             ]
           },
           {
             "code": "ID",
-            "price": 63.27,
+            "price": 63.89,
             "localPrice": 1299000,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 63.27
+                "p": 63.89
               }
             ]
           },
           {
             "code": "UA",
-            "price": 63.44,
+            "price": 63.95,
             "localPrice": 3299,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 63.44
+                "p": 63.95
               }
             ]
           },
           {
             "code": "PH",
-            "price": 71.3,
+            "price": 71.82,
             "localPrice": 4990,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 71.3
+                "p": 71.82
               }
             ]
           },
           {
             "code": "IN",
-            "price": 73.11,
+            "price": 73.97,
             "localPrice": 7999,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 73.11
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 75.91,
-            "localPrice": 43000,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 75.91
+                "p": 73.97
               }
             ]
           },
           {
             "code": "BR",
-            "price": 76.24,
+            "price": 76.02,
             "localPrice": 449,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 76.24
+                "p": 76.02
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 76.84,
+            "localPrice": 43000,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 76.84
               }
             ]
           },
           {
             "code": "CL",
-            "price": 83.53,
+            "price": 83.99,
             "localPrice": 85900,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 83.53
+                "p": 83.99
               }
             ]
           },
           {
             "code": "US",
-            "price": 86.55,
+            "price": 87.17,
             "localPrice": 99.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 86.55
+                "p": 87.17
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 98.23,
+            "price": 98.17,
             "localPrice": 1849,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 98.23
+                "p": 98.17
               }
             ]
           },
@@ -3053,28 +2647,28 @@ window.GAMES_DATA = [
             ]
           },
           {
-            "code": "CO",
-            "price": 100.25,
-            "localPrice": 400000,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 100.25
-              }
-            ]
-          },
-          {
             "code": "PL",
-            "price": 100.88,
+            "price": 100.53,
             "localPrice": 428,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 100.88
+                "p": 100.53
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 100.7,
+            "localPrice": 400000,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 100.7
               }
             ]
           }
@@ -3087,144 +2681,144 @@ window.GAMES_DATA = [
         "countries": [
           {
             "code": "TR",
-            "price": 72.7,
+            "price": 73.22,
             "localPrice": 83.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 72.7
+                "p": 73.22
               }
             ]
           },
           {
             "code": "AR",
-            "price": 72.7,
+            "price": 73.22,
             "localPrice": 83.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 72.7
+                "p": 73.22
               }
             ]
           },
           {
             "code": "UA",
-            "price": 76.9,
+            "price": 77.52,
             "localPrice": 3999,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 76.9
+                "p": 77.52
               }
             ]
           },
           {
             "code": "ID",
-            "price": 77.88,
+            "price": 78.64,
             "localPrice": 1599000,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 77.88
+                "p": 78.64
               }
             ]
           },
           {
             "code": "PH",
-            "price": 85.59,
+            "price": 86.21,
             "localPrice": 5990,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 85.59
+                "p": 86.21
               }
             ]
           },
           {
             "code": "IN",
-            "price": 88.65,
+            "price": 89.69,
             "localPrice": 9699,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 88.65
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 91.97,
-            "localPrice": 52100,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 91.97
+                "p": 89.69
               }
             ]
           },
           {
             "code": "BR",
-            "price": 93.22,
+            "price": 92.95,
             "localPrice": 549,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 93.22
+                "p": 92.95
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 93.1,
+            "localPrice": 52100,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 93.1
               }
             ]
           },
           {
             "code": "CL",
-            "price": 99.09,
+            "price": 99.64,
             "localPrice": 101900,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 99.09
+                "p": 99.64
               }
             ]
           },
           {
             "code": "US",
-            "price": 103.86,
+            "price": 104.61,
             "localPrice": 119.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 103.86
+                "p": 104.61
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 117.88,
+            "price": 117.81,
             "localPrice": 2219,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 117.88
+                "p": 117.81
               }
             ]
           },
@@ -3243,32 +2837,300 @@ window.GAMES_DATA = [
           },
           {
             "code": "CO",
-            "price": 120.05,
+            "price": 120.59,
             "localPrice": 479000,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 120.05
+                "p": 120.59
               }
             ]
           },
           {
             "code": "PL",
-            "price": 122.33,
+            "price": 121.9,
             "localPrice": 519,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 122.33
+                "p": 121.9
               }
             ]
           }
         ],
         "label": "Premium Edition"
+      }
+    ]
+  },
+  {
+    "appid": 281990,
+    "title": "Stellaris",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/281990/79d7043e520ddffaeb2108c45058d7b29af41bfc/header_alt_assets_13_german.jpg?t=1781784917",
+    "emoji": "🎮",
+    "color": "#f472b6",
+    "base": 14.72,
+    "disc": -47,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 7.83,
+        "localPrice": 404,
+        "currency": "UAH",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.83
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 8.7,
+        "localPrice": 941,
+        "currency": "INR",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.7
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 9.15,
+        "localPrice": 10.49,
+        "currency": "USD",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.15
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 9.15,
+        "localPrice": 10.49,
+        "currency": "USD",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.15
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 9.6,
+        "localPrice": 56.69,
+        "currency": "BRL",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.6
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 14.72,
+        "localPrice": 62.69,
+        "currency": "PLN",
+        "discount": 70,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.72
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 38760,
+        "name": "Stellaris",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 7.83,
+            "localPrice": 404,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.83
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 8.7,
+            "localPrice": 941,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.7
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 9.15,
+            "localPrice": 10.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.15
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 9.15,
+            "localPrice": 10.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.15
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 9.6,
+            "localPrice": 56.69,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.6
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 14.72,
+            "localPrice": 62.69,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 14.72
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1583399,
+        "name": "Stellaris: Anniversary Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 9.34,
+            "localPrice": 482,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.34
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 10.51,
+            "localPrice": 1136,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.51
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 10.98,
+            "localPrice": 12.59,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.98
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 10.98,
+            "localPrice": 12.59,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.98
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 11.73,
+            "localPrice": 69.29,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 11.73
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 17.68,
+            "localPrice": 75.29,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 17.68
+              }
+            ]
+          }
+        ],
+        "label": ": Anniversary Edition"
       }
     ]
   },
@@ -3279,26 +3141,12 @@ window.GAMES_DATA = [
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/64d362e71693f1ec7023f52ab94026f9a0d4fbed/header.jpg?t=1781720918",
     "emoji": "🎮",
     "color": "#36d399",
-    "base": 14.14,
-    "disc": -90,
+    "base": 14.1,
+    "disc": -83,
     "countries": [
       {
-        "code": "IN",
-        "price": 1.37,
-        "localPrice": 150,
-        "currency": "INR",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 1.37
-          }
-        ]
-      },
-      {
         "code": "ID",
-        "price": 2.33,
+        "price": 2.35,
         "localPrice": 47800,
         "currency": "IDR",
         "discount": 80,
@@ -3306,13 +3154,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 2.33
+            "p": 2.35
           }
         ]
       },
       {
         "code": "VN",
-        "price": 3.24,
+        "price": 3.25,
         "localPrice": 98000,
         "currency": "VND",
         "discount": 80,
@@ -3320,13 +3168,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.24
+            "p": 3.25
           }
         ]
       },
       {
         "code": "BR",
-        "price": 4.25,
+        "price": 4.23,
         "localPrice": 25,
         "currency": "BRL",
         "discount": 80,
@@ -3334,13 +3182,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.25
+            "p": 4.23
           }
         ]
       },
       {
         "code": "UA",
-        "price": 6.54,
+        "price": 6.59,
         "localPrice": 340,
         "currency": "UAH",
         "discount": 80,
@@ -3348,13 +3196,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 6.54
+            "p": 6.59
           }
         ]
       },
       {
         "code": "PH",
-        "price": 10,
+        "price": 10.07,
         "localPrice": 699.8,
         "currency": "PHP",
         "discount": 80,
@@ -3362,41 +3210,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 10
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 12.11,
-        "localPrice": 13.99,
-        "currency": "USD",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 12.11
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 12.11,
-        "localPrice": 13.99,
-        "currency": "USD",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 12.11
+            "p": 10.07
           }
         ]
       },
       {
         "code": "US",
-        "price": 12.11,
+        "price": 12.2,
         "localPrice": 13.99,
         "currency": "USD",
         "discount": 80,
@@ -3404,13 +3224,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 12.11
+            "p": 12.2
           }
         ]
       },
       {
         "code": "CL",
-        "price": 12.23,
+        "price": 12.3,
         "localPrice": 12580,
         "currency": "CLP",
         "discount": 80,
@@ -3418,13 +3238,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 12.23
+            "p": 12.3
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 12.36,
+        "price": 12.51,
         "localPrice": 7000,
         "currency": "KZT",
         "discount": 80,
@@ -3432,13 +3252,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 12.36
+            "p": 12.51
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 12.75,
+        "price": 12.74,
         "localPrice": 239.99,
         "currency": "ZAR",
         "discount": 80,
@@ -3446,7 +3266,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 12.75
+            "p": 12.74
           }
         ]
       },
@@ -3465,22 +3285,8 @@ window.GAMES_DATA = [
         ]
       },
       {
-        "code": "CO",
-        "price": 14.04,
-        "localPrice": 56000,
-        "currency": "COP",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 14.04
-          }
-        ]
-      },
-      {
         "code": "PL",
-        "price": 14.14,
+        "price": 14.09,
         "localPrice": 59.98,
         "currency": "PLN",
         "discount": 80,
@@ -3488,7 +3294,21 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 14.14
+            "p": 14.09
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 14.1,
+        "localPrice": 56000,
+        "currency": "COP",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.1
           }
         ]
       }
@@ -3499,158 +3319,119 @@ window.GAMES_DATA = [
         "name": "EA SPORTS FC™ 26",
         "countries": [
           {
-            "code": "IN",
-            "price": 1.37,
-            "localPrice": 150,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 1.37
-              }
-            ]
-          },
-          {
             "code": "ID",
-            "price": 2.33,
+            "price": 2.35,
             "localPrice": 47800,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 2.33
+                "p": 2.35
               }
             ]
           },
           {
             "code": "VN",
-            "price": 3.24,
+            "price": 3.25,
             "localPrice": 98000,
             "currency": "VND",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 3.24
+                "p": 3.25
               }
             ]
           },
           {
             "code": "BR",
-            "price": 4.25,
+            "price": 4.23,
             "localPrice": 25,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 4.25
+                "p": 4.23
               }
             ]
           },
           {
             "code": "UA",
-            "price": 6.54,
+            "price": 6.59,
             "localPrice": 340,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 6.54
+                "p": 6.59
               }
             ]
           },
           {
             "code": "PH",
-            "price": 10,
+            "price": 10.07,
             "localPrice": 699.8,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 10
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 12.11,
-            "localPrice": 13.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.11
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 12.11,
-            "localPrice": 13.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.11
+                "p": 10.07
               }
             ]
           },
           {
             "code": "US",
-            "price": 12.11,
+            "price": 12.2,
             "localPrice": 13.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 12.11
+                "p": 12.2
               }
             ]
           },
           {
             "code": "CL",
-            "price": 12.23,
+            "price": 12.3,
             "localPrice": 12580,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 12.23
+                "p": 12.3
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 12.36,
+            "price": 12.51,
             "localPrice": 7000,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 12.36
+                "p": 12.51
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 12.75,
+            "price": 12.74,
             "localPrice": 239.99,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 12.75
+                "p": 12.74
               }
             ]
           },
@@ -3668,28 +3449,28 @@ window.GAMES_DATA = [
             ]
           },
           {
-            "code": "CO",
-            "price": 14.04,
-            "localPrice": 56000,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 14.04
-              }
-            ]
-          },
-          {
             "code": "PL",
-            "price": 14.14,
+            "price": 14.09,
             "localPrice": 59.98,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 14.14
+                "p": 14.09
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 14.1,
+            "localPrice": 56000,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 14.1
               }
             ]
           }
@@ -3702,1011 +3483,162 @@ window.GAMES_DATA = [
         "countries": [
           {
             "code": "UA",
-            "price": 8.85,
-            "localPrice": 460,
+            "price": 44.56,
+            "localPrice": 2299,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 8.85
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 10.05,
-            "localPrice": 1100,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.05
+                "p": 44.56
               }
             ]
           },
           {
             "code": "ID",
-            "price": 10.12,
-            "localPrice": 207800,
+            "price": 51.1,
+            "localPrice": 1039000,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 10.12
+                "p": 51.1
               }
             ]
           },
           {
             "code": "VN",
-            "price": 10.57,
-            "localPrice": 320000,
+            "price": 53.05,
+            "localPrice": 1599000,
             "currency": "VND",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 10.57
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 12.86,
-            "localPrice": 899.8,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.86
+                "p": 53.05
               }
             ]
           },
           {
             "code": "BR",
-            "price": 12.87,
-            "localPrice": 75.8,
+            "price": 64.16,
+            "localPrice": 379,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 12.87
+                "p": 64.16
               }
             ]
           },
           {
-            "code": "TR",
-            "price": 15.58,
-            "localPrice": 18,
-            "currency": "USD",
+            "code": "PH",
+            "price": 64.75,
+            "localPrice": 4499,
+            "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 15.58
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 15.58,
-            "localPrice": 18,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 15.58
+                "p": 64.75
               }
             ]
           },
           {
             "code": "US",
-            "price": 15.58,
-            "localPrice": 18,
+            "price": 78.45,
+            "localPrice": 89.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 15.58
+                "p": 78.45
               }
             ]
           },
           {
             "code": "CL",
-            "price": 15.73,
-            "localPrice": 16180,
+            "price": 79.1,
+            "localPrice": 80900,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 15.73
+                "p": 79.1
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 16.59,
-            "localPrice": 9400,
+            "price": 83.99,
+            "localPrice": 46999,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 16.59
+                "p": 83.99
               }
             ]
           },
           {
             "code": "DE",
-            "price": 18,
-            "localPrice": 18,
+            "price": 89.99,
+            "localPrice": 89.99,
             "currency": "EUR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 18
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 18.05,
-            "localPrice": 72000,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 18.05
+                "p": 89.99
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 18.06,
-            "localPrice": 339.99,
+            "price": 90.25,
+            "localPrice": 1699.95,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 18.06
+                "p": 90.25
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 90.63,
+            "localPrice": 359999,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 90.63
               }
             ]
           },
           {
             "code": "PL",
-            "price": 18.38,
-            "localPrice": 77.98,
+            "price": 91.58,
+            "localPrice": 389.9,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 18.38
+                "p": 91.58
               }
             ]
           }
         ],
         "label": "The World's Game Edition"
-      }
-    ]
-  },
-  {
-    "appid": 1868140,
-    "title": "DAVE THE DIVER",
-    "genre": "Abenteuer",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/3f5b136a2a0284a02bdc03533a4041d358c4d7b2/header_alt_assets_2.jpg?t=1781777209",
-    "emoji": "🗺️",
-    "color": "#ffd166",
-    "base": 10.84,
-    "disc": -63,
-    "countries": [
-      {
-        "code": "UA",
-        "price": 3.98,
-        "localPrice": 207,
-        "currency": "UAH",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 3.98
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 4.02,
-        "localPrice": 440,
-        "currency": "INR",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 4.02
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 4.04,
-        "localPrice": 82999,
-        "currency": "IDR",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 4.04
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 4.3,
-        "localPrice": 130000,
-        "currency": "VND",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 4.3
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 4.39,
-        "localPrice": 307.5,
-        "currency": "PHP",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 4.39
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 4.59,
-        "localPrice": 2600,
-        "currency": "KZT",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 4.59
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 4.91,
-        "localPrice": 92.5,
-        "currency": "ZAR",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 4.91
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 5.09,
-        "localPrice": 29.99,
-        "currency": "BRL",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.09
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 5.11,
-        "localPrice": 5250,
-        "currency": "CLP",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.11
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 5.62,
-        "localPrice": 6.49,
-        "currency": "USD",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.62
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 5.62,
-        "localPrice": 6.49,
-        "currency": "USD",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.62
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 5.95,
-        "localPrice": 23750,
-        "currency": "COP",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.95
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 8.65,
-        "localPrice": 9.99,
-        "currency": "USD",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.65
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 9.99,
-        "localPrice": 9.99,
-        "currency": "EUR",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.99
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 10.84,
-        "localPrice": 45.99,
-        "currency": "PLN",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.84
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "appid": 2958130,
-    "title": "Jurassic World Evolution 3",
-    "genre": "Simulationen",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2958130/df39f8c59232633e8e01ab63313b095402bdd0d5/header.jpg?t=1781616104",
-    "emoji": "🎮",
-    "color": "#36d399",
-    "base": 43.43,
-    "disc": -58,
-    "countries": [
-      {
-        "code": "IN",
-        "price": 18.21,
-        "localPrice": 1992,
-        "currency": "INR",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 18.21
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 18.55,
-        "localPrice": 21.43,
-        "currency": "USD",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 18.55
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 18.67,
-        "localPrice": 971,
-        "currency": "UAH",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 18.67
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 20.56,
-        "localPrice": 422099,
-        "currency": "IDR",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 20.56
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 21.29,
-        "localPrice": 12060,
-        "currency": "KZT",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 21.29
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 21.69,
-        "localPrice": 656500,
-        "currency": "VND",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 21.69
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 21.73,
-        "localPrice": 1520.9,
-        "currency": "PHP",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 21.73
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 25.71,
-        "localPrice": 151.42,
-        "currency": "BRL",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 25.71
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 25.99,
-        "localPrice": 26733,
-        "currency": "CLP",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 25.99
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 28.44,
-        "localPrice": 535.33,
-        "currency": "ZAR",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 28.44
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 29.39,
-        "localPrice": 117250,
-        "currency": "COP",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.39
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 34.79,
-        "localPrice": 40.19,
-        "currency": "USD",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 34.79
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 40.19,
-        "localPrice": 40.19,
-        "currency": "EUR",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 40.19
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 43.43,
-        "localPrice": 184.24,
-        "currency": "PLN",
-        "discount": 33,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 43.43
-          }
-        ]
-      }
-    ],
-    "editions": [
-      {
-        "id": 1053151,
-        "name": "Jurassic World Evolution 3",
-        "countries": [
-          {
-            "code": "IN",
-            "price": 18.21,
-            "localPrice": 1992,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 18.21
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 18.55,
-            "localPrice": 21.43,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 18.55
-              }
-            ]
-          },
-          {
-            "code": "UA",
-            "price": 18.67,
-            "localPrice": 971,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 18.67
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 20.56,
-            "localPrice": 422099,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 20.56
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 21.29,
-            "localPrice": 12060,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 21.29
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 21.69,
-            "localPrice": 656500,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 21.69
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 21.73,
-            "localPrice": 1520.9,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 21.73
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 25.71,
-            "localPrice": 151.42,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.71
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 25.99,
-            "localPrice": 26733,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.99
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 28.44,
-            "localPrice": 535.33,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 28.44
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 29.39,
-            "localPrice": 117250,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 29.39
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 34.79,
-            "localPrice": 40.19,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 34.79
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 40.19,
-            "localPrice": 40.19,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 40.19
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 43.43,
-            "localPrice": 184.24,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 43.43
-              }
-            ]
-          }
-        ],
-        "label": "Standard"
-      },
-      {
-        "id": 1291163,
-        "name": "Jurassic World Evolution 3: Deluxe Edition",
-        "countries": [
-          {
-            "code": "IN",
-            "price": 22.81,
-            "localPrice": 2495,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 22.81
-              }
-            ]
-          },
-          {
-            "code": "UA",
-            "price": 22.86,
-            "localPrice": 1189,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 22.86
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 23.19,
-            "localPrice": 26.79,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 23.19
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 25.78,
-            "localPrice": 529299,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.78
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 26.61,
-            "localPrice": 15075,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 26.61
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 27.01,
-            "localPrice": 817500,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 27.01
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 27.48,
-            "localPrice": 1922.9,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 27.48
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 32.51,
-            "localPrice": 33433,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 32.51
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 32.54,
-            "localPrice": 191.62,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 32.54
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 35.56,
-            "localPrice": 669.33,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 35.56
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 36.1,
-            "localPrice": 144050,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 36.1
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 43.49,
-            "localPrice": 50.24,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 43.49
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 50.24,
-            "localPrice": 50.24,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 50.24
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 54.8,
-            "localPrice": 232.48,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 54.8
-              }
-            ]
-          }
-        ],
-        "label": ": Deluxe Edition"
       }
     ]
   },
@@ -4749,20 +3681,6 @@ window.GAMES_DATA = [
         ]
       },
       {
-        "code": "TR",
-        "price": 0.42,
-        "localPrice": 0.49,
-        "currency": "USD",
-        "discount": 90,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 0.42
-          }
-        ]
-      },
-      {
         "code": "ZA",
         "price": 0.42,
         "localPrice": 7.9,
@@ -4773,6 +3691,20 @@ window.GAMES_DATA = [
           {
             "s": "Steam",
             "p": 0.42
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 0.43,
+        "localPrice": 0.49,
+        "currency": "USD",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 0.43
           }
         ]
       },
@@ -4792,7 +3724,7 @@ window.GAMES_DATA = [
       },
       {
         "code": "VN",
-        "price": 0.79,
+        "price": 0.8,
         "localPrice": 24000,
         "currency": "VND",
         "discount": 70,
@@ -4800,13 +3732,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 0.79
+            "p": 0.8
           }
         ]
       },
       {
         "code": "PH",
-        "price": 0.81,
+        "price": 0.82,
         "localPrice": 56.98,
         "currency": "PHP",
         "discount": 70,
@@ -4814,7 +3746,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 0.81
+            "p": 0.82
           }
         ]
       },
@@ -4890,7 +3822,7 @@ window.GAMES_DATA = [
       },
       {
         "code": "CL",
-        "price": 1.2,
+        "price": 1.21,
         "localPrice": 1236,
         "currency": "CLP",
         "discount": 70,
@@ -4898,7 +3830,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 1.2
+            "p": 1.21
           }
         ]
       },
@@ -4919,1602 +3851,6 @@ window.GAMES_DATA = [
     ]
   },
   {
-    "appid": 394360,
-    "title": "Hearts of Iron IV",
-    "genre": "Simulationen",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/67bbd0057627fc2244793bcdd09260c2539499cf/header.jpg?t=1781595476",
-    "emoji": "🎮",
-    "color": "#4f8cff",
-    "base": 9.99,
-    "disc": -48,
-    "countries": [
-      {
-        "code": "UA",
-        "price": 5.17,
-        "localPrice": 269,
-        "currency": "UAH",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.17
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 5.49,
-        "localPrice": 112799,
-        "currency": "IDR",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.49
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 5.71,
-        "localPrice": 399.8,
-        "currency": "PHP",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.71
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 5.73,
-        "localPrice": 627,
-        "currency": "INR",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.73
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 5.77,
-        "localPrice": 174500,
-        "currency": "VND",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.77
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 6.05,
-        "localPrice": 6.99,
-        "currency": "USD",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.05
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 6.05,
-        "localPrice": 6.99,
-        "currency": "USD",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.05
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 6.42,
-        "localPrice": 37.79,
-        "currency": "BRL",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.42
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 6.85,
-        "localPrice": 7040,
-        "currency": "CLP",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.85
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 7.1,
-        "localPrice": 4020,
-        "currency": "KZT",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.1
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 7.9,
-        "localPrice": 31520,
-        "currency": "COP",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.9
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 8.11,
-        "localPrice": 152.6,
-        "currency": "ZAR",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.11
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 8.65,
-        "localPrice": 9.99,
-        "currency": "USD",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.65
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 9.85,
-        "localPrice": 41.79,
-        "currency": "PLN",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.85
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 9.99,
-        "localPrice": 9.99,
-        "currency": "EUR",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.99
-          }
-        ]
-      }
-    ],
-    "editions": [
-      {
-        "id": 808474,
-        "name": "Hearts of Iron IV",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 5.17,
-            "localPrice": 269,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 5.17
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 5.49,
-            "localPrice": 112799,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 5.49
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 5.71,
-            "localPrice": 399.8,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 5.71
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 5.73,
-            "localPrice": 627,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 5.73
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 5.77,
-            "localPrice": 174500,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 5.77
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 6.05,
-            "localPrice": 6.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.05
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 6.05,
-            "localPrice": 6.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.05
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 6.42,
-            "localPrice": 37.79,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.42
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 6.85,
-            "localPrice": 7040,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.85
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 7.1,
-            "localPrice": 4020,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.1
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 7.9,
-            "localPrice": 31520,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.9
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 8.11,
-            "localPrice": 152.6,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.11
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 8.65,
-            "localPrice": 9.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.65
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 9.85,
-            "localPrice": 41.79,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.85
-              }
-            ]
-          }
-        ],
-        "label": "Standard"
-      },
-      {
-        "id": 1429184,
-        "name": "Hearts of Iron IV: General Edition",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 7.73,
-            "localPrice": 402,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.73
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 8.24,
-            "localPrice": 169249,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.24
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 8.5,
-            "localPrice": 594.75,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.5
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 8.64,
-            "localPrice": 261500,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.64
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 8.66,
-            "localPrice": 947,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.66
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 9.08,
-            "localPrice": 10.49,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.08
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 9.08,
-            "localPrice": 10.49,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.08
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 9.8,
-            "localPrice": 57.74,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.8
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 10.26,
-            "localPrice": 10550,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.26
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 10.64,
-            "localPrice": 6025,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.64
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 11.85,
-            "localPrice": 47300,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 11.85
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 12.15,
-            "localPrice": 228.75,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.15
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 12.98,
-            "localPrice": 14.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.98
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 14.79,
-            "localPrice": 62.74,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 14.79
-              }
-            ]
-          }
-        ],
-        "label": ": General Edition"
-      }
-    ]
-  },
-  {
-    "appid": 1805110,
-    "title": "Solarpunk™",
-    "genre": "Abenteuer",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1805110/9512e707770080499c95c50976ff1b6f712a95ba/header.jpg?t=1781774673",
-    "emoji": "🗺️",
-    "color": "#f472b6",
-    "base": 22.99,
-    "disc": -59,
-    "countries": [
-      {
-        "code": "UA",
-        "price": 9.38,
-        "localPrice": 488,
-        "currency": "UAH",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.38
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 9.63,
-        "localPrice": 197792,
-        "currency": "IDR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.63
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 9.66,
-        "localPrice": 1057,
-        "currency": "INR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.66
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 9.85,
-        "localPrice": 689.06,
-        "currency": "PHP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.85
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 9.95,
-        "localPrice": 11.5,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.95
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 9.95,
-        "localPrice": 11.5,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.95
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 10.28,
-        "localPrice": 311000,
-        "currency": "VND",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.28
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 11.43,
-        "localPrice": 6477,
-        "currency": "KZT",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 11.43
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 11.73,
-        "localPrice": 220.79,
-        "currency": "ZAR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 11.73
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 13.12,
-        "localPrice": 77.27,
-        "currency": "BRL",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 13.12
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 13.42,
-        "localPrice": 13799,
-        "currency": "CLP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 13.42
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 14.06,
-        "localPrice": 56117,
-        "currency": "COP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 14.06
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 19.9,
-        "localPrice": 22.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 19.9
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 22.77,
-        "localPrice": 96.59,
-        "currency": "PLN",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 22.77
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 22.99,
-        "localPrice": 22.99,
-        "currency": "EUR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 22.99
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "appid": 1462040,
-    "title": "FINAL FANTASY VII REMAKE INTERGRADE",
-    "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1462040/header.jpg?t=1773895755",
-    "emoji": "🎯",
-    "color": "#4f8cff",
-    "base": 13.99,
-    "disc": -47,
-    "countries": [
-      {
-        "code": "UA",
-        "price": 7.38,
-        "localPrice": 384,
-        "currency": "UAH",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.38
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 7.99,
-        "localPrice": 874,
-        "currency": "INR",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.99
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 9.69,
-        "localPrice": 11.19,
-        "currency": "USD",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.69
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 9.69,
-        "localPrice": 11.19,
-        "currency": "USD",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.69
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 9.87,
-        "localPrice": 202650,
-        "currency": "IDR",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.87
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 9.89,
-        "localPrice": 5600,
-        "currency": "KZT",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.89
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 9.95,
-        "localPrice": 696.5,
-        "currency": "PHP",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.95
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 10.39,
-        "localPrice": 61.21,
-        "currency": "BRL",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.39
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 10.89,
-        "localPrice": 11199,
-        "currency": "CLP",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.89
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 11.45,
-        "localPrice": 346500,
-        "currency": "VND",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 11.45
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 11.84,
-        "localPrice": 47250,
-        "currency": "COP",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 11.84
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 12.11,
-        "localPrice": 13.99,
-        "currency": "USD",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 12.11
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 13,
-        "localPrice": 244.65,
-        "currency": "ZAR",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 13
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 13.12,
-        "localPrice": 55.65,
-        "currency": "PLN",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 13.12
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 13.99,
-        "localPrice": 13.99,
-        "currency": "EUR",
-        "discount": 65,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 13.99
-          }
-        ]
-      }
-    ],
-    "editions": [
-      {
-        "id": 514802,
-        "name": "FINAL FANTASY VII REMAKE INTERGRADE",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 7.38,
-            "localPrice": 384,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.38
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 7.99,
-            "localPrice": 874,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.99
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 9.69,
-            "localPrice": 11.19,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.69
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 9.69,
-            "localPrice": 11.19,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.69
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 9.89,
-            "localPrice": 5600,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.89
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 10.39,
-            "localPrice": 61.21,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.39
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 10.89,
-            "localPrice": 11199,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.89
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 11.84,
-            "localPrice": 47250,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 11.84
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 12.11,
-            "localPrice": 13.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.11
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 13,
-            "localPrice": 244.65,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 13
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 13.12,
-            "localPrice": 55.65,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 13.12
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 13.99,
-            "localPrice": 13.99,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 13.99
-              }
-            ]
-          }
-        ],
-        "label": "Standard"
-      },
-      {
-        "id": 1186111,
-        "name": "FINAL FANTASY VII REMAKE & REBIRTH Digital Deluxe Twin Pack",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 21.52,
-            "localPrice": 1119,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 21.52
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 25.58,
-            "localPrice": 2799,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.58
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 29.66,
-            "localPrice": 16800,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 29.66
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 30.56,
-            "localPrice": 179.96,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 30.56
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 31.15,
-            "localPrice": 35.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 31.15
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 31.15,
-            "localPrice": 35.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 31.15
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 32.67,
-            "localPrice": 33599,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 32.67
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 34.62,
-            "localPrice": 39.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 34.62
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 36.09,
-            "localPrice": 144000,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 36.09
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 36.1,
-            "localPrice": 679.6,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 36.1
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 37.62,
-            "localPrice": 159.6,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 37.62
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 39.99,
-            "localPrice": 39.99,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 39.99
-              }
-            ]
-          }
-        ],
-        "label": "FINAL FANTASY VII REMAKE & REBIRTH Digital Deluxe Twin Pack"
-      }
-    ]
-  },
-  {
-    "appid": 3276050,
-    "title": "SpaceCraft",
-    "genre": "Abenteuer",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3276050/f3c3248ff25d51c8857d135376b2042b8e203235/header_alt_assets_1_german.jpg?t=1781191112",
-    "emoji": "🗺️",
-    "color": "#36d399",
-    "base": 26.99,
-    "disc": -57,
-    "countries": [
-      {
-        "code": "UA",
-        "price": 11.58,
-        "localPrice": 602,
-        "currency": "UAH",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 11.58
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 11.68,
-        "localPrice": 13.49,
-        "currency": "USD",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 11.68
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 11.68,
-        "localPrice": 13.49,
-        "currency": "USD",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 11.68
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 11.75,
-        "localPrice": 355500,
-        "currency": "VND",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 11.75
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 12.1,
-        "localPrice": 248399,
-        "currency": "IDR",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 12.1
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 12.22,
-        "localPrice": 855,
-        "currency": "PHP",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 12.22
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 12.33,
-        "localPrice": 1349,
-        "currency": "INR",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 12.33
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 12.84,
-        "localPrice": 75.59,
-        "currency": "BRL",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 12.84
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 13.49,
-        "localPrice": 13869,
-        "currency": "CLP",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 13.49
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 14.34,
-        "localPrice": 269.99,
-        "currency": "ZAR",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 14.34
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 14.59,
-        "localPrice": 8263,
-        "currency": "KZT",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 14.59
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 15.79,
-        "localPrice": 62999,
-        "currency": "COP",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 15.79
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 23.12,
-        "localPrice": 98.09,
-        "currency": "PLN",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 23.12
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 23.36,
-        "localPrice": 26.99,
-        "currency": "USD",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 23.36
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 26.99,
-        "localPrice": 26.99,
-        "currency": "EUR",
-        "discount": 10,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 26.99
-          }
-        ]
-      }
-    ]
-  },
-  {
     "appid": 306130,
     "title": "The Elder Scrolls® Online",
     "genre": "Action",
@@ -6525,36 +3861,8 @@ window.GAMES_DATA = [
     "disc": -48,
     "countries": [
       {
-        "code": "TR",
-        "price": 10.38,
-        "localPrice": 11.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.38
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 10.38,
-        "localPrice": 11.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.38
-          }
-        ]
-      },
-      {
         "code": "BR",
-        "price": 10.44,
+        "price": 10.41,
         "localPrice": 61.5,
         "currency": "BRL",
         "discount": 0,
@@ -6562,13 +3870,41 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 10.44
+            "p": 10.41
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 10.45,
+        "localPrice": 11.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.45
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 10.45,
+        "localPrice": 11.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.45
           }
         ]
       },
       {
         "code": "UA",
-        "price": 11.52,
+        "price": 11.61,
         "localPrice": 599,
         "currency": "UAH",
         "discount": 0,
@@ -6576,13 +3912,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 11.52
+            "p": 11.61
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 11.83,
+        "price": 11.97,
         "localPrice": 6700,
         "currency": "KZT",
         "discount": 0,
@@ -6590,13 +3926,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 11.83
+            "p": 11.97
           }
         ]
       },
       {
         "code": "CO",
-        "price": 12.51,
+        "price": 12.56,
         "localPrice": 49900,
         "currency": "COP",
         "discount": 0,
@@ -6604,13 +3940,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 12.51
+            "p": 12.56
           }
         ]
       },
       {
         "code": "ID",
-        "price": 12.96,
+        "price": 13.08,
         "localPrice": 266000,
         "currency": "IDR",
         "discount": 0,
@@ -6618,13 +3954,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 12.96
+            "p": 13.08
           }
         ]
       },
       {
         "code": "PH",
-        "price": 13.15,
+        "price": 13.24,
         "localPrice": 920,
         "currency": "PHP",
         "discount": 0,
@@ -6632,13 +3968,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 13.15
+            "p": 13.24
           }
         ]
       },
       {
         "code": "CL",
-        "price": 14.58,
+        "price": 14.66,
         "localPrice": 14990,
         "currency": "CLP",
         "discount": 0,
@@ -6646,13 +3982,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 14.58
+            "p": 14.66
           }
         ]
       },
       {
         "code": "IN",
-        "price": 14.62,
+        "price": 14.79,
         "localPrice": 1599,
         "currency": "INR",
         "discount": 0,
@@ -6660,13 +3996,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 14.62
+            "p": 14.79
           }
         ]
       },
       {
         "code": "VN",
-        "price": 14.87,
+        "price": 14.93,
         "localPrice": 450000,
         "currency": "VND",
         "discount": 0,
@@ -6674,13 +4010,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 14.87
+            "p": 14.93
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 15.88,
+        "price": 15.87,
         "localPrice": 299,
         "currency": "ZAR",
         "discount": 0,
@@ -6688,13 +4024,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 15.88
+            "p": 15.87
           }
         ]
       },
       {
         "code": "US",
-        "price": 17.3,
+        "price": 17.43,
         "localPrice": 19.99,
         "currency": "USD",
         "discount": 0,
@@ -6702,13 +4038,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 17.3
+            "p": 17.43
           }
         ]
       },
       {
         "code": "PL",
-        "price": 18.83,
+        "price": 18.77,
         "localPrice": 79.9,
         "currency": "PLN",
         "discount": 0,
@@ -6716,7 +4052,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 18.83
+            "p": 18.77
           }
         ]
       },
@@ -6741,184 +4077,184 @@ window.GAMES_DATA = [
         "name": "The Elder Scrolls Online: Standard Edition",
         "countries": [
           {
-            "code": "TR",
-            "price": 10.38,
-            "localPrice": 11.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.38
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 10.38,
-            "localPrice": 11.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.38
-              }
-            ]
-          },
-          {
             "code": "BR",
-            "price": 10.44,
+            "price": 10.41,
             "localPrice": 61.5,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 10.44
+                "p": 10.41
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 10.45,
+            "localPrice": 11.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.45
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 10.45,
+            "localPrice": 11.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.45
               }
             ]
           },
           {
             "code": "UA",
-            "price": 11.52,
+            "price": 11.61,
             "localPrice": 599,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 11.52
+                "p": 11.61
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 11.83,
+            "price": 11.97,
             "localPrice": 6700,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 11.83
+                "p": 11.97
               }
             ]
           },
           {
             "code": "CO",
-            "price": 12.51,
+            "price": 12.56,
             "localPrice": 49900,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 12.51
+                "p": 12.56
               }
             ]
           },
           {
             "code": "ID",
-            "price": 12.96,
+            "price": 13.08,
             "localPrice": 266000,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 12.96
+                "p": 13.08
               }
             ]
           },
           {
             "code": "PH",
-            "price": 13.15,
+            "price": 13.24,
             "localPrice": 920,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 13.15
+                "p": 13.24
               }
             ]
           },
           {
             "code": "CL",
-            "price": 14.58,
+            "price": 14.66,
             "localPrice": 14990,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 14.58
+                "p": 14.66
               }
             ]
           },
           {
             "code": "IN",
-            "price": 14.62,
+            "price": 14.79,
             "localPrice": 1599,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 14.62
+                "p": 14.79
               }
             ]
           },
           {
             "code": "VN",
-            "price": 14.87,
+            "price": 14.93,
             "localPrice": 450000,
             "currency": "VND",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 14.87
+                "p": 14.93
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 15.88,
+            "price": 15.87,
             "localPrice": 299,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 15.88
+                "p": 15.87
               }
             ]
           },
           {
             "code": "US",
-            "price": 17.3,
+            "price": 17.43,
             "localPrice": 19.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 17.3
+                "p": 17.43
               }
             ]
           },
           {
             "code": "PL",
-            "price": 18.83,
+            "price": 18.77,
             "localPrice": 79.9,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 18.83
+                "p": 18.77
               }
             ]
           },
@@ -6944,157 +4280,157 @@ window.GAMES_DATA = [
         "countries": [
           {
             "code": "UA",
-            "price": 34.59,
+            "price": 34.87,
             "localPrice": 1799,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 34.59
+                "p": 34.87
               }
             ]
           },
           {
             "code": "TR",
-            "price": 36.35,
+            "price": 36.61,
             "localPrice": 41.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 36.35
+                "p": 36.61
               }
             ]
           },
           {
             "code": "AR",
-            "price": 36.35,
+            "price": 36.61,
             "localPrice": 41.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 36.35
+                "p": 36.61
               }
             ]
           },
           {
             "code": "IN",
-            "price": 38.38,
+            "price": 38.83,
             "localPrice": 4199,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 38.38
+                "p": 38.83
               }
             ]
           },
           {
             "code": "VN",
-            "price": 39.61,
+            "price": 39.78,
             "localPrice": 1199000,
             "currency": "VND",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 39.61
+                "p": 39.78
               }
             ]
           },
           {
             "code": "ID",
-            "price": 40.38,
+            "price": 40.77,
             "localPrice": 829000,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 40.38
+                "p": 40.77
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 42.37,
+            "price": 42.89,
             "localPrice": 23999,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 42.37
+                "p": 42.89
               }
             ]
           },
           {
             "code": "PH",
-            "price": 42.72,
+            "price": 43.03,
             "localPrice": 2990,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 42.72
+                "p": 43.03
               }
             ]
           },
           {
             "code": "CL",
-            "price": 50.47,
+            "price": 50.75,
             "localPrice": 51900,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 50.47
+                "p": 50.75
               }
             ]
           },
           {
             "code": "BR",
-            "price": 50.92,
+            "price": 50.77,
             "localPrice": 299.9,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 50.92
+                "p": 50.77
               }
             ]
           },
           {
             "code": "US",
-            "price": 51.93,
+            "price": 52.3,
             "localPrice": 59.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 51.93
+                "p": 52.3
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 54.66,
+            "price": 54.63,
             "localPrice": 1029,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 54.66
+                "p": 54.63
               }
             ]
           },
@@ -7113,27 +4449,27 @@ window.GAMES_DATA = [
           },
           {
             "code": "CO",
-            "price": 60.13,
+            "price": 60.4,
             "localPrice": 239900,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 60.13
+                "p": 60.4
               }
             ]
           },
           {
             "code": "PL",
-            "price": 61.05,
+            "price": 60.83,
             "localPrice": 259,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 61.05
+                "p": 60.83
               }
             ]
           }
@@ -7143,396 +4479,606 @@ window.GAMES_DATA = [
     ]
   },
   {
-    "appid": 2244210,
-    "title": "Echoes of Aincrad",
-    "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2244210/25fb6350451b21ca824562c8d1eebe89091347cc/header.jpg?t=1781687351",
-    "emoji": "🎯",
-    "color": "#36d399",
-    "base": 70.48,
-    "disc": -48,
+    "appid": 518790,
+    "title": "theHunter: Call of the Wild™",
+    "genre": "Abenteuer",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/518790/1975f9a8f8d475f6d348226f384ecde2d0fbc178/header_alt_assets_13_german.jpg?t=1781679235",
+    "emoji": "🗺️",
+    "color": "#f472b6",
+    "base": 2.16,
+    "disc": -63,
     "countries": [
       {
-        "code": "IN",
-        "price": 36.55,
-        "localPrice": 3999,
-        "currency": "INR",
-        "discount": 0,
+        "code": "UA",
+        "price": 0.79,
+        "localPrice": 41,
+        "currency": "UAH",
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 36.55
+            "p": 0.79
           }
         ]
       },
       {
-        "code": "UA",
-        "price": 38.44,
-        "localPrice": 1999,
-        "currency": "UAH",
-        "discount": 0,
+        "code": "IN",
+        "price": 0.81,
+        "localPrice": 88,
+        "currency": "INR",
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 38.44
+            "p": 0.81
           }
         ]
       },
       {
         "code": "ID",
-        "price": 38.91,
-        "localPrice": 799000,
+        "price": 0.82,
+        "localPrice": 16599,
         "currency": "IDR",
-        "discount": 0,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 38.91
+            "p": 0.82
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 0.86,
+        "localPrice": 26000,
+        "currency": "VND",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 0.86
           }
         ]
       },
       {
         "code": "PH",
-        "price": 39.94,
-        "localPrice": 2795,
+        "price": 0.89,
+        "localPrice": 61.5,
         "currency": "PHP",
-        "discount": 0,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 39.94
+            "p": 0.89
           }
         ]
       },
       {
         "code": "TR",
-        "price": 39.98,
-        "localPrice": 46.19,
+        "price": 0.91,
+        "localPrice": 1.04,
         "currency": "USD",
-        "discount": 0,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 39.98
+            "p": 0.91
           }
         ]
       },
       {
         "code": "AR",
-        "price": 48.46,
-        "localPrice": 55.99,
+        "price": 0.91,
+        "localPrice": 1.04,
         "currency": "USD",
-        "discount": 0,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 48.46
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 49.1,
-        "localPrice": 50499,
-        "currency": "CLP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 49.1
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 51.54,
-        "localPrice": 303.5,
-        "currency": "BRL",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 51.54
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 52.61,
-        "localPrice": 209900,
-        "currency": "COP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 52.61
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 60.58,
-        "localPrice": 69.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 60.58
+            "p": 0.91
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 61.18,
-        "localPrice": 34659,
+        "price": 0.93,
+        "localPrice": 520,
         "currency": "KZT",
-        "discount": 0,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 61.18
+            "p": 0.93
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 69.01,
-        "localPrice": 1299,
+        "price": 0.98,
+        "localPrice": 18.5,
         "currency": "ZAR",
-        "discount": 0,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 69.01
+            "p": 0.98
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 1.01,
+        "localPrice": 5.99,
+        "currency": "BRL",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 1.01
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 1.03,
+        "localPrice": 1050,
+        "currency": "CLP",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 1.03
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 1.2,
+        "localPrice": 4750,
+        "currency": "COP",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 1.2
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 1.73,
+        "localPrice": 1.99,
+        "currency": "USD",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 1.73
           }
         ]
       },
       {
         "code": "DE",
-        "price": 69.99,
-        "localPrice": 69.99,
+        "price": 1.95,
+        "localPrice": 1.95,
         "currency": "EUR",
-        "discount": 0,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 69.99
+            "p": 1.95
           }
         ]
       },
       {
         "code": "PL",
-        "price": 70.48,
-        "localPrice": 299,
+        "price": 2.16,
+        "localPrice": 9.19,
         "currency": "PLN",
-        "discount": 0,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 70.48
+            "p": 2.16
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 1462040,
+    "title": "FINAL FANTASY VII REMAKE INTERGRADE",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1462040/header.jpg?t=1773895755",
+    "emoji": "🎯",
+    "color": "#4f8cff",
+    "base": 13.99,
+    "disc": -47,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 7.44,
+        "localPrice": 384,
+        "currency": "UAH",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.44
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 8.08,
+        "localPrice": 874,
+        "currency": "INR",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.08
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 9.76,
+        "localPrice": 11.19,
+        "currency": "USD",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.76
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 9.76,
+        "localPrice": 11.19,
+        "currency": "USD",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.76
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 9.97,
+        "localPrice": 202650,
+        "currency": "IDR",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.97
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 10.01,
+        "localPrice": 5600,
+        "currency": "KZT",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.01
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 10.02,
+        "localPrice": 696.5,
+        "currency": "PHP",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.02
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 10.36,
+        "localPrice": 61.21,
+        "currency": "BRL",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.36
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 10.95,
+        "localPrice": 11199,
+        "currency": "CLP",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.95
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 11.5,
+        "localPrice": 346500,
+        "currency": "VND",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.5
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 11.9,
+        "localPrice": 47250,
+        "currency": "COP",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.9
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 12.2,
+        "localPrice": 13.99,
+        "currency": "USD",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.2
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 12.99,
+        "localPrice": 244.65,
+        "currency": "ZAR",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.99
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 13.07,
+        "localPrice": 55.65,
+        "currency": "PLN",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.07
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 13.99,
+        "localPrice": 13.99,
+        "currency": "EUR",
+        "discount": 65,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.99
           }
         ]
       }
     ],
     "editions": [
       {
-        "id": 1531722,
-        "name": "Echoes of Aincrad",
+        "id": 514802,
+        "name": "FINAL FANTASY VII REMAKE INTERGRADE",
         "countries": [
           {
-            "code": "IN",
-            "price": 36.55,
-            "localPrice": 3999,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 36.55
-              }
-            ]
-          },
-          {
             "code": "UA",
-            "price": 38.44,
-            "localPrice": 1999,
+            "price": 7.44,
+            "localPrice": 384,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 38.44
+                "p": 7.44
               }
             ]
           },
           {
-            "code": "ID",
-            "price": 38.91,
-            "localPrice": 799000,
-            "currency": "IDR",
+            "code": "IN",
+            "price": 8.08,
+            "localPrice": 874,
+            "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 38.91
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 39.94,
-            "localPrice": 2795,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 39.94
+                "p": 8.08
               }
             ]
           },
           {
             "code": "TR",
-            "price": 39.98,
-            "localPrice": 46.19,
+            "price": 9.76,
+            "localPrice": 11.19,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 39.98
+                "p": 9.76
               }
             ]
           },
           {
             "code": "AR",
-            "price": 48.46,
-            "localPrice": 55.99,
+            "price": 9.76,
+            "localPrice": 11.19,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 48.46
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 49.1,
-            "localPrice": 50499,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 49.1
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 51.54,
-            "localPrice": 303.5,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 51.54
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 52.61,
-            "localPrice": 209900,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 52.61
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 60.58,
-            "localPrice": 69.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 60.58
+                "p": 9.76
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 61.18,
-            "localPrice": 34659,
+            "price": 10.01,
+            "localPrice": 5600,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 61.18
+                "p": 10.01
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 10.36,
+            "localPrice": 61.21,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.36
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 10.95,
+            "localPrice": 11199,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.95
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 11.9,
+            "localPrice": 47250,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 11.9
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 12.2,
+            "localPrice": 13.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.2
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 69.01,
-            "localPrice": 1299,
+            "price": 12.99,
+            "localPrice": 244.65,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 69.01
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 69.99,
-            "localPrice": 69.99,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 69.99
+                "p": 12.99
               }
             ]
           },
           {
             "code": "PL",
-            "price": 70.48,
-            "localPrice": 299,
+            "price": 13.07,
+            "localPrice": 55.65,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 70.48
+                "p": 13.07
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 13.99,
+            "localPrice": 13.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.99
               }
             ]
           }
@@ -7540,604 +5086,1619 @@ window.GAMES_DATA = [
         "label": "Standard"
       },
       {
-        "id": 1531724,
-        "name": "Echoes of Aincrad Deluxe Edition",
+        "id": 1186111,
+        "name": "FINAL FANTASY VII REMAKE & REBIRTH Digital Deluxe Twin Pack",
         "countries": [
           {
             "code": "UA",
-            "price": 46.13,
-            "localPrice": 2399,
+            "price": 21.69,
+            "localPrice": 1119,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 46.13
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 48.66,
-            "localPrice": 999000,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 48.66
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 51.41,
-            "localPrice": 59.39,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 51.41
+                "p": 21.69
               }
             ]
           },
           {
             "code": "IN",
-            "price": 52.09,
-            "localPrice": 5699,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 52.09
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 52.8,
-            "localPrice": 3695,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 52.8
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 62.31,
-            "localPrice": 71.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 62.31
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 63.2,
-            "localPrice": 64999,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 63.2
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 66.31,
-            "localPrice": 390.5,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 66.31
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 67.64,
-            "localPrice": 269900,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 67.64
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 77.9,
-            "localPrice": 89.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 77.9
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 78.68,
-            "localPrice": 44569,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 78.68
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 89.99,
-            "localPrice": 89.99,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 89.99
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 90.26,
-            "localPrice": 1699,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 90.26
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 91.69,
-            "localPrice": 389,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 91.69
-              }
-            ]
-          }
-        ],
-        "label": "Deluxe Edition"
-      },
-      {
-        "id": 1531726,
-        "name": "Echoes of Aincrad Ultimate Edition",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 53.82,
+            "price": 25.88,
             "localPrice": 2799,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 53.82
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 62.83,
-            "localPrice": 72.59,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 62.83
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 63.27,
-            "localPrice": 1299000,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 63.27
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 64.23,
-            "localPrice": 4495,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 64.23
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 65.8,
-            "localPrice": 7199,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 65.8
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 76.16,
-            "localPrice": 87.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 76.16
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 77.3,
-            "localPrice": 79499,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 77.3
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 81.08,
-            "localPrice": 477.5,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 81.08
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 82.68,
-            "localPrice": 329900,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 82.68
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 95.21,
-            "localPrice": 109.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 95.21
+                "p": 25.88
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 96.16,
-            "localPrice": 54469,
+            "price": 30.02,
+            "localPrice": 16800,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 96.16
+                "p": 30.02
               }
             ]
           },
           {
-            "code": "DE",
-            "price": 109.99,
-            "localPrice": 109.99,
-            "currency": "EUR",
+            "code": "BR",
+            "price": 30.47,
+            "localPrice": 179.96,
+            "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 109.99
+                "p": 30.47
               }
             ]
           },
           {
-            "code": "PL",
-            "price": 110.55,
-            "localPrice": 469,
-            "currency": "PLN",
+            "code": "TR",
+            "price": 31.38,
+            "localPrice": 35.99,
+            "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 110.55
+                "p": 31.38
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 31.38,
+            "localPrice": 35.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.38
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 32.85,
+            "localPrice": 33599,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 32.85
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 34.86,
+            "localPrice": 39.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.86
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 111.51,
-            "localPrice": 2099,
+            "price": 36.08,
+            "localPrice": 679.6,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 111.51
+                "p": 36.08
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 36.25,
+            "localPrice": 144000,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 36.25
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 37.49,
+            "localPrice": 159.6,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 37.49
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 39.99,
+            "localPrice": 39.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.99
               }
             ]
           }
         ],
-        "label": "Ultimate Edition"
+        "label": "FINAL FANTASY VII REMAKE & REBIRTH Digital Deluxe Twin Pack"
       }
     ]
   },
   {
-    "appid": 2373990,
-    "title": "Solo Leveling: ARISE OVERDRIVE",
-    "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2373990/018068a74847b3953278efacca07cfbe537a46c7/header.jpg?t=1781758887",
-    "emoji": "🎯",
-    "color": "#f472b6",
-    "base": 23.99,
-    "disc": -45,
+    "appid": 2958130,
+    "title": "Jurassic World Evolution 3",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2958130/df39f8c59232633e8e01ab63313b095402bdd0d5/header.jpg?t=1781616104",
+    "emoji": "🎮",
+    "color": "#36d399",
+    "base": 43.27,
+    "disc": -57,
     "countries": [
       {
-        "code": "ID",
-        "price": 13.12,
-        "localPrice": 269400,
-        "currency": "IDR",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 13.12
-          }
-        ]
-      },
-      {
         "code": "IN",
-        "price": 13.15,
-        "localPrice": 1439,
+        "price": 18.42,
+        "localPrice": 1992,
         "currency": "INR",
-        "discount": 40,
+        "discount": 33,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 13.15
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 13.71,
-        "localPrice": 959.4,
-        "currency": "PHP",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 13.71
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 13.83,
-        "localPrice": 719,
-        "currency": "UAH",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 13.83
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 14.83,
-        "localPrice": 8399,
-        "currency": "KZT",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 14.83
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 15.27,
-        "localPrice": 89.94,
-        "currency": "BRL",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 15.27
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 15.66,
-        "localPrice": 474000,
-        "currency": "VND",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 15.66
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 15.75,
-        "localPrice": 16194,
-        "currency": "CLP",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 15.75
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 17.89,
-        "localPrice": 71400,
-        "currency": "COP",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 17.89
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 19.09,
-        "localPrice": 359.4,
-        "currency": "ZAR",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 19.09
+            "p": 18.42
           }
         ]
       },
       {
         "code": "TR",
-        "price": 20.77,
-        "localPrice": 23.99,
+        "price": 18.68,
+        "localPrice": 21.43,
         "currency": "USD",
-        "discount": 40,
+        "discount": 33,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 20.77
+            "p": 18.68
           }
         ]
       },
       {
         "code": "AR",
-        "price": 20.77,
-        "localPrice": 23.99,
+        "price": 18.68,
+        "localPrice": 21.43,
         "currency": "USD",
-        "discount": 40,
+        "discount": 33,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 20.77
+            "p": 18.68
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 18.82,
+        "localPrice": 971,
+        "currency": "UAH",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 18.82
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 20.76,
+        "localPrice": 422099,
+        "currency": "IDR",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.76
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 21.55,
+        "localPrice": 12060,
+        "currency": "KZT",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.55
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 21.78,
+        "localPrice": 656500,
+        "currency": "VND",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.78
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 21.89,
+        "localPrice": 1520.9,
+        "currency": "PHP",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.89
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 25.64,
+        "localPrice": 151.42,
+        "currency": "BRL",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.64
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 26.14,
+        "localPrice": 26733,
+        "currency": "CLP",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 26.14
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 28.42,
+        "localPrice": 535.33,
+        "currency": "ZAR",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 28.42
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 29.52,
+        "localPrice": 117250,
+        "currency": "COP",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.52
           }
         ]
       },
       {
         "code": "US",
-        "price": 20.77,
-        "localPrice": 23.99,
+        "price": 35.04,
+        "localPrice": 40.19,
         "currency": "USD",
-        "discount": 40,
+        "discount": 33,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 20.77
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 21.07,
-        "localPrice": 89.4,
-        "currency": "PLN",
-        "discount": 40,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 21.07
+            "p": 35.04
           }
         ]
       },
       {
         "code": "DE",
-        "price": 23.99,
-        "localPrice": 23.99,
+        "price": 40.19,
+        "localPrice": 40.19,
         "currency": "EUR",
-        "discount": 40,
+        "discount": 33,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 23.99
+            "p": 40.19
           }
         ]
+      },
+      {
+        "code": "PL",
+        "price": 43.27,
+        "localPrice": 184.24,
+        "currency": "PLN",
+        "discount": 33,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 43.27
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 1053151,
+        "name": "Jurassic World Evolution 3",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 18.42,
+            "localPrice": 1992,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.42
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 18.68,
+            "localPrice": 21.43,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.68
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 18.68,
+            "localPrice": 21.43,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.68
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 18.82,
+            "localPrice": 971,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.82
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 20.76,
+            "localPrice": 422099,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 20.76
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 21.55,
+            "localPrice": 12060,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.55
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 21.78,
+            "localPrice": 656500,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.78
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 21.89,
+            "localPrice": 1520.9,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.89
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 25.64,
+            "localPrice": 151.42,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 25.64
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 26.14,
+            "localPrice": 26733,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 26.14
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 28.42,
+            "localPrice": 535.33,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 28.42
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 29.52,
+            "localPrice": 117250,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 29.52
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 35.04,
+            "localPrice": 40.19,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 35.04
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 40.19,
+            "localPrice": 40.19,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 40.19
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 43.27,
+            "localPrice": 184.24,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.27
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1291163,
+        "name": "Jurassic World Evolution 3: Deluxe Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 23.05,
+            "localPrice": 1189,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 23.05
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 23.07,
+            "localPrice": 2495,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 23.07
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 23.36,
+            "localPrice": 26.79,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 23.36
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 23.36,
+            "localPrice": 26.79,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 23.36
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 26.03,
+            "localPrice": 529299,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 26.03
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 26.94,
+            "localPrice": 15075,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 26.94
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 27.12,
+            "localPrice": 817500,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 27.12
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 27.67,
+            "localPrice": 1922.9,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 27.67
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 32.44,
+            "localPrice": 191.62,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 32.44
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 32.69,
+            "localPrice": 33433,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 32.69
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 35.54,
+            "localPrice": 669.33,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 35.54
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 36.27,
+            "localPrice": 144050,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 36.27
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 43.8,
+            "localPrice": 50.24,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.8
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 50.24,
+            "localPrice": 50.24,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 50.24
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 54.61,
+            "localPrice": 232.48,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 54.61
+              }
+            ]
+          }
+        ],
+        "label": ": Deluxe Edition"
+      }
+    ]
+  },
+  {
+    "appid": 1805110,
+    "title": "Solarpunk™",
+    "genre": "Abenteuer",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1805110/9512e707770080499c95c50976ff1b6f712a95ba/header.jpg?t=1781774673",
+    "emoji": "🗺️",
+    "color": "#f472b6",
+    "base": 22.99,
+    "disc": -59,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 9.46,
+        "localPrice": 488,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.46
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 9.73,
+        "localPrice": 197792,
+        "currency": "IDR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.73
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 9.77,
+        "localPrice": 1057,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.77
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 9.92,
+        "localPrice": 689.06,
+        "currency": "PHP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.92
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 10.03,
+        "localPrice": 11.5,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.03
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 10.03,
+        "localPrice": 11.5,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.03
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 10.32,
+        "localPrice": 311000,
+        "currency": "VND",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.32
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 11.57,
+        "localPrice": 6477,
+        "currency": "KZT",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.57
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 11.72,
+        "localPrice": 220.79,
+        "currency": "ZAR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.72
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 13.08,
+        "localPrice": 77.27,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.08
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 13.49,
+        "localPrice": 13799,
+        "currency": "CLP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.49
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 14.13,
+        "localPrice": 56117,
+        "currency": "COP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.13
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 20.04,
+        "localPrice": 22.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.04
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 22.69,
+        "localPrice": 96.59,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 22.69
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 22.99,
+        "localPrice": 22.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 22.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 394360,
+    "title": "Hearts of Iron IV",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/67bbd0057627fc2244793bcdd09260c2539499cf/header.jpg?t=1781595476",
+    "emoji": "🎮",
+    "color": "#4f8cff",
+    "base": 9.99,
+    "disc": -48,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 5.21,
+        "localPrice": 269,
+        "currency": "UAH",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.21
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 5.55,
+        "localPrice": 112799,
+        "currency": "IDR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.55
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 5.75,
+        "localPrice": 399.8,
+        "currency": "PHP",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.75
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 5.79,
+        "localPrice": 174500,
+        "currency": "VND",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.79
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 5.8,
+        "localPrice": 627,
+        "currency": "INR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 5.8
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 6.09,
+        "localPrice": 6.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.09
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 6.09,
+        "localPrice": 6.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.09
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 6.4,
+        "localPrice": 37.79,
+        "currency": "BRL",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.4
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 6.88,
+        "localPrice": 7040,
+        "currency": "CLP",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.88
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 7.18,
+        "localPrice": 4020,
+        "currency": "KZT",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.18
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 7.94,
+        "localPrice": 31520,
+        "currency": "COP",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.94
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 8.1,
+        "localPrice": 152.6,
+        "currency": "ZAR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.1
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 8.71,
+        "localPrice": 9.99,
+        "currency": "USD",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.71
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 9.82,
+        "localPrice": 41.79,
+        "currency": "PLN",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.82
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 9.99,
+        "localPrice": 9.99,
+        "currency": "EUR",
+        "discount": 80,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 808474,
+        "name": "Hearts of Iron IV",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 5.21,
+            "localPrice": 269,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.21
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 5.55,
+            "localPrice": 112799,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.55
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 5.75,
+            "localPrice": 399.8,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.75
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 5.79,
+            "localPrice": 174500,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.79
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 5.8,
+            "localPrice": 627,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.8
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 6.09,
+            "localPrice": 6.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.09
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 6.09,
+            "localPrice": 6.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.09
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 6.4,
+            "localPrice": 37.79,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.4
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 6.88,
+            "localPrice": 7040,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.88
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 7.18,
+            "localPrice": 4020,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.18
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 7.94,
+            "localPrice": 31520,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.94
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 8.1,
+            "localPrice": 152.6,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.1
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 8.71,
+            "localPrice": 9.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.71
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 9.82,
+            "localPrice": 41.79,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.82
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1429184,
+        "name": "Hearts of Iron IV: General Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 7.79,
+            "localPrice": 402,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.79
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 8.32,
+            "localPrice": 169249,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.32
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 8.56,
+            "localPrice": 594.75,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.56
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 8.68,
+            "localPrice": 261500,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.68
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 8.76,
+            "localPrice": 947,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.76
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 9.15,
+            "localPrice": 10.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.15
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 9.15,
+            "localPrice": 10.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.15
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 9.78,
+            "localPrice": 57.74,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.78
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 10.32,
+            "localPrice": 10550,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.32
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 10.77,
+            "localPrice": 6025,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.77
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 11.91,
+            "localPrice": 47300,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 11.91
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 12.14,
+            "localPrice": 228.75,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.14
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 13.07,
+            "localPrice": 14.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.07
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 14.74,
+            "localPrice": 62.74,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 14.74
+              }
+            ]
+          }
+        ],
+        "label": ": General Edition"
       }
     ]
   },
@@ -8153,7 +6714,7 @@ window.GAMES_DATA = [
     "countries": [
       {
         "code": "PH",
-        "price": 6.43,
+        "price": 6.48,
         "localPrice": 450,
         "currency": "PHP",
         "discount": 50,
@@ -8161,13 +6722,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 6.43
+            "p": 6.48
           }
         ]
       },
       {
         "code": "UA",
-        "price": 7.48,
+        "price": 7.54,
         "localPrice": 389,
         "currency": "UAH",
         "discount": 50,
@@ -8175,13 +6736,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 7.48
+            "p": 7.54
           }
         ]
       },
       {
         "code": "ID",
-        "price": 8.01,
+        "price": 8.09,
         "localPrice": 164500,
         "currency": "IDR",
         "discount": 50,
@@ -8189,13 +6750,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 8.01
+            "p": 8.09
           }
         ]
       },
       {
         "code": "TR",
-        "price": 8.21,
+        "price": 8.27,
         "localPrice": 9.49,
         "currency": "USD",
         "discount": 50,
@@ -8203,13 +6764,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 8.21
+            "p": 8.27
           }
         ]
       },
       {
         "code": "AR",
-        "price": 8.21,
+        "price": 8.27,
         "localPrice": 9.49,
         "currency": "USD",
         "discount": 50,
@@ -8217,27 +6778,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 8.21
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 8.22,
-        "localPrice": 899,
-        "currency": "INR",
-        "discount": 50,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.22
+            "p": 8.27
           }
         ]
       },
       {
         "code": "VN",
-        "price": 8.26,
+        "price": 8.29,
         "localPrice": 250000,
         "currency": "VND",
         "discount": 50,
@@ -8245,13 +6792,27 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 8.26
+            "p": 8.29
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 8.31,
+        "localPrice": 899,
+        "currency": "INR",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.31
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 9.27,
+        "price": 9.38,
         "localPrice": 5250,
         "currency": "KZT",
         "discount": 50,
@@ -8259,13 +6820,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 9.27
+            "p": 9.38
           }
         ]
       },
       {
         "code": "BR",
-        "price": 10.19,
+        "price": 10.16,
         "localPrice": 59.99,
         "currency": "BRL",
         "discount": 50,
@@ -8273,13 +6834,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 10.19
+            "p": 10.16
           }
         ]
       },
       {
         "code": "CL",
-        "price": 10.45,
+        "price": 10.51,
         "localPrice": 10750,
         "currency": "CLP",
         "discount": 50,
@@ -8287,13 +6848,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 10.45
+            "p": 10.51
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 10.6,
+        "price": 10.59,
         "localPrice": 199.5,
         "currency": "ZAR",
         "discount": 50,
@@ -8301,13 +6862,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 10.6
+            "p": 10.59
           }
         ]
       },
       {
         "code": "CO",
-        "price": 11.9,
+        "price": 11.96,
         "localPrice": 47500,
         "currency": "COP",
         "discount": 50,
@@ -8315,13 +6876,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 11.9
+            "p": 11.96
           }
         ]
       },
       {
         "code": "PL",
-        "price": 14.14,
+        "price": 14.09,
         "localPrice": 59.99,
         "currency": "PLN",
         "discount": 50,
@@ -8329,13 +6890,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 14.14
+            "p": 14.09
           }
         ]
       },
       {
         "code": "US",
-        "price": 17.3,
+        "price": 17.43,
         "localPrice": 19.99,
         "currency": "USD",
         "discount": 50,
@@ -8343,7 +6904,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 17.3
+            "p": 17.43
           }
         ]
       },
@@ -8364,18 +6925,240 @@ window.GAMES_DATA = [
     ]
   },
   {
+    "appid": 2373990,
+    "title": "Solo Leveling: ARISE OVERDRIVE",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2373990/018068a74847b3953278efacca07cfbe537a46c7/header.jpg?t=1781758887",
+    "emoji": "🎯",
+    "color": "#f472b6",
+    "base": 23.99,
+    "disc": -45,
+    "countries": [
+      {
+        "code": "ID",
+        "price": 13.25,
+        "localPrice": 269400,
+        "currency": "IDR",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.25
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 13.31,
+        "localPrice": 1439,
+        "currency": "INR",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.31
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 13.81,
+        "localPrice": 959.4,
+        "currency": "PHP",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.81
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 13.94,
+        "localPrice": 719,
+        "currency": "UAH",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.94
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 15.01,
+        "localPrice": 8399,
+        "currency": "KZT",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.01
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 15.23,
+        "localPrice": 89.94,
+        "currency": "BRL",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.23
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 15.73,
+        "localPrice": 474000,
+        "currency": "VND",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.73
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 15.83,
+        "localPrice": 16194,
+        "currency": "CLP",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.83
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 17.98,
+        "localPrice": 71400,
+        "currency": "COP",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.98
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 19.08,
+        "localPrice": 359.4,
+        "currency": "ZAR",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.08
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 20.91,
+        "localPrice": 23.99,
+        "currency": "USD",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.91
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 20.91,
+        "localPrice": 23.99,
+        "currency": "USD",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.91
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 20.91,
+        "localPrice": 23.99,
+        "currency": "USD",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.91
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 21,
+        "localPrice": 89.4,
+        "currency": "PLN",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 23.99,
+        "localPrice": 23.99,
+        "currency": "EUR",
+        "discount": 40,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 23.99
+          }
+        ]
+      }
+    ]
+  },
+  {
     "appid": 1962700,
     "title": "Subnautica 2",
     "genre": "Action",
     "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/header.jpg?t=1780372044",
     "emoji": "🎯",
     "color": "#ffd166",
-    "base": 20.38,
-    "disc": -19,
+    "base": 29.99,
+    "disc": -44,
     "countries": [
       {
         "code": "IN",
-        "price": 16.45,
+        "price": 16.65,
         "localPrice": 1800,
         "currency": "INR",
         "discount": 0,
@@ -8383,13 +7166,27 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 16.45
+            "p": 16.65
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 17.26,
+        "localPrice": 350999,
+        "currency": "IDR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.26
           }
         ]
       },
       {
         "code": "UA",
-        "price": 17.29,
+        "price": 17.43,
         "localPrice": 899,
         "currency": "UAH",
         "discount": 0,
@@ -8397,13 +7194,27 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 17.29
+            "p": 17.43
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 17.46,
+        "localPrice": 9770,
+        "currency": "KZT",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.46
           }
         ]
       },
       {
         "code": "TR",
-        "price": 18.17,
+        "price": 18.3,
         "localPrice": 20.99,
         "currency": "USD",
         "discount": 0,
@@ -8411,13 +7222,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 18.17
+            "p": 18.3
           }
         ]
       },
       {
         "code": "AR",
-        "price": 18.17,
+        "price": 18.3,
         "localPrice": 20.99,
         "currency": "USD",
         "discount": 0,
@@ -8425,13 +7236,55 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 18.17
+            "p": 18.3
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 19.74,
+        "localPrice": 595000,
+        "currency": "VND",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.74
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 19.79,
+        "localPrice": 1375,
+        "currency": "PHP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.79
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 19.85,
+        "localPrice": 20300,
+        "currency": "CLP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.85
           }
         ]
       },
       {
         "code": "BR",
-        "price": 20.38,
+        "price": 20.31,
         "localPrice": 119.99,
         "currency": "BRL",
         "discount": 0,
@@ -8439,215 +7292,847 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 20.38
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "appid": 518790,
-    "title": "theHunter: Call of the Wild™",
-    "genre": "Abenteuer",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/518790/1975f9a8f8d475f6d348226f384ecde2d0fbc178/header_alt_assets_13_german.jpg?t=1781679235",
-    "emoji": "🗺️",
-    "color": "#f472b6",
-    "base": 21.68,
-    "disc": -63,
-    "countries": [
-      {
-        "code": "UA",
-        "price": 7.98,
-        "localPrice": 415,
-        "currency": "UAH",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.98
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 8.04,
-        "localPrice": 880,
-        "currency": "INR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.04
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 8.08,
-        "localPrice": 165999,
-        "currency": "IDR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.08
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 8.59,
-        "localPrice": 260000,
-        "currency": "VND",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.59
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 8.79,
-        "localPrice": 615,
-        "currency": "PHP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.79
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 9.08,
-        "localPrice": 10.49,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.08
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 9.18,
-        "localPrice": 5200,
-        "currency": "KZT",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.18
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 9.83,
-        "localPrice": 185,
-        "currency": "ZAR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.83
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 10.19,
-        "localPrice": 59.99,
-        "currency": "BRL",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.19
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 10.21,
-        "localPrice": 10500,
-        "currency": "CLP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.21
+            "p": 20.31
           }
         ]
       },
       {
         "code": "CO",
-        "price": 11.9,
-        "localPrice": 47500,
+        "price": 21.65,
+        "localPrice": 86000,
         "currency": "COP",
         "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 11.9
+            "p": 21.65
           }
         ]
       },
       {
         "code": "US",
-        "price": 17.3,
-        "localPrice": 19.99,
+        "price": 26.14,
+        "localPrice": 29.99,
         "currency": "USD",
         "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 17.3
+            "p": 26.14
           }
         ]
       },
       {
-        "code": "DE",
-        "price": 19.5,
-        "localPrice": 19.5,
-        "currency": "EUR",
+        "code": "ZA",
+        "price": 26.55,
+        "localPrice": 500,
+        "currency": "ZAR",
         "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 19.5
+            "p": 26.55
           }
         ]
       },
       {
         "code": "PL",
-        "price": 21.68,
-        "localPrice": 91.99,
+        "price": 27.01,
+        "localPrice": 115,
         "currency": "PLN",
         "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 21.68
+            "p": 27.01
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 29.99,
+        "localPrice": 29.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 29.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "appid": 801800,
+    "title": "Atomfall",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/801800/header.jpg?t=1776701587",
+    "emoji": "🎯",
+    "color": "#4f8cff",
+    "base": 21.79,
+    "disc": -67,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 7.17,
+        "localPrice": 370,
+        "currency": "UAH",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.17
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 7.4,
+        "localPrice": 800,
+        "currency": "INR",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.4
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 7.4,
+        "localPrice": 150399,
+        "currency": "IDR",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.4
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 7.76,
+        "localPrice": 234000,
+        "currency": "VND",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.76
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 8.06,
+        "localPrice": 560,
+        "currency": "PHP",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.06
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 8.36,
+        "localPrice": 4680,
+        "currency": "KZT",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.36
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 8.81,
+        "localPrice": 166,
+        "currency": "ZAR",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.81
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 9.14,
+        "localPrice": 53.99,
+        "currency": "BRL",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.14
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 9.31,
+        "localPrice": 9520,
+        "currency": "CLP",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.31
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 10.78,
+        "localPrice": 42800,
+        "currency": "COP",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 10.78
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 17.43,
+        "localPrice": 19.99,
+        "currency": "USD",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.43
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 19.99,
+        "localPrice": 19.99,
+        "currency": "EUR",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.99
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 21.79,
+        "localPrice": 92.79,
+        "currency": "PLN",
+        "discount": 60,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.79
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 244021,
+        "name": "Atomfall",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 7.17,
+            "localPrice": 370,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.17
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 7.4,
+            "localPrice": 800,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.4
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 7.4,
+            "localPrice": 150399,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.4
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 7.76,
+            "localPrice": 234000,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.76
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 8.06,
+            "localPrice": 560,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.06
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 8.36,
+            "localPrice": 4680,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.36
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 8.81,
+            "localPrice": 166,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.81
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 9.14,
+            "localPrice": 53.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.14
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 9.31,
+            "localPrice": 9520,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.31
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 10.78,
+            "localPrice": 42800,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.78
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 17.43,
+            "localPrice": 19.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 17.43
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 19.99,
+            "localPrice": 19.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 19.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 21.79,
+            "localPrice": 92.79,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.79
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1180080,
+        "name": "Atomfall Deluxe Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 10.2,
+            "localPrice": 526,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.2
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 10.35,
+            "localPrice": 210399,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.35
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 10.36,
+            "localPrice": 1120,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.36
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 10.88,
+            "localPrice": 328000,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 10.88
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 11.23,
+            "localPrice": 780,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 11.23
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 11.79,
+            "localPrice": 6600,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 11.79
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 12.3,
+            "localPrice": 231.6,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.3
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 12.8,
+            "localPrice": 75.59,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.8
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 13.1,
+            "localPrice": 13400,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.1
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 15.11,
+            "localPrice": 60000,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 15.11
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 24.4,
+            "localPrice": 27.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 24.4
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 27.99,
+            "localPrice": 27.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 27.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 30.53,
+            "localPrice": 129.99,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 30.53
+              }
+            ]
+          }
+        ],
+        "label": "Deluxe Edition"
+      }
+    ]
+  },
+  {
+    "appid": 3276050,
+    "title": "SpaceCraft",
+    "genre": "Abenteuer",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3276050/f3c3248ff25d51c8857d135376b2042b8e203235/header_alt_assets_1_german.jpg?t=1781191112",
+    "emoji": "🗺️",
+    "color": "#36d399",
+    "base": 26.99,
+    "disc": -57,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 11.67,
+        "localPrice": 602,
+        "currency": "UAH",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.67
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 11.76,
+        "localPrice": 13.49,
+        "currency": "USD",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.76
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 11.76,
+        "localPrice": 13.49,
+        "currency": "USD",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.76
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 11.79,
+        "localPrice": 355500,
+        "currency": "VND",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.79
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 12.22,
+        "localPrice": 248399,
+        "currency": "IDR",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.22
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 12.31,
+        "localPrice": 855,
+        "currency": "PHP",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.31
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 12.48,
+        "localPrice": 1349,
+        "currency": "INR",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.48
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 12.8,
+        "localPrice": 75.59,
+        "currency": "BRL",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.8
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 13.56,
+        "localPrice": 13869,
+        "currency": "CLP",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.56
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 14.33,
+        "localPrice": 269.99,
+        "currency": "ZAR",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.33
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 14.77,
+        "localPrice": 8263,
+        "currency": "KZT",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.77
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 15.86,
+        "localPrice": 62999,
+        "currency": "COP",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.86
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 23.04,
+        "localPrice": 98.09,
+        "currency": "PLN",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 23.04
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 23.53,
+        "localPrice": 26.99,
+        "currency": "USD",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 23.53
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 26.99,
+        "localPrice": 26.99,
+        "currency": "EUR",
+        "discount": 10,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 26.99
           }
         ]
       }
@@ -8665,7 +8150,7 @@ window.GAMES_DATA = [
     "countries": [
       {
         "code": "UA",
-        "price": 30.75,
+        "price": 30.99,
         "localPrice": 1599,
         "currency": "UAH",
         "discount": 0,
@@ -8673,29 +8158,15 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 30.75
+            "p": 30.99
           }
         ]
       },
       {
         "code": "PH",
-        "price": 31.44,
+        "price": 31.66,
         "localPrice": 2200,
         "currency": "PHP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 31.44
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 31.66,
-        "localPrice": 650000,
-        "currency": "IDR",
         "discount": 0,
         "shop": "Steam",
         "shops": [
@@ -8706,8 +8177,22 @@ window.GAMES_DATA = [
         ]
       },
       {
+        "code": "ID",
+        "price": 31.97,
+        "localPrice": 650000,
+        "currency": "IDR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 31.97
+          }
+        ]
+      },
+      {
         "code": "IN",
-        "price": 31.98,
+        "price": 32.36,
         "localPrice": 3499,
         "currency": "INR",
         "discount": 0,
@@ -8715,13 +8200,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 31.98
+            "p": 32.36
           }
         ]
       },
       {
         "code": "TR",
-        "price": 34.62,
+        "price": 34.86,
         "localPrice": 39.99,
         "currency": "USD",
         "discount": 0,
@@ -8729,13 +8214,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 34.62
+            "p": 34.86
           }
         ]
       },
       {
         "code": "AR",
-        "price": 34.62,
+        "price": 34.86,
         "localPrice": 39.99,
         "currency": "USD",
         "discount": 0,
@@ -8743,27 +8228,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 34.62
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 36.95,
-        "localPrice": 38000,
-        "currency": "CLP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 36.95
+            "p": 34.86
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 37.13,
+        "price": 37.11,
         "localPrice": 699,
         "currency": "ZAR",
         "discount": 0,
@@ -8771,13 +8242,27 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 37.13
+            "p": 37.11
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 37.16,
+        "localPrice": 38000,
+        "currency": "CLP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 37.16
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 37.95,
+        "price": 38.42,
         "localPrice": 21500,
         "currency": "KZT",
         "discount": 0,
@@ -8785,13 +8270,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 37.95
+            "p": 38.42
           }
         ]
       },
       {
         "code": "CO",
-        "price": 40.1,
+        "price": 40.28,
         "localPrice": 160000,
         "currency": "COP",
         "discount": 0,
@@ -8799,13 +8284,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 40.1
+            "p": 40.28
           }
         ]
       },
       {
         "code": "BR",
-        "price": 50.77,
+        "price": 50.62,
         "localPrice": 299,
         "currency": "BRL",
         "discount": 0,
@@ -8813,13 +8298,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 50.77
+            "p": 50.62
           }
         ]
       },
       {
         "code": "PL",
-        "price": 53.98,
+        "price": 53.79,
         "localPrice": 229,
         "currency": "PLN",
         "discount": 0,
@@ -8827,13 +8312,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 53.98
+            "p": 53.79
           }
         ]
       },
       {
         "code": "US",
-        "price": 60.58,
+        "price": 61.02,
         "localPrice": 69.99,
         "currency": "USD",
         "discount": 0,
@@ -8841,7 +8326,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 60.58
+            "p": 61.02
           }
         ]
       },
@@ -8867,35 +8352,22 @@ window.GAMES_DATA = [
         "countries": [
           {
             "code": "UA",
-            "price": 30.75,
+            "price": 30.99,
             "localPrice": 1599,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 30.75
+                "p": 30.99
               }
             ]
           },
           {
             "code": "PH",
-            "price": 31.44,
+            "price": 31.66,
             "localPrice": 2200,
             "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 31.44
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 31.66,
-            "localPrice": 650000,
-            "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
@@ -8905,132 +8377,145 @@ window.GAMES_DATA = [
             ]
           },
           {
+            "code": "ID",
+            "price": 31.97,
+            "localPrice": 650000,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.97
+              }
+            ]
+          },
+          {
             "code": "IN",
-            "price": 31.98,
+            "price": 32.36,
             "localPrice": 3499,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 31.98
+                "p": 32.36
               }
             ]
           },
           {
             "code": "TR",
-            "price": 34.62,
+            "price": 34.86,
             "localPrice": 39.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 34.62
+                "p": 34.86
               }
             ]
           },
           {
             "code": "AR",
-            "price": 34.62,
+            "price": 34.86,
             "localPrice": 39.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 34.62
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 36.95,
-            "localPrice": 38000,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 36.95
+                "p": 34.86
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 37.13,
+            "price": 37.11,
             "localPrice": 699,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 37.13
+                "p": 37.11
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 37.16,
+            "localPrice": 38000,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 37.16
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 37.95,
+            "price": 38.42,
             "localPrice": 21500,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 37.95
+                "p": 38.42
               }
             ]
           },
           {
             "code": "CO",
-            "price": 40.1,
+            "price": 40.28,
             "localPrice": 160000,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 40.1
+                "p": 40.28
               }
             ]
           },
           {
             "code": "BR",
-            "price": 50.77,
+            "price": 50.62,
             "localPrice": 299,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 50.77
+                "p": 50.62
               }
             ]
           },
           {
             "code": "PL",
-            "price": 53.98,
+            "price": 53.79,
             "localPrice": 229,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 53.98
+                "p": 53.79
               }
             ]
           },
           {
             "code": "US",
-            "price": 60.58,
+            "price": 61.02,
             "localPrice": 69.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 60.58
+                "p": 61.02
               }
             ]
           },
@@ -9056,170 +8541,170 @@ window.GAMES_DATA = [
         "countries": [
           {
             "code": "UA",
-            "price": 35.55,
+            "price": 35.84,
             "localPrice": 1849,
             "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 35.55
+                "p": 35.84
               }
             ]
           },
           {
             "code": "PH",
-            "price": 35.72,
+            "price": 35.98,
             "localPrice": 2500,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 35.72
+                "p": 35.98
               }
             ]
           },
           {
             "code": "ID",
-            "price": 36.53,
+            "price": 36.89,
             "localPrice": 749999,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 36.53
+                "p": 36.89
               }
             ]
           },
           {
             "code": "IN",
-            "price": 36.56,
+            "price": 36.99,
             "localPrice": 4000,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 36.56
+                "p": 36.99
               }
             ]
           },
           {
             "code": "TR",
-            "price": 39.81,
+            "price": 40.09,
             "localPrice": 45.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 39.81
+                "p": 40.09
               }
             ]
           },
           {
             "code": "AR",
-            "price": 39.81,
+            "price": 40.09,
             "localPrice": 45.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 39.81
+                "p": 40.09
               }
             ]
           },
           {
             "code": "CL",
-            "price": 41.81,
+            "price": 42.05,
             "localPrice": 43000,
             "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 41.81
+                "p": 42.05
               }
             ]
           },
           {
             "code": "ZA",
-            "price": 42.45,
+            "price": 42.42,
             "localPrice": 799,
             "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 42.45
+                "p": 42.42
               }
             ]
           },
           {
             "code": "KZ",
-            "price": 43.25,
+            "price": 43.78,
             "localPrice": 24500,
             "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 43.25
+                "p": 43.78
               }
             ]
           },
           {
             "code": "CO",
-            "price": 45.36,
+            "price": 45.57,
             "localPrice": 181000,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 45.36
+                "p": 45.57
               }
             ]
           },
           {
             "code": "BR",
-            "price": 57.72,
+            "price": 57.55,
             "localPrice": 339.9,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 57.72
+                "p": 57.55
               }
             ]
           },
           {
             "code": "PL",
-            "price": 61.05,
+            "price": 60.83,
             "localPrice": 259,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 61.05
+                "p": 60.83
               }
             ]
           },
           {
             "code": "US",
-            "price": 69.24,
+            "price": 69.73,
             "localPrice": 79.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 69.24
+                "p": 69.73
               }
             ]
           },
@@ -9242,6 +8727,783 @@ window.GAMES_DATA = [
     ]
   },
   {
+    "appid": 2244210,
+    "title": "Echoes of Aincrad",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2244210/25fb6350451b21ca824562c8d1eebe89091347cc/header.jpg?t=1781687351",
+    "emoji": "🎯",
+    "color": "#36d399",
+    "base": 70.23,
+    "disc": -47,
+    "countries": [
+      {
+        "code": "IN",
+        "price": 36.98,
+        "localPrice": 3999,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 36.98
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 38.75,
+        "localPrice": 1999,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 38.75
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 39.3,
+        "localPrice": 799000,
+        "currency": "IDR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 39.3
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 40.23,
+        "localPrice": 2795,
+        "currency": "PHP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 40.23
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 40.27,
+        "localPrice": 46.19,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 40.27
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 48.81,
+        "localPrice": 55.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 48.81
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 49.38,
+        "localPrice": 50499,
+        "currency": "CLP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 49.38
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 51.38,
+        "localPrice": 303.5,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 51.38
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 52.84,
+        "localPrice": 209900,
+        "currency": "COP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 52.84
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 61.02,
+        "localPrice": 69.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 61.02
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 61.94,
+        "localPrice": 34659,
+        "currency": "KZT",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 61.94
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 68.97,
+        "localPrice": 1299,
+        "currency": "ZAR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 68.97
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 69.99,
+        "localPrice": 69.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 69.99
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 70.23,
+        "localPrice": 299,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 70.23
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 1531722,
+        "name": "Echoes of Aincrad",
+        "countries": [
+          {
+            "code": "IN",
+            "price": 36.98,
+            "localPrice": 3999,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 36.98
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 38.75,
+            "localPrice": 1999,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 38.75
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 39.3,
+            "localPrice": 799000,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.3
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 40.23,
+            "localPrice": 2795,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 40.23
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 40.27,
+            "localPrice": 46.19,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 40.27
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 48.81,
+            "localPrice": 55.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 48.81
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 49.38,
+            "localPrice": 50499,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 49.38
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 51.38,
+            "localPrice": 303.5,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51.38
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 52.84,
+            "localPrice": 209900,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 52.84
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 61.02,
+            "localPrice": 69.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 61.02
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 61.94,
+            "localPrice": 34659,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 61.94
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 68.97,
+            "localPrice": 1299,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 68.97
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 69.99,
+            "localPrice": 69.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 69.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 70.23,
+            "localPrice": 299,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 70.23
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1531724,
+        "name": "Echoes of Aincrad Deluxe Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 46.5,
+            "localPrice": 2399,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 46.5
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 49.13,
+            "localPrice": 999000,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 49.13
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 51.78,
+            "localPrice": 59.39,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51.78
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 52.7,
+            "localPrice": 5699,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 52.7
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 53.18,
+            "localPrice": 3695,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 53.18
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 62.76,
+            "localPrice": 71.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 62.76
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 63.56,
+            "localPrice": 64999,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 63.56
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 66.11,
+            "localPrice": 390.5,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 66.11
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 67.95,
+            "localPrice": 269900,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 67.95
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 78.45,
+            "localPrice": 89.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 78.45
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 79.65,
+            "localPrice": 44569,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 79.65
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 89.99,
+            "localPrice": 89.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 89.99
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 90.2,
+            "localPrice": 1699,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 90.2
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 91.37,
+            "localPrice": 389,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 91.37
+              }
+            ]
+          }
+        ],
+        "label": "Deluxe Edition"
+      },
+      {
+        "id": 1531726,
+        "name": "Echoes of Aincrad Ultimate Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 54.26,
+            "localPrice": 2799,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 54.26
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 63.28,
+            "localPrice": 72.59,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 63.28
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 63.89,
+            "localPrice": 1299000,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 63.89
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 64.69,
+            "localPrice": 4495,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 64.69
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 66.57,
+            "localPrice": 7199,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 66.57
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 76.71,
+            "localPrice": 87.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 76.71
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 77.73,
+            "localPrice": 79499,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 77.73
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 80.84,
+            "localPrice": 477.5,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 80.84
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 83.05,
+            "localPrice": 329900,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 83.05
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 95.89,
+            "localPrice": 109.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 95.89
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 97.34,
+            "localPrice": 54469,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 97.34
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 109.99,
+            "localPrice": 109.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 109.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 110.16,
+            "localPrice": 469,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 110.16
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 111.44,
+            "localPrice": 2099,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 111.44
+              }
+            ]
+          }
+        ],
+        "label": "Ultimate Edition"
+      }
+    ]
+  },
+  {
     "appid": 3892270,
     "title": "Gamble With Your Friends",
     "genre": "Abenteuer",
@@ -9253,7 +9515,7 @@ window.GAMES_DATA = [
     "countries": [
       {
         "code": "UA",
-        "price": 3.6,
+        "price": 3.62,
         "localPrice": 187,
         "currency": "UAH",
         "discount": 0,
@@ -9261,13 +9523,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.6
+            "p": 3.62
           }
         ]
       },
       {
         "code": "ID",
-        "price": 3.6,
+        "price": 3.64,
         "localPrice": 74000,
         "currency": "IDR",
         "discount": 0,
@@ -9275,13 +9537,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.6
+            "p": 3.64
           }
         ]
       },
       {
         "code": "IN",
-        "price": 3.66,
+        "price": 3.7,
         "localPrice": 400,
         "currency": "INR",
         "discount": 0,
@@ -9289,13 +9551,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.66
+            "p": 3.7
           }
         ]
       },
       {
         "code": "VN",
-        "price": 3.8,
+        "price": 3.82,
         "localPrice": 115000,
         "currency": "VND",
         "discount": 0,
@@ -9303,13 +9565,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.8
+            "p": 3.82
           }
         ]
       },
       {
         "code": "TR",
-        "price": 3.89,
+        "price": 3.91,
         "localPrice": 4.49,
         "currency": "USD",
         "discount": 0,
@@ -9317,13 +9579,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.89
+            "p": 3.91
           }
         ]
       },
       {
         "code": "AR",
-        "price": 3.89,
+        "price": 3.91,
         "localPrice": 4.49,
         "currency": "USD",
         "discount": 0,
@@ -9331,13 +9593,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.89
+            "p": 3.91
           }
         ]
       },
       {
         "code": "PH",
-        "price": 3.93,
+        "price": 3.96,
         "localPrice": 274.95,
         "currency": "PHP",
         "discount": 0,
@@ -9345,13 +9607,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 3.93
+            "p": 3.96
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 4.06,
+        "price": 4.11,
         "localPrice": 2300,
         "currency": "KZT",
         "discount": 0,
@@ -9359,13 +9621,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.06
+            "p": 4.11
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 4.36,
+        "price": 4.35,
         "localPrice": 82,
         "currency": "ZAR",
         "discount": 0,
@@ -9373,13 +9635,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.36
+            "p": 4.35
           }
         ]
       },
       {
         "code": "BR",
-        "price": 4.5,
+        "price": 4.48,
         "localPrice": 26.49,
         "currency": "BRL",
         "discount": 0,
@@ -9387,13 +9649,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.5
+            "p": 4.48
           }
         ]
       },
       {
         "code": "CL",
-        "price": 4.57,
+        "price": 4.6,
         "localPrice": 4700,
         "currency": "CLP",
         "discount": 0,
@@ -9401,13 +9663,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 4.57
+            "p": 4.6
           }
         ]
       },
       {
         "code": "CO",
-        "price": 5.26,
+        "price": 5.29,
         "localPrice": 21000,
         "currency": "COP",
         "discount": 0,
@@ -9415,13 +9677,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 5.26
+            "p": 5.29
           }
         ]
       },
       {
         "code": "PL",
-        "price": 6.83,
+        "price": 6.81,
         "localPrice": 28.99,
         "currency": "PLN",
         "discount": 0,
@@ -9429,13 +9691,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 6.83
+            "p": 6.81
           }
         ]
       },
       {
         "code": "US",
-        "price": 6.92,
+        "price": 6.97,
         "localPrice": 7.99,
         "currency": "USD",
         "discount": 0,
@@ -9443,7 +9705,7 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 6.92
+            "p": 6.97
           }
         ]
       },
@@ -9464,1012 +9726,612 @@ window.GAMES_DATA = [
     ]
   },
   {
-    "appid": 534380,
-    "title": "Dying Light 2 Stay Human: Reloaded Edition",
-    "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/534380/header.jpg?t=1781107577",
-    "emoji": "🎯",
-    "color": "#ffd166",
-    "base": 11.99,
-    "disc": -54,
+    "appid": 292030,
+    "title": "The Witcher 3: Wild Hunt",
+    "genre": "Rollenspiel",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/ad9240e088f953a84aee814034c50a6a92bf4516/header.jpg?t=1768303991",
+    "emoji": "🎮",
+    "color": "#f472b6",
+    "base": 3.48,
+    "disc": -52,
     "countries": [
       {
         "code": "IN",
-        "price": 5.48,
-        "localPrice": 599,
+        "price": 1.66,
+        "localPrice": 179,
         "currency": "INR",
-        "discount": 80,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 5.48
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 6.13,
-        "localPrice": 319,
-        "currency": "UAH",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.13
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 6.54,
-        "localPrice": 198000,
-        "currency": "VND",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.54
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 6.92,
-        "localPrice": 7.99,
-        "currency": "USD",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.92
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 6.92,
-        "localPrice": 7.99,
-        "currency": "USD",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.92
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 7.78,
-        "localPrice": 7998,
-        "currency": "CLP",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.78
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 7.94,
-        "localPrice": 4500,
-        "currency": "KZT",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.94
+            "p": 1.66
           }
         ]
       },
       {
         "code": "ID",
-        "price": 8.27,
-        "localPrice": 169800,
+        "price": 1.77,
+        "localPrice": 35999,
         "currency": "IDR",
-        "discount": 80,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 8.27
+            "p": 1.77
+          }
+        ]
+      },
+      {
+        "code": "UA",
+        "price": 1.82,
+        "localPrice": 94,
+        "currency": "UAH",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 1.82
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 1.95,
+        "localPrice": 1990,
+        "currency": "CLP",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 1.95
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 2.14,
+        "localPrice": 1199,
+        "currency": "KZT",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 2.14
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 2.19,
+        "localPrice": 66000,
+        "currency": "VND",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 2.19
           }
         ]
       },
       {
         "code": "BR",
-        "price": 8.46,
-        "localPrice": 49.8,
+        "price": 2.2,
+        "localPrice": 12.99,
         "currency": "BRL",
-        "discount": 80,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 8.46
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 8.54,
-        "localPrice": 598,
-        "currency": "PHP",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.54
+            "p": 2.2
           }
         ]
       },
       {
         "code": "PL",
-        "price": 9.43,
-        "localPrice": 39.99,
+        "price": 2.35,
+        "localPrice": 9.99,
         "currency": "PLN",
-        "discount": 80,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 9.43
+            "p": 2.35
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 2.45,
+        "localPrice": 169.9,
+        "currency": "PHP",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 2.45
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 2.61,
+        "localPrice": 2.99,
+        "currency": "USD",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 2.61
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 2.61,
+        "localPrice": 2.99,
+        "currency": "USD",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 2.61
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 9.55,
-        "localPrice": 179.8,
+        "price": 2.81,
+        "localPrice": 52.9,
         "currency": "ZAR",
-        "discount": 80,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 9.55
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 10.02,
-        "localPrice": 39980,
-        "currency": "COP",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.02
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 10.38,
-        "localPrice": 11.99,
-        "currency": "USD",
-        "discount": 80,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.38
+            "p": 2.81
           }
         ]
       },
       {
         "code": "DE",
-        "price": 11.99,
-        "localPrice": 11.99,
+        "price": 2.99,
+        "localPrice": 2.99,
         "currency": "EUR",
-        "discount": 80,
+        "discount": 90,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 11.99
+            "p": 2.99
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 3.27,
+        "localPrice": 12999,
+        "currency": "COP",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 3.27
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 3.48,
+        "localPrice": 3.99,
+        "currency": "USD",
+        "discount": 90,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 3.48
           }
         ]
       }
     ],
     "editions": [
       {
-        "id": 129576,
-        "name": "Dying Light 2: Reloaded Edition",
+        "id": 68476,
+        "name": "The Witcher 3: Wild Hunt",
         "countries": [
           {
             "code": "IN",
-            "price": 5.48,
-            "localPrice": 599,
+            "price": 1.66,
+            "localPrice": 179,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 5.48
-              }
-            ]
-          },
-          {
-            "code": "UA",
-            "price": 6.13,
-            "localPrice": 319,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.13
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 6.54,
-            "localPrice": 198000,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.54
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 6.92,
-            "localPrice": 7.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.92
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 6.92,
-            "localPrice": 7.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.92
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 7.78,
-            "localPrice": 7998,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.78
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 7.94,
-            "localPrice": 4500,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.94
+                "p": 1.66
               }
             ]
           },
           {
             "code": "ID",
-            "price": 8.27,
-            "localPrice": 169800,
+            "price": 1.77,
+            "localPrice": 35999,
             "currency": "IDR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 8.27
+                "p": 1.77
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 1.82,
+            "localPrice": 94,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 1.82
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 1.95,
+            "localPrice": 1990,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 1.95
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 2.14,
+            "localPrice": 1199,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 2.14
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 2.19,
+            "localPrice": 66000,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 2.19
               }
             ]
           },
           {
             "code": "BR",
-            "price": 8.46,
-            "localPrice": 49.8,
+            "price": 2.2,
+            "localPrice": 12.99,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 8.46
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 8.54,
-            "localPrice": 598,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.54
+                "p": 2.2
               }
             ]
           },
           {
             "code": "PL",
-            "price": 9.43,
-            "localPrice": 39.99,
+            "price": 2.35,
+            "localPrice": 9.99,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 9.43
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 9.55,
-            "localPrice": 179.8,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.55
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 10.02,
-            "localPrice": 39980,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.02
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 10.38,
-            "localPrice": 11.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.38
-              }
-            ]
-          }
-        ],
-        "label": "Dying Light 2: Reloaded Edition"
-      },
-      {
-        "id": 1150220,
-        "name": "Dying Light 2: Stay Human Digital Extras Edition",
-        "countries": [
-          {
-            "code": "IN",
-            "price": 6.39,
-            "localPrice": 699,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.39
-              }
-            ]
-          },
-          {
-            "code": "UA",
-            "price": 7.17,
-            "localPrice": 373,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.17
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 7.63,
-            "localPrice": 231000,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.63
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 7.96,
-            "localPrice": 9.2,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.96
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 7.96,
-            "localPrice": 9.2,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.96
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 9.07,
-            "localPrice": 9331,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.07
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 9.27,
-            "localPrice": 5250,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.27
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 9.65,
-            "localPrice": 198104,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.65
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 9.85,
-            "localPrice": 58,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.85
+                "p": 2.35
               }
             ]
           },
           {
             "code": "PH",
-            "price": 9.97,
-            "localPrice": 697.6,
+            "price": 2.45,
+            "localPrice": 169.9,
             "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 9.97
+                "p": 2.45
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 2.61,
+            "localPrice": 2.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 2.61
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 2.61,
+            "localPrice": 2.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 2.61
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 2.81,
+            "localPrice": 52.9,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 2.81
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 2.99,
+            "localPrice": 2.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 2.99
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 3.27,
+            "localPrice": 12999,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 3.27
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 3.48,
+            "localPrice": 3.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 3.48
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 124923,
+        "name": "The Witcher 3: Wild Hunt - Complete Edition",
+        "countries": [
+          {
+            "code": "ID",
+            "price": 4.42,
+            "localPrice": 89800,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 4.42
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 4.43,
+            "localPrice": 479,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 4.43
+              }
+            ]
+          },
+          {
+            "code": "UA",
+            "price": 4.44,
+            "localPrice": 229,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 4.44
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 4.89,
+            "localPrice": 5000,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 4.89
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 5.31,
+            "localPrice": 160000,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.31
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 5.36,
+            "localPrice": 2999,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.36
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 5.42,
+            "localPrice": 31.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 5.42
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 6.04,
+            "localPrice": 419.8,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.04
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 6.36,
+            "localPrice": 119.8,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.36
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 6.62,
+            "localPrice": 7.59,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.62
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 6.62,
+            "localPrice": 7.59,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.62
               }
             ]
           },
           {
             "code": "PL",
-            "price": 10.98,
-            "localPrice": 46.6,
+            "price": 7.04,
+            "localPrice": 29.99,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 10.98
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 11.13,
-            "localPrice": 209.6,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 11.13
+                "p": 7.04
               }
             ]
           },
           {
             "code": "CO",
-            "price": 11.69,
-            "localPrice": 46644,
+            "price": 7.8,
+            "localPrice": 30999,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 11.69
+                "p": 7.8
               }
             ]
           },
           {
             "code": "US",
-            "price": 12.11,
-            "localPrice": 13.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 12.11
-              }
-            ]
-          }
-        ],
-        "label": "Dying Light 2: Stay Human Digital Extras Edition"
-      }
-    ]
-  },
-  {
-    "appid": 2050650,
-    "title": "Resident Evil 4",
-    "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922",
-    "emoji": "🎯",
-    "color": "#36d399",
-    "base": 9.99,
-    "disc": -43,
-    "countries": [
-      {
-        "code": "IN",
-        "price": 5.7,
-        "localPrice": 624,
-        "currency": "INR",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.7
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 5.77,
-        "localPrice": 300,
-        "currency": "UAH",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 5.77
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 6.28,
-        "localPrice": 7.25,
-        "currency": "USD",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.28
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 6.32,
-        "localPrice": 129750,
-        "currency": "IDR",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.32
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 6.39,
-        "localPrice": 447.5,
-        "currency": "PHP",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.39
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 6.42,
-        "localPrice": 3637,
-        "currency": "KZT",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.42
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 6.48,
-        "localPrice": 7.49,
-        "currency": "USD",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.48
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 6.71,
-        "localPrice": 6900,
-        "currency": "CLP",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 6.71
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 7.02,
-        "localPrice": 212500,
-        "currency": "VND",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.02
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 7.17,
-        "localPrice": 42.25,
-        "currency": "BRL",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.17
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 7.46,
-        "localPrice": 140.43,
-        "currency": "ZAR",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.46
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 7.63,
-        "localPrice": 30450,
-        "currency": "COP",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.63
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 8.65,
-        "localPrice": 9.99,
-        "currency": "USD",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.65
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 9.96,
-        "localPrice": 42.25,
-        "currency": "PLN",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.96
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 9.99,
-        "localPrice": 9.99,
-        "currency": "EUR",
-        "discount": 75,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.99
-          }
-        ]
-      }
-    ],
-    "editions": [
-      {
-        "id": 794618,
-        "name": "Resident Evil 4",
-        "countries": [
-          {
-            "code": "IN",
-            "price": 5.7,
-            "localPrice": 624,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 5.7
-              }
-            ]
-          },
-          {
-            "code": "UA",
-            "price": 5.77,
-            "localPrice": 300,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 5.77
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 6.28,
-            "localPrice": 7.25,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.28
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 6.32,
-            "localPrice": 129750,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.32
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 6.39,
-            "localPrice": 447.5,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.39
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 6.42,
-            "localPrice": 3637,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.42
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 6.48,
-            "localPrice": 7.49,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.48
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 6.71,
-            "localPrice": 6900,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 6.71
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 7.02,
-            "localPrice": 212500,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.02
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 7.17,
-            "localPrice": 42.25,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.17
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 7.46,
-            "localPrice": 140.43,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.46
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 7.63,
-            "localPrice": 30450,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 7.63
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 8.65,
+            "price": 8.71,
             "localPrice": 9.99,
             "currency": "USD",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 8.65
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 9.96,
-            "localPrice": 42.25,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.96
+                "p": 8.71
               }
             ]
           },
@@ -10487,209 +10349,1987 @@ window.GAMES_DATA = [
             ]
           }
         ],
-        "label": "Standard"
+        "label": "- Complete Edition"
       },
       {
-        "id": 994065,
-        "name": "Resident Evil 4 Gold Edition",
+        "id": 303242,
+        "name": "The Witcher 3: Wild Hunt - Game of the Year Edition - Commercial License",
         "countries": [
           {
-            "code": "UA",
-            "price": 8.65,
-            "localPrice": 450,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 8.65
-              }
-            ]
-          },
-          {
             "code": "IN",
-            "price": 8.67,
-            "localPrice": 948,
+            "price": 9.24,
+            "localPrice": 999,
             "currency": "INR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 8.67
+                "p": 9.24
               }
             ]
           },
           {
-            "code": "PH",
-            "price": 9.39,
-            "localPrice": 657,
-            "currency": "PHP",
+            "code": "UA",
+            "price": 11.22,
+            "localPrice": 579,
+            "currency": "UAH",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 9.39
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 9.48,
-            "localPrice": 194700,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.48
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 9.63,
-            "localPrice": 5456,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.63
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 9.73,
-            "localPrice": 11.24,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 9.73
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 10.13,
-            "localPrice": 11.7,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 10.13
+                "p": 11.22
               }
             ]
           },
           {
             "code": "VN",
-            "price": 10.41,
-            "localPrice": 315000,
+            "price": 12.94,
+            "localPrice": 390000,
             "currency": "VND",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 10.41
+                "p": 12.94
               }
             ]
           },
           {
-            "code": "CL",
-            "price": 10.82,
-            "localPrice": 11130,
-            "currency": "CLP",
+            "code": "KZ",
+            "price": 15.72,
+            "localPrice": 8799,
+            "currency": "KZT",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 10.82
+                "p": 15.72
               }
             ]
           },
           {
             "code": "BR",
-            "price": 11.16,
-            "localPrice": 65.7,
+            "price": 16.93,
+            "localPrice": 99.99,
             "currency": "BRL",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 11.16
+                "p": 16.93
               }
             ]
           },
           {
-            "code": "ZA",
-            "price": 11.34,
-            "localPrice": 213.52,
-            "currency": "ZAR",
+            "code": "CL",
+            "price": 21.51,
+            "localPrice": 22000,
+            "currency": "CLP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 11.34
+                "p": 21.51
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 22.08,
+            "localPrice": 449000,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 22.08
               }
             ]
           },
           {
             "code": "CO",
-            "price": 12.32,
-            "localPrice": 49140,
+            "price": 22.91,
+            "localPrice": 91000,
             "currency": "COP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 12.32
+                "p": 22.91
               }
             ]
           },
           {
-            "code": "US",
-            "price": 12.98,
-            "localPrice": 14.99,
-            "currency": "USD",
+            "code": "PH",
+            "price": 24.45,
+            "localPrice": 1699,
+            "currency": "PHP",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 12.98
+                "p": 24.45
               }
             ]
           },
           {
-            "code": "DE",
-            "price": 14.99,
-            "localPrice": 14.99,
-            "currency": "EUR",
+            "code": "ZA",
+            "price": 26.49,
+            "localPrice": 499,
+            "currency": "ZAR",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 14.99
+                "p": 26.49
               }
             ]
           },
           {
             "code": "PL",
-            "price": 15.48,
-            "localPrice": 65.69,
+            "price": 35.23,
+            "localPrice": 149.99,
             "currency": "PLN",
             "shop": "Steam",
             "shops": [
               {
                 "s": "Steam",
-                "p": 15.48
+                "p": 35.23
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 43.58,
+            "localPrice": 49.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.58
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 43.58,
+            "localPrice": 49.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.58
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 43.58,
+            "localPrice": 49.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.58
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 49.99,
+            "localPrice": 49.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 49.99
               }
             ]
           }
         ],
-        "label": "Gold Edition"
+        "label": "- Game of the Year Edition - Commercial License"
+      }
+    ]
+  },
+  {
+    "appid": 949230,
+    "title": "Cities: Skylines II",
+    "genre": "Simulationen",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/949230/header.jpg?t=1781017670",
+    "emoji": "🎮",
+    "color": "#f472b6",
+    "base": 34.99,
+    "disc": -48,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 18.3,
+        "localPrice": 944,
+        "currency": "UAH",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 18.3
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 19.42,
+        "localPrice": 394799,
+        "currency": "IDR",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.42
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 20.14,
+        "localPrice": 1399.3,
+        "currency": "PHP",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.14
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 20.25,
+        "localPrice": 610500,
+        "currency": "VND",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.25
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 20.32,
+        "localPrice": 2197,
+        "currency": "INR",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 20.32
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 21.35,
+        "localPrice": 24.49,
+        "currency": "USD",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.35
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 21.35,
+        "localPrice": 24.49,
+        "currency": "USD",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.35
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 22.4,
+        "localPrice": 132.29,
+        "currency": "BRL",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 22.4
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 25.14,
+        "localPrice": 14070,
+        "currency": "KZT",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.14
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 26.08,
+        "localPrice": 26670,
+        "currency": "CLP",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 26.08
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 30.5,
+        "localPrice": 34.99,
+        "currency": "USD",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.5
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 31.18,
+        "localPrice": 587.3,
+        "currency": "ZAR",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 31.18
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 33.04,
+        "localPrice": 131250,
+        "currency": "COP",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 33.04
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 34.36,
+        "localPrice": 146.29,
+        "currency": "PLN",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.36
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 34.99,
+        "localPrice": 34.99,
+        "currency": "EUR",
+        "discount": 30,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.99
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 885642,
+        "name": "Cities: Skylines II",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 18.3,
+            "localPrice": 944,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.3
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 19.42,
+            "localPrice": 394799,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 19.42
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 20.14,
+            "localPrice": 1399.3,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 20.14
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 20.25,
+            "localPrice": 610500,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 20.25
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 20.32,
+            "localPrice": 2197,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 20.32
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 21.35,
+            "localPrice": 24.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.35
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 21.35,
+            "localPrice": 24.49,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.35
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 22.4,
+            "localPrice": 132.29,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 22.4
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 25.14,
+            "localPrice": 14070,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 25.14
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 26.08,
+            "localPrice": 26670,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 26.08
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 30.5,
+            "localPrice": 34.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 30.5
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 31.18,
+            "localPrice": 587.3,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.18
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 33.04,
+            "localPrice": 131250,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 33.04
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 34.36,
+            "localPrice": 146.29,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.36
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 34.99,
+            "localPrice": 34.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.99
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 885643,
+        "name": "Cities: Skylines II - Ultimate Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 37.35,
+            "localPrice": 1927,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 37.35
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 39.94,
+            "localPrice": 811999,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.94
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 40.98,
+            "localPrice": 2847.2,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 40.98
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 41.62,
+            "localPrice": 1254500,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 41.62
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 42.09,
+            "localPrice": 4551,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 42.09
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 43.93,
+            "localPrice": 50.39,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.93
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 43.93,
+            "localPrice": 50.39,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 43.93
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 46.18,
+            "localPrice": 272.79,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 46.18
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 51.47,
+            "localPrice": 28800,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 51.47
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 53.58,
+            "localPrice": 54800,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 53.58
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 62.76,
+            "localPrice": 71.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 62.76
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 63.67,
+            "localPrice": 1199.2,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 63.67
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 67.77,
+            "localPrice": 269200,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 67.77
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 70.65,
+            "localPrice": 300.79,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 70.65
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 71.99,
+            "localPrice": 71.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 71.99
+              }
+            ]
+          }
+        ],
+        "label": "- Ultimate Edition"
+      }
+    ]
+  },
+  {
+    "appid": 2807960,
+    "title": "Battlefield™ 6",
+    "genre": "Action",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2807960/c12d12ce3c7d217398d3fcad77427bfc9d57c570/header.jpg?t=1781611363",
+    "emoji": "🎯",
+    "color": "#4f8cff",
+    "base": 35.25,
+    "disc": -53,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 16.46,
+        "localPrice": 849,
+        "currency": "UAH",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 16.46
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 18.49,
+        "localPrice": 1999,
+        "currency": "INR",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 18.49
+          }
+        ]
+      },
+      {
+        "code": "ID",
+        "price": 19.65,
+        "localPrice": 399500,
+        "currency": "IDR",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 19.65
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 21.55,
+        "localPrice": 649500,
+        "currency": "VND",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 21.55
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 25.18,
+        "localPrice": 1749.5,
+        "currency": "PHP",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.18
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 25.31,
+        "localPrice": 149.5,
+        "currency": "BRL",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 25.31
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 30.5,
+        "localPrice": 34.99,
+        "currency": "USD",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.5
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 30.5,
+        "localPrice": 34.99,
+        "currency": "USD",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.5
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 30.5,
+        "localPrice": 34.99,
+        "currency": "USD",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.5
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 30.75,
+        "localPrice": 31450,
+        "currency": "CLP",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 30.75
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 31.27,
+        "localPrice": 17499,
+        "currency": "KZT",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 31.27
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 31.85,
+        "localPrice": 599.97,
+        "currency": "ZAR",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 31.85
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 34.99,
+        "localPrice": 34.99,
+        "currency": "EUR",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.99
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 35.22,
+        "localPrice": 149.95,
+        "currency": "PLN",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 35.22
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 35.25,
+        "localPrice": 139999,
+        "currency": "COP",
+        "discount": 50,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 35.25
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 1115548,
+        "name": "Battlefield™ 6",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 16.46,
+            "localPrice": 849,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 16.46
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 18.49,
+            "localPrice": 1999,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 18.49
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 19.65,
+            "localPrice": 399500,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 19.65
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 21.55,
+            "localPrice": 649500,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 21.55
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 25.18,
+            "localPrice": 1749.5,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 25.18
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 25.31,
+            "localPrice": 149.5,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 25.31
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 30.5,
+            "localPrice": 34.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 30.5
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 30.5,
+            "localPrice": 34.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 30.5
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 30.5,
+            "localPrice": 34.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 30.5
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 30.75,
+            "localPrice": 31450,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 30.75
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 31.27,
+            "localPrice": 17499,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.27
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 31.85,
+            "localPrice": 599.97,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.85
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 34.99,
+            "localPrice": 34.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 34.99
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 35.22,
+            "localPrice": 149.95,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 35.22
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 35.25,
+            "localPrice": 139999,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 35.25
+              }
+            ]
+          }
+        ],
+        "label": "Standard"
+      },
+      {
+        "id": 1259804,
+        "name": "Battlefield™ 6 Phantom Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 31.48,
+            "localPrice": 1624,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.48
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 36.06,
+            "localPrice": 3899,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 36.06
+              }
+            ]
+          },
+          {
+            "code": "ID",
+            "price": 36.41,
+            "localPrice": 740350,
+            "currency": "IDR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 36.41
+              }
+            ]
+          },
+          {
+            "code": "VN",
+            "price": 38.8,
+            "localPrice": 1169500,
+            "currency": "VND",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 38.8
+              }
+            ]
+          },
+          {
+            "code": "PH",
+            "price": 46.76,
+            "localPrice": 3249.35,
+            "currency": "PHP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 46.76
+              }
+            ]
+          },
+          {
+            "code": "BR",
+            "price": 47.21,
+            "localPrice": 278.85,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 47.21
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 56.66,
+            "localPrice": 64.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 56.66
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 56.66,
+            "localPrice": 64.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 56.66
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 56.66,
+            "localPrice": 64.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 56.66
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 57.14,
+            "localPrice": 58435,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 57.14
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 60.4,
+            "localPrice": 33799,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 60.4
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 64.99,
+            "localPrice": 64.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 64.99
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 65.46,
+            "localPrice": 259999,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 65.46
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 65.57,
+            "localPrice": 1234.96,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 65.57
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 65.63,
+            "localPrice": 279.43,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 65.63
+              }
+            ]
+          }
+        ],
+        "label": "Phantom Edition"
+      }
+    ]
+  },
+  {
+    "appid": 39210,
+    "title": "FINAL FANTASY XIV Online",
+    "genre": "MMO",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/39210/header_german.jpg?t=1777372469",
+    "emoji": "🎮",
+    "color": "#36d399",
+    "base": 17.43,
+    "disc": -65,
+    "countries": [
+      {
+        "code": "UA",
+        "price": 6.05,
+        "localPrice": 312,
+        "currency": "UAH",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.05
+          }
+        ]
+      },
+      {
+        "code": "IN",
+        "price": 6.65,
+        "localPrice": 719,
+        "currency": "INR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 6.65
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 7.05,
+        "localPrice": 3945,
+        "currency": "KZT",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.05
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 7.65,
+        "localPrice": 144,
+        "currency": "ZAR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 7.65
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 8.97,
+        "localPrice": 52.99,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 8.97
+          }
+        ]
+      },
+      {
+        "code": "PL",
+        "price": 9.86,
+        "localPrice": 41.99,
+        "currency": "PLN",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.86
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "price": 9.99,
+        "localPrice": 9.99,
+        "currency": "EUR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 9.99
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 11.2,
+        "localPrice": 11450,
+        "currency": "CLP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 11.2
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "price": 12.49,
+        "localPrice": 49600,
+        "currency": "COP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.49
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 13.94,
+        "localPrice": 15.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.94
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 13.94,
+        "localPrice": 15.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.94
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 17.43,
+        "localPrice": 19.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 17.43
+          }
+        ]
+      }
+    ],
+    "editions": [
+      {
+        "id": 33938,
+        "name": "FINAL FANTASY XIV Online Starter Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 6.05,
+            "localPrice": 312,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.05
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 6.65,
+            "localPrice": 719,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 6.65
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 7.05,
+            "localPrice": 3945,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.05
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 7.65,
+            "localPrice": 144,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 7.65
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 9.86,
+            "localPrice": 41.99,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.86
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 9.99,
+            "localPrice": 9.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 9.99
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 13.94,
+            "localPrice": 15.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.94
+              }
+            ]
+          }
+        ],
+        "label": "Starter Edition"
+      },
+      {
+        "id": 33936,
+        "name": "FINAL FANTASY XIV Online Starter Edition",
+        "countries": [
+          {
+            "code": "BR",
+            "price": 8.97,
+            "localPrice": 52.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 8.97
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 11.2,
+            "localPrice": 11450,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 11.2
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 12.49,
+            "localPrice": 49600,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 12.49
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 13.94,
+            "localPrice": 15.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 13.94
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 17.43,
+            "localPrice": 19.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 17.43
+              }
+            ]
+          }
+        ],
+        "label": "Starter Edition"
+      },
+      {
+        "id": 952444,
+        "name": "FINAL FANTASY XIV Online - Complete Edition",
+        "countries": [
+          {
+            "code": "BR",
+            "price": 26.92,
+            "localPrice": 158.99,
+            "currency": "BRL",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 26.92
+              }
+            ]
+          },
+          {
+            "code": "CL",
+            "price": 33.59,
+            "localPrice": 34350,
+            "currency": "CLP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 33.59
+              }
+            ]
+          },
+          {
+            "code": "AR",
+            "price": 39.22,
+            "localPrice": 44.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.22
+              }
+            ]
+          },
+          {
+            "code": "CO",
+            "price": 39.86,
+            "localPrice": 158325,
+            "currency": "COP",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.86
+              }
+            ]
+          },
+          {
+            "code": "US",
+            "price": 52.3,
+            "localPrice": 59.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 52.3
+              }
+            ]
+          }
+        ],
+        "label": "- Complete Edition"
+      },
+      {
+        "id": 952445,
+        "name": "FINAL FANTASY XIV Online - Complete Edition",
+        "countries": [
+          {
+            "code": "UA",
+            "price": 27.23,
+            "localPrice": 1405,
+            "currency": "UAH",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 27.23
+              }
+            ]
+          },
+          {
+            "code": "IN",
+            "price": 29.94,
+            "localPrice": 3238,
+            "currency": "INR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 29.94
+              }
+            ]
+          },
+          {
+            "code": "KZ",
+            "price": 31.72,
+            "localPrice": 17750,
+            "currency": "KZT",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 31.72
+              }
+            ]
+          },
+          {
+            "code": "ZA",
+            "price": 35.73,
+            "localPrice": 673,
+            "currency": "ZAR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 35.73
+              }
+            ]
+          },
+          {
+            "code": "TR",
+            "price": 39.22,
+            "localPrice": 44.99,
+            "currency": "USD",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 39.22
+              }
+            ]
+          },
+          {
+            "code": "PL",
+            "price": 44.39,
+            "localPrice": 188.98,
+            "currency": "PLN",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 44.39
+              }
+            ]
+          },
+          {
+            "code": "DE",
+            "price": 44.99,
+            "localPrice": 44.99,
+            "currency": "EUR",
+            "shop": "Steam",
+            "shops": [
+              {
+                "s": "Steam",
+                "p": 44.99
+              }
+            ]
+          }
+        ],
+        "label": "- Complete Edition"
       }
     ]
   },
@@ -10701,11 +12341,11 @@ window.GAMES_DATA = [
     "emoji": "🎮",
     "color": "#4f8cff",
     "base": 38.99,
-    "disc": -64,
+    "disc": -63,
     "countries": [
       {
         "code": "UA",
-        "price": 14.23,
+        "price": 14.34,
         "localPrice": 740,
         "currency": "UAH",
         "discount": 0,
@@ -10713,13 +12353,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 14.23
+            "p": 14.34
           }
         ]
       },
       {
         "code": "ID",
-        "price": 14.61,
+        "price": 14.75,
         "localPrice": 299999,
         "currency": "IDR",
         "discount": 0,
@@ -10727,13 +12367,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 14.61
+            "p": 14.75
           }
         ]
       },
       {
         "code": "IN",
-        "price": 14.62,
+        "price": 14.8,
         "localPrice": 1600,
         "currency": "INR",
         "discount": 0,
@@ -10741,13 +12381,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 14.62
+            "p": 14.8
           }
         ]
       },
       {
         "code": "VN",
-        "price": 15.53,
+        "price": 15.59,
         "localPrice": 470000,
         "currency": "VND",
         "discount": 0,
@@ -10755,13 +12395,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 15.53
+            "p": 15.59
           }
         ]
       },
       {
         "code": "PH",
-        "price": 15.72,
+        "price": 15.83,
         "localPrice": 1100,
         "currency": "PHP",
         "discount": 0,
@@ -10769,13 +12409,41 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 15.72
+            "p": 15.83
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "price": 16.56,
+        "localPrice": 18.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 16.56
+          }
+        ]
+      },
+      {
+        "code": "AR",
+        "price": 16.56,
+        "localPrice": 18.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 16.56
           }
         ]
       },
       {
         "code": "KZ",
-        "price": 16.42,
+        "price": 16.62,
         "localPrice": 9300,
         "currency": "KZT",
         "discount": 0,
@@ -10783,41 +12451,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 16.42
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 16.44,
-        "localPrice": 18.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 16.44
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 16.44,
-        "localPrice": 18.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 16.44
+            "p": 16.62
           }
         ]
       },
       {
         "code": "ZA",
-        "price": 17.53,
+        "price": 17.52,
         "localPrice": 330,
         "currency": "ZAR",
         "discount": 0,
@@ -10825,13 +12465,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 17.53
+            "p": 17.52
           }
         ]
       },
       {
         "code": "BR",
-        "price": 18.34,
+        "price": 18.28,
         "localPrice": 107.99,
         "currency": "BRL",
         "discount": 0,
@@ -10839,13 +12479,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 18.34
+            "p": 18.28
           }
         ]
       },
       {
         "code": "CL",
-        "price": 18.48,
+        "price": 18.58,
         "localPrice": 19000,
         "currency": "CLP",
         "discount": 0,
@@ -10853,13 +12493,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 18.48
+            "p": 18.58
           }
         ]
       },
       {
         "code": "CO",
-        "price": 21.55,
+        "price": 21.65,
         "localPrice": 86000,
         "currency": "COP",
         "discount": 0,
@@ -10867,27 +12507,13 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 21.55
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 34.62,
-        "localPrice": 39.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 34.62
+            "p": 21.65
           }
         ]
       },
       {
         "code": "PL",
-        "price": 34.88,
+        "price": 34.76,
         "localPrice": 147.99,
         "currency": "PLN",
         "discount": 0,
@@ -10895,7 +12521,21 @@ window.GAMES_DATA = [
         "shops": [
           {
             "s": "Steam",
-            "p": 34.88
+            "p": 34.76
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 34.86,
+        "localPrice": 39.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 34.86
           }
         ]
       },
@@ -10916,1767 +12556,20 @@ window.GAMES_DATA = [
     ]
   },
   {
-    "appid": 1401590,
-    "title": "Disney Dreamlight Valley",
+    "appid": 3041230,
+    "title": "Windrose",
     "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1401590/79c6d572401153efb551ef297504e8fff9c6e93e/header_alt_assets_8.jpg?t=1781727329",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3041230/7e838d87d787735d5d29d72777c5ee55653dfb2b/header.jpg?t=1781601719",
     "emoji": "🎯",
     "color": "#f472b6",
-    "base": 43.6,
-    "disc": -58,
-    "countries": [
-      {
-        "code": "AR",
-        "price": 18.17,
-        "localPrice": 20.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 18.17
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 19.81,
-        "localPrice": 1030,
-        "currency": "UAH",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 19.81
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 19.87,
-        "localPrice": 2174,
-        "currency": "INR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 19.87
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 23.83,
-        "localPrice": 13500,
-        "currency": "KZT",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 23.83
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 25.04,
-        "localPrice": 147.45,
-        "currency": "BRL",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 25.04
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 25.1,
-        "localPrice": 29,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 25.1
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 25.57,
-        "localPrice": 525000,
-        "currency": "IDR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 25.57
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 26.25,
-        "localPrice": 26999,
-        "currency": "CLP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 26.25
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 26.44,
-        "localPrice": 1850,
-        "currency": "PHP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 26.44
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 30.55,
-        "localPrice": 121900,
-        "currency": "COP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 30.55
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 34.62,
-        "localPrice": 39.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 34.62
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 35.54,
-        "localPrice": 669,
-        "currency": "ZAR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 35.54
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 39.99,
-        "localPrice": 39.99,
-        "currency": "EUR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 39.99
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 43.6,
-        "localPrice": 184.99,
-        "currency": "PLN",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 43.6
-          }
-        ]
-      }
-    ],
-    "editions": [
-      {
-        "id": 944611,
-        "name": "Disney Dreamlight Valley",
-        "countries": [
-          {
-            "code": "AR",
-            "price": 18.17,
-            "localPrice": 20.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 18.17
-              }
-            ]
-          },
-          {
-            "code": "UA",
-            "price": 19.81,
-            "localPrice": 1030,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 19.81
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 19.87,
-            "localPrice": 2174,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 19.87
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 23.83,
-            "localPrice": 13500,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 23.83
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 25.04,
-            "localPrice": 147.45,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.04
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 25.1,
-            "localPrice": 29,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.1
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 25.57,
-            "localPrice": 525000,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.57
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 26.25,
-            "localPrice": 26999,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 26.25
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 26.44,
-            "localPrice": 1850,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 26.44
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 30.55,
-            "localPrice": 121900,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 30.55
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 34.62,
-            "localPrice": 39.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 34.62
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 35.54,
-            "localPrice": 669,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 35.54
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 39.99,
-            "localPrice": 39.99,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 39.99
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 43.6,
-            "localPrice": 184.99,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 43.6
-              }
-            ]
-          }
-        ],
-        "label": "Standard"
-      },
-      {
-        "id": 1389237,
-        "name": "Disney Dreamlight Valley — „Wishblossom Ranch“ Edition",
-        "countries": [
-          {
-            "code": "AR",
-            "price": 27.69,
-            "localPrice": 31.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 27.69
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 38.09,
-            "localPrice": 44,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 38.09
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 38.48,
-            "localPrice": 790000,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 38.48
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 39.65,
-            "localPrice": 2775,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 39.65
-              }
-            ]
-          },
-          {
-            "code": "UA",
-            "price": 40.48,
-            "localPrice": 2105,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 40.48
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 41.12,
-            "localPrice": 4499,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 41.12
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 49.74,
-            "localPrice": 292.95,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 49.74
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 51.93,
-            "localPrice": 59.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 51.93
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 53.6,
-            "localPrice": 1009,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 53.6
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 56.4,
-            "localPrice": 57999,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 56.4
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 57.02,
-            "localPrice": 32300,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 57.02
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 59.99,
-            "localPrice": 59.99,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 59.99
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 60.38,
-            "localPrice": 240900,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 60.38
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 65.41,
-            "localPrice": 277.49,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 65.41
-              }
-            ]
-          }
-        ],
-        "label": "— „Wishblossom Ranch“ Edition"
-      },
-      {
-        "id": 1389233,
-        "name": "Disney Dreamlight Valley — Ultimate Edition",
-        "countries": [
-          {
-            "code": "AR",
-            "price": 36.78,
-            "localPrice": 42.49,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 36.78
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 50.2,
-            "localPrice": 58,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 50.2
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 51.14,
-            "localPrice": 1050000,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 51.14
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 52.51,
-            "localPrice": 3675,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 52.51
-              }
-            ]
-          },
-          {
-            "code": "UA",
-            "price": 54.03,
-            "localPrice": 2810,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 54.03
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 54.74,
-            "localPrice": 5989,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 54.74
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 66.39,
-            "localPrice": 390.95,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 66.39
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 69.24,
-            "localPrice": 79.99,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 69.24
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 71.66,
-            "localPrice": 1349,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 71.66
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 75.16,
-            "localPrice": 77299,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 75.16
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 75.91,
-            "localPrice": 43000,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 75.91
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 79.99,
-            "localPrice": 79.99,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 79.99
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 80.68,
-            "localPrice": 321900,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 80.68
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 87.21,
-            "localPrice": 369.99,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 87.21
-              }
-            ]
-          }
-        ],
-        "label": "— Ultimate Edition"
-      }
-    ]
-  },
-  {
-    "appid": 2246340,
-    "title": "Monster Hunter Wilds",
-    "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg?t=1781071959",
-    "emoji": "🎯",
-    "color": "#ffd166",
-    "base": 29.6,
-    "disc": -46,
+    "base": 29.99,
+    "disc": -61,
     "countries": [
       {
         "code": "UA",
-        "price": 16.13,
-        "localPrice": 839,
-        "currency": "UAH",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 16.13
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 17.27,
-        "localPrice": 1889,
-        "currency": "INR",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 17.27
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 17.78,
-        "localPrice": 364980,
-        "currency": "IDR",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 17.78
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 19.08,
-        "localPrice": 22.04,
-        "currency": "USD",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 19.08
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 19.08,
-        "localPrice": 22.04,
-        "currency": "USD",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 19.08
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 19.13,
-        "localPrice": 10835,
-        "currency": "KZT",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 19.13
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 19.3,
-        "localPrice": 584000,
-        "currency": "VND",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 19.3
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 19.9,
-        "localPrice": 117.18,
-        "currency": "BRL",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 19.9
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 20.95,
-        "localPrice": 1465.8,
-        "currency": "PHP",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 20.95
-          }
-        ]
-      },
-      {
-        "code": "CO",
-        "price": 21.15,
-        "localPrice": 84378,
-        "currency": "COP",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 21.15
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 24.46,
-        "localPrice": 25158,
-        "currency": "CLP",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 24.46
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 25.44,
-        "localPrice": 29.39,
-        "currency": "USD",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 25.44
-          }
-        ]
-      },
-      {
-        "code": "ZA",
-        "price": 28.98,
-        "localPrice": 545.58,
-        "currency": "ZAR",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 28.98
-          }
-        ]
-      },
-      {
-        "code": "DE",
-        "price": 29.39,
-        "localPrice": 29.39,
-        "currency": "EUR",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.39
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 29.6,
-        "localPrice": 125.58,
-        "currency": "PLN",
-        "discount": 58,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 29.6
-          }
-        ]
-      }
-    ],
-    "editions": [
-      {
-        "id": 805461,
-        "name": "Monster Hunter Wilds",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 16.13,
-            "localPrice": 839,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 16.13
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 17.27,
-            "localPrice": 1889,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 17.27
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 17.78,
-            "localPrice": 364980,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 17.78
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 19.08,
-            "localPrice": 22.04,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 19.08
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 19.08,
-            "localPrice": 22.04,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 19.08
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 19.13,
-            "localPrice": 10835,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 19.13
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 19.3,
-            "localPrice": 584000,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 19.3
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 19.9,
-            "localPrice": 117.18,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 19.9
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 20.95,
-            "localPrice": 1465.8,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 20.95
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 21.15,
-            "localPrice": 84378,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 21.15
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 24.46,
-            "localPrice": 25158,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 24.46
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 25.44,
-            "localPrice": 29.39,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.44
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 28.98,
-            "localPrice": 545.58,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 28.98
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 29.39,
-            "localPrice": 29.39,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 29.39
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 29.6,
-            "localPrice": 125.58,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 29.6
-              }
-            ]
-          }
-        ],
-        "label": "Standard"
-      },
-      {
-        "id": 1139973,
-        "name": "Monster Hunter Wilds – Deluxe-Edition",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 21.98,
-            "localPrice": 1143,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 21.98
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 22.91,
-            "localPrice": 2507,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 22.91
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 23.79,
-            "localPrice": 488400,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 23.79
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 25.7,
-            "localPrice": 29.69,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.7
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 25.7,
-            "localPrice": 29.69,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.7
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 25.79,
-            "localPrice": 14607,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.79
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 25.99,
-            "localPrice": 786500,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 25.99
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 27.27,
-            "localPrice": 160.6,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 27.27
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 28.17,
-            "localPrice": 1971.2,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 28.17
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 28.62,
-            "localPrice": 114180,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 28.62
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 33.76,
-            "localPrice": 34716,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 33.76
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 34.27,
-            "localPrice": 39.59,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 34.27
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 39.31,
-            "localPrice": 166.76,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 39.31
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 39.59,
-            "localPrice": 39.59,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 39.59
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 39.71,
-            "localPrice": 747.56,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 39.71
-              }
-            ]
-          }
-        ],
-        "label": "– Deluxe-Edition"
-      },
-      {
-        "id": 1139975,
-        "name": "Monster Hunter Wilds – Premium-Deluxe-Edition",
-        "countries": [
-          {
-            "code": "UA",
-            "price": 26.8,
-            "localPrice": 1394,
-            "currency": "UAH",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 26.8
-              }
-            ]
-          },
-          {
-            "code": "IN",
-            "price": 28.37,
-            "localPrice": 3104,
-            "currency": "INR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 28.37
-              }
-            ]
-          },
-          {
-            "code": "ID",
-            "price": 29.81,
-            "localPrice": 612000,
-            "currency": "IDR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 29.81
-              }
-            ]
-          },
-          {
-            "code": "TR",
-            "price": 32.13,
-            "localPrice": 37.12,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 32.13
-              }
-            ]
-          },
-          {
-            "code": "AR",
-            "price": 32.17,
-            "localPrice": 37.16,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 32.17
-              }
-            ]
-          },
-          {
-            "code": "KZ",
-            "price": 32.25,
-            "localPrice": 18269,
-            "currency": "KZT",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 32.25
-              }
-            ]
-          },
-          {
-            "code": "VN",
-            "price": 32.48,
-            "localPrice": 983000,
-            "currency": "VND",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 32.48
-              }
-            ]
-          },
-          {
-            "code": "BR",
-            "price": 33.77,
-            "localPrice": 198.9,
-            "currency": "BRL",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 33.77
-              }
-            ]
-          },
-          {
-            "code": "PH",
-            "price": 35.24,
-            "localPrice": 2466,
-            "currency": "PHP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 35.24
-              }
-            ]
-          },
-          {
-            "code": "CO",
-            "price": 35.75,
-            "localPrice": 142650,
-            "currency": "COP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 35.75
-              }
-            ]
-          },
-          {
-            "code": "US",
-            "price": 42.84,
-            "localPrice": 49.49,
-            "currency": "USD",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 42.84
-              }
-            ]
-          },
-          {
-            "code": "CL",
-            "price": 44.19,
-            "localPrice": 45450,
-            "currency": "CLP",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 44.19
-              }
-            ]
-          },
-          {
-            "code": "ZA",
-            "price": 47.79,
-            "localPrice": 899.55,
-            "currency": "ZAR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 47.79
-              }
-            ]
-          },
-          {
-            "code": "DE",
-            "price": 49.49,
-            "localPrice": 49.49,
-            "currency": "EUR",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 49.49
-              }
-            ]
-          },
-          {
-            "code": "PL",
-            "price": 49.75,
-            "localPrice": 211.05,
-            "currency": "PLN",
-            "shop": "Steam",
-            "shops": [
-              {
-                "s": "Steam",
-                "p": 49.75
-              }
-            ]
-          }
-        ],
-        "label": "– Premium-Deluxe-Edition"
-      }
-    ]
-  },
-  {
-    "appid": 227300,
-    "title": "Euro Truck Simulator 2",
-    "genre": "Indie",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/9a81dc3126c56637297b654f9dcac057cfd79b77/header.jpg?t=1773641450",
-    "emoji": "🎨",
-    "color": "#ffd166",
-    "base": 19.99,
-    "disc": -62,
-    "countries": [
-      {
-        "code": "UA",
-        "price": 7.69,
-        "localPrice": 400,
-        "currency": "UAH",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 7.69
-          }
-        ]
-      },
-      {
-        "code": "IN",
-        "price": 8.41,
-        "localPrice": 920,
-        "currency": "INR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.41
-          }
-        ]
-      },
-      {
-        "code": "ID",
-        "price": 8.57,
-        "localPrice": 175999,
-        "currency": "IDR",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.57
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 8.73,
-        "localPrice": 10.09,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.73
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 8.73,
-        "localPrice": 10.09,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 8.73
-          }
-        ]
-      },
-      {
-        "code": "KZ",
-        "price": 9.18,
-        "localPrice": 5200,
-        "currency": "KZT",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.18
-          }
-        ]
-      },
-      {
-        "code": "PH",
-        "price": 9.22,
-        "localPrice": 645,
-        "currency": "PHP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.22
-          }
-        ]
-      },
-      {
-        "code": "VN",
-        "price": 9.25,
-        "localPrice": 280000,
-        "currency": "VND",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 9.25
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 10.53,
-        "localPrice": 61.99,
-        "currency": "BRL",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.53
-          }
-        ]
-      },
-      {
-        "code": "CL",
-        "price": 10.6,
-        "localPrice": 10900,
-        "currency": "CLP",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 10.6
-          }
-        ]
-      },
-      {
-        "code": "ZA",
         "price": 11.63,
-        "localPrice": 219,
-        "currency": "ZAR",
+        "localPrice": 600,
+        "currency": "UAH",
         "discount": 0,
         "shop": "Steam",
         "shops": [
@@ -12687,154 +12580,156 @@ window.GAMES_DATA = [
         ]
       },
       {
+        "code": "ID",
+        "price": 12.1,
+        "localPrice": 245999,
+        "currency": "IDR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.1
+          }
+        ]
+      },
+      {
+        "code": "VN",
+        "price": 12.77,
+        "localPrice": 385000,
+        "currency": "VND",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.77
+          }
+        ]
+      },
+      {
+        "code": "PH",
+        "price": 12.81,
+        "localPrice": 890,
+        "currency": "PHP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 12.81
+          }
+        ]
+      },
+      {
+        "code": "KZ",
+        "price": 13.58,
+        "localPrice": 7600,
+        "currency": "KZT",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 13.58
+          }
+        ]
+      },
+      {
+        "code": "ZA",
+        "price": 14.33,
+        "localPrice": 270,
+        "currency": "ZAR",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 14.33
+          }
+        ]
+      },
+      {
+        "code": "CL",
+        "price": 15.16,
+        "localPrice": 15500,
+        "currency": "CLP",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.16
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "price": 15.24,
+        "localPrice": 89.99,
+        "currency": "BRL",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 15.24
+          }
+        ]
+      },
+      {
         "code": "CO",
-        "price": 12.01,
-        "localPrice": 47900,
+        "price": 17.62,
+        "localPrice": 70000,
         "currency": "COP",
         "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 12.01
-          }
-        ]
-      },
-      {
-        "code": "US",
-        "price": 17.3,
-        "localPrice": 19.99,
-        "currency": "USD",
-        "discount": 0,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 17.3
+            "p": 17.62
           }
         ]
       },
       {
         "code": "PL",
-        "price": 18.85,
-        "localPrice": 79.99,
+        "price": 23.49,
+        "localPrice": 99.99,
         "currency": "PLN",
         "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 18.85
+            "p": 23.49
+          }
+        ]
+      },
+      {
+        "code": "US",
+        "price": 26.14,
+        "localPrice": 29.99,
+        "currency": "USD",
+        "discount": 0,
+        "shop": "Steam",
+        "shops": [
+          {
+            "s": "Steam",
+            "p": 26.14
           }
         ]
       },
       {
         "code": "DE",
-        "price": 19.99,
-        "localPrice": 19.99,
+        "price": 29.99,
+        "localPrice": 29.99,
         "currency": "EUR",
         "discount": 0,
         "shop": "Steam",
         "shops": [
           {
             "s": "Steam",
-            "p": 19.99
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "appid": 2001120,
-    "title": "Split Fiction",
-    "genre": "Action",
-    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2001120/header.jpg?t=1763484567",
-    "emoji": "🎯",
-    "color": "#4f8cff",
-    "base": 33.69,
-    "disc": -56,
-    "countries": [
-      {
-        "code": "IN",
-        "price": 14.84,
-        "localPrice": 1624,
-        "currency": "INR",
-        "discount": 35,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 14.84
-          }
-        ]
-      },
-      {
-        "code": "UA",
-        "price": 16.23,
-        "localPrice": 844,
-        "currency": "UAH",
-        "discount": 35,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 16.23
-          }
-        ]
-      },
-      {
-        "code": "BR",
-        "price": 21.96,
-        "localPrice": 129.35,
-        "currency": "BRL",
-        "discount": 35,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 21.96
-          }
-        ]
-      },
-      {
-        "code": "TR",
-        "price": 28.12,
-        "localPrice": 32.49,
-        "currency": "USD",
-        "discount": 35,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 28.12
-          }
-        ]
-      },
-      {
-        "code": "AR",
-        "price": 28.12,
-        "localPrice": 32.49,
-        "currency": "USD",
-        "discount": 35,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 28.12
-          }
-        ]
-      },
-      {
-        "code": "PL",
-        "price": 33.69,
-        "localPrice": 142.93,
-        "currency": "PLN",
-        "discount": 35,
-        "shop": "Steam",
-        "shops": [
-          {
-            "s": "Steam",
-            "p": 33.69
+            "p": 29.99
           }
         ]
       }
