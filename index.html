@@ -399,14 +399,14 @@
 <script>
 /* ---------------- Beispieldaten ---------------- */
 const COUNTRIES = {
-  TR:{flag:"🇹🇷",name:"Türkei"}, AR:{flag:"🇦🇷",name:"Argentinien"},
-  IN:{flag:"🇮🇳",name:"Indien"}, BR:{flag:"🇧🇷",name:"Brasilien"},
-  DE:{flag:"🇩🇪",name:"Deutschland"}, US:{flag:"🇺🇸",name:"USA"},
-  PL:{flag:"🇵🇱",name:"Polen"}, UA:{flag:"🇺🇦",name:"Ukraine"},
-  KZ:{flag:"🇰🇿",name:"Kasachstan"}, ID:{flag:"🇮🇩",name:"Indonesien"},
-  VN:{flag:"🇻🇳",name:"Vietnam"}, PH:{flag:"🇵🇭",name:"Philippinen"},
-  CO:{flag:"🇨🇴",name:"Kolumbien"}, CL:{flag:"🇨🇱",name:"Chile"},
-  ZA:{flag:"🇿🇦",name:"Südafrika"}
+  TR:{flag:"🇹🇷",name:"Türkei",en:"Turkey"}, AR:{flag:"🇦🇷",name:"Argentinien",en:"Argentina"},
+  IN:{flag:"🇮🇳",name:"Indien",en:"India"}, BR:{flag:"🇧🇷",name:"Brasilien",en:"Brazil"},
+  DE:{flag:"🇩🇪",name:"Deutschland",en:"Germany"}, US:{flag:"🇺🇸",name:"USA",en:"USA"},
+  PL:{flag:"🇵🇱",name:"Polen",en:"Poland"}, UA:{flag:"🇺🇦",name:"Ukraine",en:"Ukraine"},
+  KZ:{flag:"🇰🇿",name:"Kasachstan",en:"Kazakhstan"}, ID:{flag:"🇮🇩",name:"Indonesien",en:"Indonesia"},
+  VN:{flag:"🇻🇳",name:"Vietnam",en:"Vietnam"}, PH:{flag:"🇵🇭",name:"Philippinen",en:"Philippines"},
+  CO:{flag:"🇨🇴",name:"Kolumbien",en:"Colombia"}, CL:{flag:"🇨🇱",name:"Chile",en:"Chile"},
+  ZA:{flag:"🇿🇦",name:"Südafrika",en:"South Africa"}
 };
 const SHOPS = ["Steam","Epic","GreenManGaming","Eneba","GamersGate","Fanatical"];
 const COLORS = ["#4f8cff","#7c5cff","#36d399","#ff6b6b","#ffd166","#22d3ee","#f472b6","#a78bfa"];
@@ -635,6 +635,9 @@ const T={
   }
 };
 const t=(k,...a)=>{ const v=(T[LANG]||T.de)[k]; return typeof v==='function'?v(...a):(v??k); };
+const cname=code=>{ const c=COUNTRIES[code]; if(!c) return code; return LANG==='en'?(c.en||c.name):c.name; };
+const GENRE_EN={'Action':'Action','Abenteuer':'Adventure','Rollenspiel':'RPG','Rollenspiele':'RPG','Strategie':'Strategy','Simulationen':'Simulation','Simulation':'Simulation','Indie':'Indie','Sport':'Sports','Rennspiele':'Racing','Rennspiel':'Racing','Gelegenheitsspiele':'Casual','Massively Multiplayer':'Massively Multiplayer','Frühzugang':'Early Access','Early Access':'Early Access','Kostenlos spielbar':'Free to Play','Free to Play':'Free to Play','Spiel':'Game'};
+const genreLabel=g=>LANG==='en'?(GENRE_EN[g]||g):g;
 function setLang(l){ LANG=l; try{localStorage.setItem('rp_lang',l);}catch{} applyLang(); renderGrid(); if($('#overlay').classList.contains('open')&&MODAL_GAME) openGame(MODAL_GAME.id,document.querySelector('.edition-sel')?.value); }
 function applyLang(){
   document.documentElement.lang=LANG;
@@ -709,16 +712,16 @@ function renderGrid(){
         ${img?`<img class="cover" src="${img}" alt="" loading="lazy" draggable="false" onerror="this.remove()">`:''}
         <span class="ov"></span>
         <span class="disc" style="${isHere?'background:var(--accent);color:#fff':''}">${isHere?'BESTE REGION':'-'+saving+'%'}</span>
-        <span class="flag" title="${c.name}">${flag(g.best.code,16)} ${g.best.code}</span>
+        <span class="flag" title="${cname(g.best.code)}">${flag(g.best.code,16)} ${g.best.code}</span>
         ${g.appid?`<button class="fav-btn ${isFav(g.appid)?'on':''}" onclick="toggleFav(${g.appid},event)" title="Favorit">${isFav(g.appid)?IC.starFill:IC.star}</button>`:''}
       </div>
       <div class="body">
         <h3>${g.title}</h3>
-        <div class="meta">${g.genre}${g.editions&&g.editions.length>1?` · <span class="ed-badge">${t('editions',g.editions.length)}</span>`:''}</div>
-        <span class="country-tag">${flag(g.best.code)} ${t('cheapestCountry')} ${c.name}</span>
+        <div class="meta">${genreLabel(g.genre)}${g.editions&&g.editions.length>1?` · <span class="ed-badge">${t('editions',g.editions.length)}</span>`:''}</div>
+        <span class="country-tag">${flag(g.best.code)} ${t('cheapestCountry')} ${cname(g.best.code)}</span>
         <div class="price-row">
           <span class="price">${eur(g.best.price)}</span>
-          ${isHere?'':`<span class="price-old" title="Preis in ${COUNTRIES[ref.code]?.name||ref.code}">${eur(ref.price)}</span>`}
+          ${isHere?'':`<span class="price-old" title="${cname(ref.code)}">${eur(ref.price)}</span>`}
         </div>
       </div>
     </div>`;
@@ -730,12 +733,12 @@ function renderGrid(){
   }
   if(!list.length && !LOADING)$('#grid').innerHTML=`<div class="empty" style="grid-column:1/-1"><div class="big">${FAV_ONLY?IC.star:IC.search}</div>${FAV_ONLY?t('noFavs'):t('noResults')}</div>`;
   const rn=$('#region-note');
-  if(rn)rn.innerHTML=`${t('region')} ${flag(USER_REGION)} <select class="region-sel" onchange="setRegion(this.value)">${Object.entries(COUNTRIES).map(([code,info])=>`<option value="${code}" ${code===USER_REGION?'selected':''}>${info.name}</option>`).join('')}</select> ${t('regionNote2')}`;
+  if(rn)rn.innerHTML=`${t('region')} ${flag(USER_REGION)} <select class="region-sel" onchange="setRegion(this.value)">${Object.entries(COUNTRIES).map(([code])=>`<option value="${code}" ${code===USER_REGION?'selected':''}>${cname(code)}</option>`).join('')}</select> ${t('regionNote2')}`;
   const gc=$('#genre-chips');
   if(gc){
     const genres=[...new Set(GAMES.map(g=>g.genre).filter(Boolean))].sort();
     gc.innerHTML = genres.length>1
-      ? `<button class="chip ${!GENRE_FILTER?'on':''}" onclick="setGenre('')">${t('all')}</button>`+genres.map(gn=>`<button class="chip ${GENRE_FILTER===gn?'on':''}" onclick="setGenre('${gn.replace(/'/g,"\\'")}')">${gn}</button>`).join('')
+      ? `<button class="chip ${!GENRE_FILTER?'on':''}" onclick="setGenre('')">${t('all')}</button>`+genres.map(gn=>`<button class="chip ${GENRE_FILTER===gn?'on':''}" onclick="setGenre('${gn.replace(/'/g,"\\'")}')">${genreLabel(gn)}</button>`).join('')
       : '';
   }
   const sent=$('#sentinel');
@@ -766,7 +769,7 @@ function openGame(id,edId){
   $('#modal').innerHTML=`
     <div class="modal-head">
       <div class="ico" style="${(g.image||g.appid)?`background-image:url('${g.image||`https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg`}');background-size:cover;background-position:center`:`background:linear-gradient(135deg,${g.color}44,${g.color}11);color:${g.color}`}">${(g.image||g.appid)?'':IC.pad}</div>
-      <div><h2>${g.title}</h2><div class="meta">${g.genre} · ${ref.code===best.code?t('hereCheapest'):t('inYour',ref.code,eur(ref.price),saving)}</div></div>
+      <div><h2>${g.title}</h2><div class="meta">${genreLabel(g.genre)} · ${ref.code===best.code?t('hereCheapest'):t('inYour',ref.code,eur(ref.price),saving)}</div></div>
       <div class="head-actions">
         ${g.appid?`<button class="act-btn" onclick="shareGame(${g.appid},'${(g.title||'').replace(/'/g,'')}')" title="Teilen">${IC.link}</button>`:''}
         ${g.appid?`<button class="act-btn fav-head ${isFav(g.appid)?'on':''}" onclick="toggleFav(${g.appid},event)" title="Favorit">${isFav(g.appid)?IC.starFill:IC.star}</button>`:''}
@@ -779,7 +782,7 @@ function openGame(id,edId){
       <table class="ctable">${cs.slice(0,8).map((c,i)=>`
         <tr>
           <td class="c-flag">${flag(c.code,18)}</td>
-          <td><span class="c-name">${c.code} · ${COUNTRIES[c.code].name}</span>${i===0?`<span class="badge-best">${t('cheapestBadge')}</span>`:''}<div class="c-shop">${localMoney(c.localPrice,c.currency)}</div></td>
+          <td><span class="c-name">${c.code} · ${cname(c.code)}</span>${i===0?`<span class="badge-best">${t('cheapestBadge')}</span>`:''}<div class="c-shop">${localMoney(c.localPrice,c.currency)}</div></td>
           <td class="c-price" style="color:${i===0?'var(--green)':'inherit'}">${eur(c.price)}</td>
           <td style="text-align:right">${g.appid?`<a class="buy" href="https://store.steampowered.com/app/${g.appid}/?cc=${c.code}" target="_blank" rel="noopener" onclick="event.stopPropagation();trackClick('steam',{appid:${g.appid},cc:'${c.code}'})">Steam ↗</a>`:''}</td>
         </tr>`).join('')}
