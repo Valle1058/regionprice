@@ -23,7 +23,7 @@ async function main() {
   }
   const json = JSON.stringify(games, null, 2);
   writeFileSync("games.json", json, "utf8");
-  writeFileSync("games.js", `window.GAMES_DATA = ${json};`, "utf8");
+  writeFileSync("games.js", `window.GAMES_DATA = ${json};\nwindow.GAMES_GENERATED = ${JSON.stringify(new Date().toISOString())};`, "utf8");
   console.log(`\nFertig: ${games.length} Spiele in games.json + games.js`);
 }
 

@@ -71,6 +71,8 @@
   .logo b{background:linear-gradient(135deg,#fff,#c4ccff);-webkit-background-clip:text;background-clip:text;color:transparent}
   .tabs{display:flex;gap:4px;margin-left:auto}
   .head-note{margin-left:auto;font-size:13px;font-weight:600;color:var(--muted);background:var(--surface-2);border:1px solid var(--border);padding:7px 14px;border-radius:20px}
+  .lang-btn{margin-left:10px;background:var(--surface-2);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:13px;font-weight:700;padding:7px 12px;border-radius:10px;cursor:pointer}
+  .lang-btn:hover{border-color:var(--accent);color:var(--accent)}
   .tab{
     padding:9px 16px;border-radius:10px;color:var(--muted);
     font-weight:600;font-size:14px;cursor:pointer;border:1px solid transparent;
@@ -131,6 +133,14 @@
   .skel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);height:232px;position:relative;overflow:hidden}
   .skel::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.05),transparent);transform:translateX(-100%);animation:sh 1.3s infinite}
   @keyframes sh{to{transform:translateX(100%)}}
+  .modal-loading{padding:60px 24px;text-align:center;color:var(--muted)}
+  .modal-loading p{margin-top:16px}
+  .spinner{width:38px;height:38px;border-radius:50%;border:3px solid var(--border);border-top-color:var(--accent);margin:0 auto;animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+  .chip{background:var(--surface);border:1px solid var(--border);color:var(--muted);font-family:inherit;font-size:13px;font-weight:600;padding:6px 12px;border-radius:20px;cursor:pointer}
+  .chip:hover{color:var(--text);border-color:#3b4250}
+  .chip.on{background:var(--surface-2);color:var(--accent);border-color:var(--accent)}
   .loadmore{text-align:center;color:var(--muted);font-size:14px;padding:24px 0}
   .loadmore.done{color:var(--muted);opacity:.7}
   .thumb .fav-btn{position:absolute;top:8px;right:10px;z-index:3;background:rgba(0,0,0,.45);border:none;color:#fff;font-size:16px;width:30px;height:30px;border-radius:8px;cursor:pointer;line-height:1;backdrop-filter:blur(2px)}
@@ -302,7 +312,8 @@
         </svg>
       </span>
     </div>
-    <div class="head-note"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18"/></svg> Spiele-Preise nach Land</div>
+    <div class="head-note" id="headNote"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18"/></svg> Spiele-Preise nach Land</div>
+    <button id="langBtn" class="lang-btn" onclick="setLang(LANG==='de'?'en':'de')">EN</button>
   </div>
 </header>
 
@@ -311,8 +322,8 @@
   <!-- ============ GAMES PANEL ============ -->
   <section class="panel active" id="panel-games">
     <div class="hero">
-      <h1>Dasselbe Spiel,<br><span>im günstigsten Land</span>.</h1>
-      <p>Wir vergleichen Steam-Preise weltweit und zeigen dir sofort, in welcher Region dein Spiel am wenigsten kostet – mit Editionen, echtem Preisverlauf und Shop-Vergleich.</p>
+      <h1 id="heroH1">Dasselbe Spiel,<br><span>im günstigsten Land</span>.</h1>
+      <p id="heroP">Wir vergleichen Steam-Preise weltweit und zeigen dir sofort, in welcher Region dein Spiel am wenigsten kostet – mit Editionen, echtem Preisverlauf und Shop-Vergleich.</p>
     </div>
 
     <div class="toolbar">
@@ -338,7 +349,8 @@
         <option value="BRL">R$ BRL</option>
       </select>
     </div>
-    <div id="region-note" style="margin:-14px 0 22px;font-size:13px;color:var(--muted)"></div>
+    <div id="region-note" style="margin:-14px 0 14px;font-size:13px;color:var(--muted)"></div>
+    <div id="genre-chips" class="chips"></div>
 
     <div class="grid" id="grid"></div>
     <div id="sentinel" style="height:1px"></div>
@@ -360,11 +372,12 @@
     <div id="wishlist-list"></div>
   </section>
 
-  <footer>
+  <footer id="footerMain">
     Preise von Steam, in Euro umgerechnet · ohne Gewähr ·
     <a href="impressum.html" style="color:var(--accent)">Impressum</a> ·
     <a href="datenschutz.html" style="color:var(--accent)">Datenschutz</a><br>
     <span style="font-size:12px">* Affiliate-Link: Bei einem Kauf über diesen Link erhalten wir ggf. eine Provision – für dich ohne Mehrkosten.</span>
+    <div id="updated" style="font-size:12px;margin-top:6px;opacity:.8"></div>
   </footer>
 </main>
 
@@ -376,8 +389,8 @@
 <div class="toast" id="toast"></div>
 
 <div class="consent" id="consent" style="display:none">
-  <span>Diese Seite speichert nur technisch notwendige Einstellungen (z. B. deine Region). Beim Klick auf Shop-/Affiliate-Links können Drittanbieter Cookies setzen. <a href="datenschutz.html">Mehr erfahren</a></span>
-  <button class="btn-primary" onclick="acceptConsent()">Verstanden</button>
+  <span id="consentText">Diese Seite speichert nur technisch notwendige Einstellungen (z. B. deine Region). Beim Klick auf Shop-/Affiliate-Links können Drittanbieter Cookies setzen. <a href="datenschutz.html">Mehr erfahren</a></span>
+  <button class="btn-primary" id="consentBtn" onclick="acceptConsent()">Verstanden</button>
 </div>
 
 <!-- Vercel Web Analytics (cookielos; aktiv, sobald in Vercel eingeschaltet) -->
@@ -479,6 +492,7 @@ async function loadGames(){
     if(Array.isArray(window.GAMES_DATA)&&window.GAMES_DATA.length){
       GAMES=window.GAMES_DATA.map(normalizeGame);
       renderGrid(); hadStatic=true;
+      if(window.GAMES_GENERATED){ const u=$('#updated'); if(u) u.textContent=t('updated')+new Date(window.GAMES_GENERATED).toLocaleString(LANG==='en'?'en-GB':'de-DE'); }
       console.log(`games.js sofort geladen: ${GAMES.length} Spiele`);
     }
   }catch{}
@@ -548,6 +562,8 @@ const store={
 /* ---------------- Helpers ---------------- */
 const IG_AFF="gamer-346292"; // Instant-Gaming Affiliate-Kennung
 const $=s=>document.querySelector(s);
+/* Klick-Tracking (Vercel Analytics custom events, falls aktiv) */
+function trackClick(name,data){ try{ if(window.va) window.va('event',{name,...(data||{})}); }catch{} }
 /* ---- Anzeige-Währung (alle Preise sind intern in EUR) ---- */
 let DISPLAY_CUR=localStorage.getItem('rp_cur')||'EUR';
 let RATES={EUR:1};
@@ -564,12 +580,76 @@ function setRegion(code){ USER_REGION=code; try{localStorage.setItem('rp_region'
 /* ---- Favoriten ---- */
 let FAVS=JSON.parse(localStorage.getItem('rp_favs')||'[]');
 let FAV_ONLY=false;
+let GENRE_FILTER='';
+function setGenre(g){ GENRE_FILTER=g; renderGrid(); }
 const isFav=appid=>FAVS.includes(appid);
 function saveFavs(){try{localStorage.setItem('rp_favs',JSON.stringify(FAVS));}catch{}}
 function toggleFav(appid,e){ if(e)e.stopPropagation(); if(!appid)return; const i=FAVS.indexOf(appid); if(i>=0)FAVS.splice(i,1); else FAVS.push(appid); saveFavs(); renderGrid(); if($('#overlay').classList.contains('open')&&MODAL_GAME&&MODAL_GAME.appid===appid) openGame(MODAL_GAME.id,document.querySelector('.edition-sel')?.value); }
 function toggleFavFilter(){ FAV_ONLY=!FAV_ONLY; const b=$('#favBtn'); if(b){b.innerHTML=(FAV_ONLY?IC.starFill:IC.star)+' Favoriten'; b.classList.toggle('active',FAV_ONLY);} renderGrid(); }
 /* echte Flaggen-Bilder (Emoji-Flaggen werden auf Windows nicht angezeigt) */
 const flag=(code,h=14)=>`<img class="flagimg" style="height:${h}px" src="https://flagcdn.com/h${h<=20?20:40}/${code.toLowerCase()}.png" alt="${code}" loading="lazy">`;
+/* ---- Sprache (i18n) ---- */
+let LANG=localStorage.getItem('rp_lang') || ((navigator.language||'de').slice(0,2)==='en'?'en':'de');
+if(LANG!=='en'&&LANG!=='de') LANG='de';
+const T={
+  de:{
+    heroA:'Dasselbe Spiel,',heroB:'im günstigsten Land',
+    heroP:'Wir vergleichen Steam-Preise weltweit und zeigen dir sofort, in welcher Region dein Spiel am wenigsten kostet – mit Editionen, echtem Preisverlauf und Shop-Vergleich.',
+    searchPh:'Spiel suchen… (jedes Steam-Spiel)',
+    sortPrice:'Preis aufsteigend',sortPriceDesc:'Preis absteigend',sortDisc:'Größte Ersparnis',sortName:'Name A–Z',
+    favorites:'Favoriten',headNote:'Spiele-Preise nach Land',
+    region:'Deine Region:',regionNote2:'· Ersparnis & Vergleichspreis beziehen sich auf dein Land.',
+    all:'Alle',cheapestCountry:'Günstigstes Land:',editions:n=>`${n} Editionen`,
+    cheapestBadge:'GÜNSTIGSTES',cheapestLands:'Günstigste Länder',edition:'Edition',from:'ab',
+    inYour:(c,p,z)=>`in deinem Land (${c}) ${p} · ${z}% sparen`,hereCheapest:'günstigstes Land = dein Land',
+    steamNote:'Preise von Steam, in Euro umgerechnet. „Steam ↗" öffnet die Store-Seite der jeweiligen Region.',
+    igBtn:'Auf Instant Gaming ansehen *',
+    histTitle:'Preisverlauf (12 Monate · bester Shop-Preis)',low:'Tief',high:'Hoch',hoverHint:'↔ Fahre über die Kurve',histSrc:'Preisverlauf von IsThereAnyDeal',
+    loadingPrices:'Lade Live-Preise aus allen Ländern …',loadMore:'Lädt weitere Spiele…',allLoaded:'Das waren alle beliebten Spiele – nutze die Suche für mehr.',
+    noResults:'Keine Spiele gefunden.',noFavs:'Noch keine Favoriten – tippe den Stern auf einem Spiel.',
+    linkCopied:'Link kopiert',loadFail:'Konnte Preise nicht laden',updated:'Preise zuletzt aktualisiert: ',
+    footerMain:'Preise von Steam, in Euro umgerechnet · ohne Gewähr ·',
+    affNote:'* Affiliate-Link: Bei einem Kauf über diesen Link erhalten wir ggf. eine Provision – für dich ohne Mehrkosten.',
+    consentText:'Diese Seite speichert nur technisch notwendige Einstellungen (z. B. deine Region). Beim Klick auf Shop-/Affiliate-Links können Drittanbieter Cookies setzen.',consentBtn:'Verstanden',consentMore:'Mehr erfahren'
+  },
+  en:{
+    heroA:'The same game,',heroB:'in the cheapest country',
+    heroP:'We compare Steam prices worldwide and instantly show you the region where your game costs the least – with editions, real price history and shop comparison.',
+    searchPh:'Search game… (any Steam game)',
+    sortPrice:'Price ascending',sortPriceDesc:'Price descending',sortDisc:'Biggest saving',sortName:'Name A–Z',
+    favorites:'Favorites',headNote:'Game prices by country',
+    region:'Your region:',regionNote2:'· Savings & reference price are based on your country.',
+    all:'All',cheapestCountry:'Cheapest country:',editions:n=>`${n} editions`,
+    cheapestBadge:'CHEAPEST',cheapestLands:'Cheapest countries',edition:'Edition',from:'from',
+    inYour:(c,p,z)=>`in your country (${c}) ${p} · save ${z}%`,hereCheapest:'cheapest country = your country',
+    steamNote:'Prices from Steam, converted to euro. “Steam ↗” opens the store page for each region.',
+    igBtn:'View on Instant Gaming *',
+    histTitle:'Price history (12 months · best shop price)',low:'Low',high:'High',hoverHint:'↔ Hover over the chart',histSrc:'Price history by IsThereAnyDeal',
+    loadingPrices:'Loading live prices from all countries …',loadMore:'Loading more games…',allLoaded:'That was all popular games – use search for more.',
+    noResults:'No games found.',noFavs:'No favorites yet – tap the star on a game.',
+    linkCopied:'Link copied',loadFail:'Couldn’t load prices',updated:'Prices last updated: ',
+    footerMain:'Prices from Steam, converted to euro · no guarantee ·',
+    affNote:'* Affiliate link: if you buy via this link we may earn a commission – at no extra cost to you.',
+    consentText:'This site only stores technically necessary settings (e.g. your region). Clicking shop/affiliate links may let third parties set cookies.',consentBtn:'Got it',consentMore:'Learn more'
+  }
+};
+const t=(k,...a)=>{ const v=(T[LANG]||T.de)[k]; return typeof v==='function'?v(...a):(v??k); };
+function setLang(l){ LANG=l; try{localStorage.setItem('rp_lang',l);}catch{} applyLang(); renderGrid(); if($('#overlay').classList.contains('open')&&MODAL_GAME) openGame(MODAL_GAME.id,document.querySelector('.edition-sel')?.value); }
+function applyLang(){
+  document.documentElement.lang=LANG;
+  const set=(sel,html)=>{const e=$(sel);if(e)e.innerHTML=html;};
+  set('#heroH1',`${t('heroA')}<br><span>${t('heroB')}</span>.`);
+  set('#heroP',t('heroP'));
+  const s=$('#search'); if(s)s.placeholder=t('searchPh');
+  const so=$('#sort'); if(so)so.innerHTML=`<option value="price">${t('sortPrice')}</option><option value="priceDesc">${t('sortPriceDesc')}</option><option value="disc">${t('sortDisc')}</option><option value="name">${t('sortName')}</option>`;
+  const fb=$('#favBtn'); if(fb)fb.innerHTML=(FAV_ONLY?IC.starFill:IC.star)+' '+t('favorites');
+  set('#headNote',IC.globe+' '+t('headNote'));
+  set('#footerMain',`${t('footerMain')} <a href="impressum.html" style="color:var(--accent)">Impressum</a> · <a href="datenschutz.html" style="color:var(--accent)">Datenschutz</a><br><span style="font-size:12px">${t('affNote')}</span><div id="updated" style="font-size:12px;margin-top:6px;opacity:.8"></div>`);
+  set('#consentText',t('consentText')+' <a href="datenschutz.html">'+t('consentMore')+'</a>');
+  const cb=$('#consentBtn'); if(cb)cb.textContent=t('consentBtn');
+  const lb=$('#langBtn'); if(lb)lb.textContent=LANG==='de'?'EN':'DE';
+  if(window.GAMES_GENERATED){ const u=$('#updated'); if(u)u.textContent=t('updated')+new Date(window.GAMES_GENERATED).toLocaleString(LANG==='en'?'en-GB':'de-DE'); }
+}
 /* ---- Inline-Icons (keine Emojis) ---- */
 const IC={
   globe:'<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.6 2.6 15.4 0 18M12 3c-2.6 2.6-2.6 15.4 0 18"/></svg>',
@@ -611,7 +691,7 @@ function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show'
 function renderGrid(){
   const q=$('#search').value.toLowerCase();
   const sort=$('#sort').value;
-  let list=GAMES.filter(g=>g.title.toLowerCase().includes(q) && (!FAV_ONLY||isFav(g.appid)));
+  let list=GAMES.filter(g=>g.title.toLowerCase().includes(q) && (!FAV_ONLY||isFav(g.appid)) && (!GENRE_FILTER||g.genre===GENRE_FILTER));
   list.sort((a,b)=>sort==='name'?a.title.localeCompare(b.title)
     :sort==='disc'?savingPct(b)-savingPct(a)
     :sort==='priceDesc'?b.best.price-a.best.price
@@ -633,8 +713,8 @@ function renderGrid(){
       </div>
       <div class="body">
         <h3>${g.title}</h3>
-        <div class="meta">${g.genre}${g.editions&&g.editions.length>1?` · <span class="ed-badge">${g.editions.length} Editionen</span>`:''}</div>
-        <span class="country-tag">${flag(g.best.code)} ${g.best.code} · Günstigstes Land: ${c.name}</span>
+        <div class="meta">${g.genre}${g.editions&&g.editions.length>1?` · <span class="ed-badge">${t('editions',g.editions.length)}</span>`:''}</div>
+        <span class="country-tag">${flag(g.best.code)} ${g.best.code} · ${t('cheapestCountry')} ${c.name}</span>
         <div class="price-row">
           <span class="price">${eur(g.best.price)}</span>
           ${isHere?'':`<span class="price-old" title="Preis in ${COUNTRIES[ref.code]?.name||ref.code}">${eur(ref.price)}</span>`}
@@ -647,12 +727,19 @@ function renderGrid(){
     const need=Math.max(0,(list.length<8?12:4));
     $('#grid').insertAdjacentHTML('beforeend','<div class="skel"></div>'.repeat(need));
   }
-  if(!list.length && !LOADING)$('#grid').innerHTML=`<div class="empty" style="grid-column:1/-1"><div class="big">${FAV_ONLY?IC.star:IC.search}</div>${FAV_ONLY?'Noch keine Favoriten – tippe den Stern auf einem Spiel.':'Keine Spiele gefunden.'}</div>`;
+  if(!list.length && !LOADING)$('#grid').innerHTML=`<div class="empty" style="grid-column:1/-1"><div class="big">${FAV_ONLY?IC.star:IC.search}</div>${FAV_ONLY?t('noFavs'):t('noResults')}</div>`;
   const rn=$('#region-note');
-  if(rn)rn.innerHTML=`Deine Region: ${flag(USER_REGION)} <select class="region-sel" onchange="setRegion(this.value)">${Object.entries(COUNTRIES).map(([code,info])=>`<option value="${code}" ${code===USER_REGION?'selected':''}>${info.name}</option>`).join('')}</select> · Ersparnis & Vergleichspreis beziehen sich auf dein Land.`;
+  if(rn)rn.innerHTML=`${t('region')} ${flag(USER_REGION)} <select class="region-sel" onchange="setRegion(this.value)">${Object.entries(COUNTRIES).map(([code,info])=>`<option value="${code}" ${code===USER_REGION?'selected':''}>${info.name}</option>`).join('')}</select> ${t('regionNote2')}`;
+  const gc=$('#genre-chips');
+  if(gc){
+    const genres=[...new Set(GAMES.map(g=>g.genre).filter(Boolean))].sort();
+    gc.innerHTML = genres.length>1
+      ? `<button class="chip ${!GENRE_FILTER?'on':''}" onclick="setGenre('')">${t('all')}</button>`+genres.map(gn=>`<button class="chip ${GENRE_FILTER===gn?'on':''}" onclick="setGenre('${gn.replace(/'/g,"\\'")}')">${gn}</button>`).join('')
+      : '';
+  }
   const sent=$('#sentinel');
-  if(sent) sent.innerHTML = LOADING ? '<div class="loadmore">Lädt weitere Spiele…</div>'
-    : (EXHAUSTED && list.length ? '<div class="loadmore done">Das waren alle beliebten Spiele – nutze die Suche für mehr.</div>' : '');
+  if(sent) sent.innerHTML = LOADING ? `<div class="loadmore">${t('loadMore')}</div>`
+    : (EXHAUSTED && list.length ? `<div class="loadmore done">${t('allLoaded')}</div>` : '');
 }
 
 /* ---------------- Modal: game detail ---------------- */
@@ -669,16 +756,16 @@ function openGame(id,edId){
 
   const editionPicker=eds?`
       <div class="edition-row">
-        <span class="edition-lbl">Edition</span>
+        <span class="edition-lbl">${t('edition')}</span>
         <select class="edition-sel" onchange="openGame(${g.id}, this.value)">
-          ${eds.map(e=>`<option value="${e.id}" ${e===sel?'selected':''}>${e.label} – ab ${eur(e.countries[0].price)}</option>`).join('')}
+          ${eds.map(e=>`<option value="${e.id}" ${e===sel?'selected':''}>${e.label} – ${t('from')} ${eur(e.countries[0].price)}</option>`).join('')}
         </select>
       </div>`:'';
 
   $('#modal').innerHTML=`
     <div class="modal-head">
       <div class="ico" style="${(g.image||g.appid)?`background-image:url('${g.image||`https://cdn.cloudflare.steamstatic.com/steam/apps/${g.appid}/header.jpg`}');background-size:cover;background-position:center`:`background:linear-gradient(135deg,${g.color}44,${g.color}11);color:${g.color}`}">${(g.image||g.appid)?'':IC.pad}</div>
-      <div><h2>${g.title}</h2><div class="meta">${g.genre} · ${ref.code===best.code?'günstigstes Land = dein Land':`in deinem Land (${ref.code}) ${eur(ref.price)} · ${saving}% sparen`}</div></div>
+      <div><h2>${g.title}</h2><div class="meta">${g.genre} · ${ref.code===best.code?t('hereCheapest'):t('inYour',ref.code,eur(ref.price),saving)}</div></div>
       <div class="head-actions">
         ${g.appid?`<button class="act-btn" onclick="shareGame(${g.appid},'${(g.title||'').replace(/'/g,'')}')" title="Teilen">${IC.link}</button>`:''}
         ${g.appid?`<button class="act-btn fav-head ${isFav(g.appid)?'on':''}" onclick="toggleFav(${g.appid},event)" title="Favorit">${isFav(g.appid)?IC.starFill:IC.star}</button>`:''}
@@ -687,18 +774,18 @@ function openGame(id,edId){
     </div>
     <div class="modal-body">
       ${editionPicker}
-      <div class="section-title">Günstigste Länder${sel?` · ${sel.label}`:''}</div>
+      <div class="section-title">${t('cheapestLands')}${sel?` · ${sel.label}`:''}</div>
       <table class="ctable">${cs.slice(0,8).map((c,i)=>`
         <tr>
           <td class="c-flag">${flag(c.code,18)}</td>
-          <td><span class="c-name">${c.code} · ${COUNTRIES[c.code].name}</span>${i===0?'<span class="badge-best">GÜNSTIGSTES</span>':''}<div class="c-shop">${localMoney(c.localPrice,c.currency)}</div></td>
+          <td><span class="c-name">${c.code} · ${COUNTRIES[c.code].name}</span>${i===0?`<span class="badge-best">${t('cheapestBadge')}</span>`:''}<div class="c-shop">${localMoney(c.localPrice,c.currency)}</div></td>
           <td class="c-price" style="color:${i===0?'var(--green)':'inherit'}">${eur(c.price)}</td>
-          <td style="text-align:right">${g.appid?`<a class="buy" href="https://store.steampowered.com/app/${g.appid}/?cc=${c.code}" target="_blank" rel="noopener" onclick="event.stopPropagation()">Steam ↗</a>`:''}</td>
+          <td style="text-align:right">${g.appid?`<a class="buy" href="https://store.steampowered.com/app/${g.appid}/?cc=${c.code}" target="_blank" rel="noopener" onclick="event.stopPropagation();trackClick('steam',{appid:${g.appid},cc:'${c.code}'})">Steam ↗</a>`:''}</td>
         </tr>`).join('')}
       </table>
-      <p class="meta" style="margin-top:12px">Preise von Steam, in Euro umgerechnet. „Steam ↗" öffnet die Store-Seite der jeweiligen Region.</p>
+      <p class="meta" style="margin-top:12px">${t('steamNote')}</p>
       <div class="aff-row">
-        <a class="aff-btn ig" href="https://www.instant-gaming.com/de/suche/?q=${encodeURIComponent(g.title)}&igr=${IG_AFF}" target="_blank" rel="noopener sponsored">${IC.pad} Auf Instant Gaming ansehen *</a>
+        <a class="aff-btn ig" href="https://www.instant-gaming.com/de/suche/?q=${encodeURIComponent(g.title)}&igr=${IG_AFF}" target="_blank" rel="noopener sponsored" onclick="trackClick('instant_gaming',{appid:${g.appid||0}})">${IC.pad} ${t('igBtn')}</a>
       </div>
       <div id="itad-extra"></div>
     </div>`;
@@ -715,14 +802,12 @@ async function loadItad(appid){
   let html='';
   if(d.history&&d.history.length>1){
     const ps=d.history.map(x=>x.p),min=Math.min(...ps),max=Math.max(...ps);
-    html+=`<div class="section-title" style="margin-top:22px">${IC.chart} Preisverlauf (12 Monate · bester Shop-Preis)</div>
+    html+=`<div class="section-title" style="margin-top:22px">${IC.chart} ${t('histTitle')}</div>
       <div class="chart-box">${priceChart(d.history)}</div>
       <div style="display:flex;gap:20px;margin-top:10px;font-size:13px;color:var(--muted)">
-        <span>Tief: <b style="color:var(--green)">${eur(min)}</b></span><span>Hoch: <b style="color:var(--red)">${eur(max)}</b></span>
-        <span style="margin-left:auto">↔ Fahre über die Kurve</span></div>`;
-  }
-  if(d.history&&d.history.length>1){
-    html+=`<p class="meta" style="margin-top:8px">Preisverlauf von IsThereAnyDeal</p>`;
+        <span>${t('low')}: <b style="color:var(--green)">${eur(min)}</b></span><span>${t('high')}: <b style="color:var(--red)">${eur(max)}</b></span>
+        <span style="margin-left:auto">${t('hoverHint')}</span></div>
+      <p class="meta" style="margin-top:8px">${t('histSrc')}</p>`;
   }
   el.innerHTML=html;
   attachCharts();
@@ -731,11 +816,11 @@ function closeModal(){$('#overlay').classList.remove('open');try{history.replace
 /* Teilen: Direkt-Link kopieren oder System-Teilen */
 function copyLink(url){
   if(navigator.clipboard&&navigator.clipboard.writeText){
-    navigator.clipboard.writeText(url).then(()=>toast('Link kopiert')).catch(()=>legacyCopy(url));
+    navigator.clipboard.writeText(url).then(()=>toast(t('linkCopied'))).catch(()=>legacyCopy(url));
   } else legacyCopy(url);
 }
 function legacyCopy(url){
-  try{ const i=document.createElement('input'); i.value=url; document.body.appendChild(i); i.select(); document.execCommand('copy'); i.remove(); toast('Link kopiert'); }
+  try{ const i=document.createElement('input'); i.value=url; document.body.appendChild(i); i.select(); document.execCommand('copy'); i.remove(); toast(t('linkCopied')); }
   catch{ toast(url); }
 }
 function shareGame(appid,title){
@@ -894,17 +979,21 @@ function renderSuggest(items){
   el.innerHTML=items.map(it=>`<div class="sug" onclick="pickGame(${it.appid})"><img src="${it.image}" alt="" loading="lazy"><span>${it.title}</span><small>Live laden</small></div>`).join('');
   el.classList.add('open');
 }
+function showModalLoading(){
+  $('#modal').innerHTML=`<div class="modal-loading"><div class="spinner"></div><p>${t('loadingPrices')}</p></div>`;
+  $('#overlay').classList.add('open');
+}
 async function pickGame(appid){
   $('#suggest').classList.remove('open');
   let g=GAMES.find(x=>x.appid===appid);
   if(!g){
-    toast('Hole Live-Preise aus allen Ländern …');
+    showModalLoading();
     try{
       const raw=await apiGet('/api/game?appid='+appid);
       GAMES.push(normalizeGame(raw,GAMES.length));
       renderGrid();
       g=GAMES.find(x=>x.appid===appid);
-    }catch{ toast('Konnte Preise nicht laden'); return; }
+    }catch{ closeModal(); toast(t('loadFail')); return; }
   }
   if(g) openGame(g.id);
 }
@@ -929,6 +1018,7 @@ function acceptConsent(){ try{localStorage.setItem('rp_consent','1');}catch{} co
 /* ---------------- Init ---------------- */
 $('#search').addEventListener('input',onSearchInput);
 $('#sort').addEventListener('input',renderGrid);
+applyLang();
 initConsent();
 const _cs=$('#curSel'); if(_cs)_cs.value=DISPLAY_CUR;
 fetchRates();
