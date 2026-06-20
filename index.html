@@ -729,11 +729,20 @@ async function loadItad(appid){
 }
 function closeModal(){$('#overlay').classList.remove('open');try{history.replaceState(null,'',location.pathname);}catch{}}
 /* Teilen: Direkt-Link kopieren oder System-Teilen */
+function copyLink(url){
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(url).then(()=>toast('Link kopiert')).catch(()=>legacyCopy(url));
+  } else legacyCopy(url);
+}
+function legacyCopy(url){
+  try{ const i=document.createElement('input'); i.value=url; document.body.appendChild(i); i.select(); document.execCommand('copy'); i.remove(); toast('Link kopiert'); }
+  catch{ toast(url); }
+}
 function shareGame(appid,title){
   const url=location.origin+'/game/'+appid;
-  if(navigator.share){ navigator.share({title:(title||'Spiel')+' – RegionPrice',url}).catch(()=>{}); }
-  else if(navigator.clipboard){ navigator.clipboard.writeText(url).then(()=>toast('Link kopiert')).catch(()=>toast(url)); }
-  else { toast(url); }
+  const mobile=window.matchMedia&&window.matchMedia('(pointer:coarse)').matches;
+  if(mobile&&navigator.share){ navigator.share({title:(title||'Spiel')+' – RegionPrice',url}).catch(()=>copyLink(url)); }
+  else copyLink(url);
 }
 $('#overlay').onclick=e=>{if(e.target.id==='overlay')closeModal()};
 
