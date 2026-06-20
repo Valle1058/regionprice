@@ -581,6 +581,7 @@ function setRegion(code){ USER_REGION=code; try{localStorage.setItem('rp_region'
 let FAVS=JSON.parse(localStorage.getItem('rp_favs')||'[]');
 let FAV_ONLY=false;
 let GENRE_FILTER='';
+let SORT='priceDesc'; // Standard: teuer -> billig
 function setGenre(g){ GENRE_FILTER=g; renderGrid(); }
 const isFav=appid=>FAVS.includes(appid);
 function saveFavs(){try{localStorage.setItem('rp_favs',JSON.stringify(FAVS));}catch{}}
@@ -641,7 +642,7 @@ function applyLang(){
   set('#heroH1',`${t('heroA')}<br><span>${t('heroB')}</span>.`);
   set('#heroP',t('heroP'));
   const s=$('#search'); if(s)s.placeholder=t('searchPh');
-  const so=$('#sort'); if(so)so.innerHTML=`<option value="price">${t('sortPrice')}</option><option value="priceDesc">${t('sortPriceDesc')}</option><option value="disc">${t('sortDisc')}</option><option value="name">${t('sortName')}</option>`;
+  const so=$('#sort'); if(so){so.innerHTML=`<option value="price">${t('sortPrice')}</option><option value="priceDesc">${t('sortPriceDesc')}</option><option value="disc">${t('sortDisc')}</option><option value="name">${t('sortName')}</option>`; so.value=SORT;}
   const fb=$('#favBtn'); if(fb)fb.innerHTML=(FAV_ONLY?IC.starFill:IC.star)+' '+t('favorites');
   set('#headNote',IC.globe+' '+t('headNote'));
   set('#footerMain',`${t('footerMain')} <a href="impressum.html" style="color:var(--accent)">Impressum</a> · <a href="datenschutz.html" style="color:var(--accent)">Datenschutz</a><br><span style="font-size:12px">${t('affNote')}</span><div id="updated" style="font-size:12px;margin-top:6px;opacity:.8"></div>`);
@@ -690,7 +691,7 @@ function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show'
 /* ---------------- Render: Game grid ---------------- */
 function renderGrid(){
   const q=$('#search').value.toLowerCase();
-  const sort=$('#sort').value;
+  const sort=SORT;
   let list=GAMES.filter(g=>g.title.toLowerCase().includes(q) && (!FAV_ONLY||isFav(g.appid)) && (!GENRE_FILTER||g.genre===GENRE_FILTER));
   list.sort((a,b)=>sort==='name'?a.title.localeCompare(b.title)
     :sort==='disc'?savingPct(b)-savingPct(a)
@@ -1017,7 +1018,7 @@ function acceptConsent(){ try{localStorage.setItem('rp_consent','1');}catch{} co
 
 /* ---------------- Init ---------------- */
 $('#search').addEventListener('input',onSearchInput);
-$('#sort').addEventListener('input',renderGrid);
+$('#sort').addEventListener('change',e=>{SORT=e.target.value;renderGrid();});
 applyLang();
 initConsent();
 const _cs=$('#curSel'); if(_cs)_cs.value=DISPLAY_CUR;
