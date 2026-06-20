@@ -715,7 +715,7 @@ function renderGrid(){
       <div class="body">
         <h3>${g.title}</h3>
         <div class="meta">${g.genre}${g.editions&&g.editions.length>1?` · <span class="ed-badge">${t('editions',g.editions.length)}</span>`:''}</div>
-        <span class="country-tag">${flag(g.best.code)} ${g.best.code} · ${t('cheapestCountry')} ${c.name}</span>
+        <span class="country-tag">${flag(g.best.code)} ${t('cheapestCountry')} ${c.name}</span>
         <div class="price-row">
           <span class="price">${eur(g.best.price)}</span>
           ${isHere?'':`<span class="price-old" title="Preis in ${COUNTRIES[ref.code]?.name||ref.code}">${eur(ref.price)}</span>`}
